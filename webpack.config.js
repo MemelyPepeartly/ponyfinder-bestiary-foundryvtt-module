@@ -126,20 +126,6 @@ const config = {
                         system: "pf2e",
                     },
                     {
-                        name: "ponyfinder-bestiary-archetypes",
-                        label: "Ponyfinder Archetypes",
-                        path: "packs/ponyfinder-archetypes.db",
-                        type: "JournalEntry",
-                        system: "pf2e",
-                    },
-                    {
-                        name: "ponyfinder-bestiary-deities",
-                        label: "Ponyfinder Deities",
-                        path: "packs/ponyfinder-deities.db",
-                        type: "Item",
-                        system: "pf2e",
-                    },
-                    {
                         name: "ponyfinder-bestiary-effects",
                         label: "Ponyfinder Effects",
                         path: "packs/ponyfinder-effects.db",
@@ -168,13 +154,6 @@ const config = {
                         system: "pf2e",
                     },
                     {
-                        name: "ponyfinder-bestiary-spells",
-                        label: "Ponyfinder Spells",
-                        path: "packs/ponyfinder-spells.db",
-                        type: "Item",
-                        system: "pf2e",
-                    },
-                    {
                         name: "ponyfinder-bestiary-npc-actions",
                         label: "Ponyfinder NPC Actions",
                         path: "packs/ponyfinder-npc-actions.db",
@@ -193,11 +172,14 @@ const config = {
                     "ponyfinder-bestiary-foundryvtt-module": {
                         "pf2e-homebrew": {
                             creatureTraits: {
-                                testCreatureTrait: "Test Creature Trait",
+                                beastfolk: "Beastfolk",
                             },
                             featTraits: {
                                 testFeatTrait: "Test Feat Trait",
                             },
+                            languages: {
+                                reptim: "Reptim"
+                            }
                         },
                     },
                 },

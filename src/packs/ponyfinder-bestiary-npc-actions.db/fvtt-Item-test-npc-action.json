@@ -1,0 +1,61 @@
+{
+  "name": "test npc action",
+  "type": "melee",
+  "img": "systems/pf2e/icons/default-icons/melee.svg",
+  "system": {
+    "description": {
+      "value": ""
+    },
+    "source": {
+      "value": ""
+    },
+    "traits": {
+      "value": [],
+      "rarity": "common",
+      "custom": ""
+    },
+    "rules": [],
+    "slug": null,
+    "schema": {
+      "version": 0.8,
+      "lastMigration": {
+        "datetime": "2022-11-20T22:36:53.869-07:00",
+        "version": {
+          "schema": null,
+          "foundry": "10.290",
+          "system": "4.4.0"
+        }
+      }
+    },
+    "weaponType": {
+      "value": "melee"
+    },
+    "attack": {
+      "value": ""
+    },
+    "damageRolls": {},
+    "bonus": {
+      "value": 0
+    },
+    "attackEffects": {
+      "value": []
+    }
+  },
+  "effects": [],
+  "flags": {
+    "exportSource": {
+      "world": "pfy-dev",
+      "system": "pf2e",
+      "coreVersion": "10.290",
+      "systemVersion": "4.4.0"
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "4.4.0",
+    "coreVersion": "10.290",
+    "createdTime": 1669009013872,
+    "modifiedTime": 1669009013872,
+    "lastModifiedBy": "VX5LPqOa6doQNd1U"
+  }
+}
