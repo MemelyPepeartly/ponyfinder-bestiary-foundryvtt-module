@@ -112,13 +112,6 @@ const config = {
                     })),
                 packs: [
                     {
-                        name: "ponyfinder-bestiary-actions",
-                        label: "Ponyfinder Actions",
-                        path: "packs/ponyfinder-actions.db",
-                        type: "Item",
-                        system: "pf2e",
-                    },
-                    {
                         name: "ponyfinder-bestiary-ancestries",
                         label: "Ponyfinder Ancestries",
                         path: "packs/ponyfinder-ancestries.db",
