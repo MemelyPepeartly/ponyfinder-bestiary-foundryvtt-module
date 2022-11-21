@@ -2,7 +2,7 @@
     "name": "ponyfinder-bestiary-foundryvtt-module",
     "title": "Ponyfinder: Bestiary of Everglow - Unified Edition for Pathfinder 2e",
     "description": "A collection of Ponyfinder: Bestiary of Everglow - Unified Edition content for Pathfinder 2e",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "private": true,
     "type": "module",
     "author": {
