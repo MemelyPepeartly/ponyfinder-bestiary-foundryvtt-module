@@ -1,9 +1,13 @@
 name: Module CI/CD
 
-on: 
-  push:
-    branches:
-      - master
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+    contents: write
+    pull-requests: write
 
 jobs: 
   build:
