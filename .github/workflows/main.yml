@@ -15,13 +15,13 @@ jobs:
     - name: Get Version
       shell: bash
       id: get-version
-      run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
+      run: echo "version=$(node ./.github/workflows/get-version.js)" >> $GITHUB_OUTPUT
 
     # Get the name from 'module.json'
     - name: Get Includes
       shell: bash
       id: get-includes
-      run: echo "::set-output name=files::$(node ./.github/workflows/get-includes.js)"
+      run: echo "files=$(node ./.github/workflows/get-includes.js)" >> $GITHUB_OUTPUT
 
     # create a zip file with all files required by the module to add to the release
     - name: Zip Files
