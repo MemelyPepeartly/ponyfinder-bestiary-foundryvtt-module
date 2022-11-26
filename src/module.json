@@ -1,19 +1,19 @@
 {
-  "name": "foundry-typescript-template",
-  "title": "Typescript Template",
-  "description": "", 
+  "name": "ponyfinder-bestiary-foundryvtt-module",
+  "title": "Ponyfinder: Bestiary of Everglow - Unified Edition for Pathfinder 2e",
+  "description": "A collection of Ponyfinder: Bestiary of Everglow - Unified Edition content for Pathfinder 2e", 
   "authors": [
     {
-      "name": "spacemandev",
-      "discord": "spacemandev#6256"
+      "name": "Memely",
+      "discord": "Memely#0001"
     }
   ],
   "version": "0.0.1",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "0.7.9",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10",
   "manifestPlusVersion": "1.0.0",
-  "url": "",
-  "manifest": "",
+  "url": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/download/latest/ponyfinder-bestiary-foundryvtt-module.zip",
+  "manifest": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/download/latest/module.json",
   "download": "",
   "type": "module",
   "includes": [
@@ -21,7 +21,6 @@
     "./lang/**",
     "./scripts/**",
     "./styles/**",
-    "./templates/**",
     "./module.json",
     "./README.md"
   ],
@@ -51,5 +50,20 @@
       "name": "English",
       "path": "lang/en.json"
     }
-  ]
+  ],
+  "flags": {
+    "ponyfinder-bestiary-foundryvtt-module": {
+        "pf2e-homebrew": {
+            "creatureTraits": {
+                "beastfolk": "Beastfolk"
+            },
+            "featTraits": {
+                "testFeatTrait": "Test Feat Trait"
+            },
+            "languages": {
+                "reptim": "Reptim"
+            }
+        }
+    }
+  }
 }
