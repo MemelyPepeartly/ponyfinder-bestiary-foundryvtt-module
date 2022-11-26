@@ -6,7 +6,6 @@
     "types": ["foundry-pc-types", "node"],
     "allowUmdGlobalAccess": true
   },
-  "files": ["./gulpfile.ts"],
   "exclude": [
     "node_modules"
   ]
