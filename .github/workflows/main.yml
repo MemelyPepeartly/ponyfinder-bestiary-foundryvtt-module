@@ -15,6 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Build Files
+      shell: bash
+      id: build-files
+      run: npm run build
+
     # Get the version from 'module.json'
     - name: Get Version
       shell: bash

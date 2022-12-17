@@ -1,7 +1,7 @@
 {
-  "name": "foundry-typescript-template",
-  "version": "1.0.0",
-  "description": "Foundry VTT Typescript Template",
+  "name": "ponyfinder-bestiary-foundryvtt-module",
+  "version": "1.0.1",
+  "description": "A collection of Ponyfinder Bestiary content for Pathfinder 2e",
   "main": "index.js",
   "scripts": {
     "build": "gulp build"
