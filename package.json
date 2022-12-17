@@ -1,6 +1,6 @@
 {
   "name": "ponyfinder-bestiary-foundryvtt-module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A collection of Ponyfinder Bestiary content for Pathfinder 2e",
   "main": "index.js",
   "scripts": {

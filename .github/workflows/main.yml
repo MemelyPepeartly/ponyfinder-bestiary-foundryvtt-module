@@ -34,14 +34,18 @@ jobs:
       shell: bash
       id: get-version
       run: echo "version=$(node ./.github/workflows/get-version.js)" >> $GITHUB_OUTPUT
+      
+    - name: Echo Version
       run: echo ${{steps.get-version.outputs.version}}
+
+    - name: Echo Version
+      run: echo ${{steps.get-includes.outputs.files}}
 
     # Get the name from 'module.json'
     - name: Get Includes
       shell: bash
       id: get-includes
       run: echo "files=$(node ./.github/workflows/get-includes.js)" >> $GITHUB_OUTPUT
-      run: echo ${{steps.get-includes.outputs.files}}
 
     # create a zip file with all files required by the module to add to the release
     - name: Zip Files
