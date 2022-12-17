@@ -1,6 +1,6 @@
 {
   "name": "ponyfinder-bestiary-foundryvtt-module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of Ponyfinder Bestiary content for Pathfinder 2e",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.11.16",
     "gulp": "^4.0.2",
     "gulp-typescript": "^6.0.0-alpha.1",
     "ts-node": "^10.9.1",
     "ts-register": "^0.1.0"
   },
   "dependencies": {
-    "@types/node": "^14.10.1",
     "foundry-pc-types": "gitlab:foundry-projects/foundry-pc/foundry-pc-types",
     "typescript": "^4.0.2"
   }
