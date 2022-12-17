@@ -21,6 +21,7 @@
     "./lang/**",
     "./scripts/**",
     "./styles/**",
+    "./packs/**",
     "./module.json",
     "./README.md"
   ],
