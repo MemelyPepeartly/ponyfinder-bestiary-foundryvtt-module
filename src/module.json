@@ -51,6 +51,50 @@
       "path": "lang/en.json"
     }
   ],
+  "packs": [
+    {
+      "name": "ponyfinder-bestiary-ancestries",
+      "label": "Ponyfinder Bestiary Ancestries",
+      "path": "packs/ponyfinder-bestiary-ancestries.db",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "ponyfinder-bestiary-effects",
+      "label": "Ponyfinder Bestiary Effects",
+      "path": "packs/ponyfinder-bestiary-effects.db",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "ponyfinder-bestiary-feats",
+      "label": "Ponyfinder Bestiary Feats",
+      "path": "packs/ponyfinder-bestiary-feats.db",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "ponyfinder-bestiary-items",
+      "label": "Ponyfinder Bestiary Items",
+      "path": "packs/ponyfinder-bestiary-items.db",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "ponyfinder-bestiary-npc-actions",
+      "label": "Ponyfinder Bestiary NPC Actions",
+      "path": "packs/ponyfinder-bestiary-npc-actions.db",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "ponyfinder-bestiary-npc-gallery",
+      "label": "Ponyfinder Bestiary NPC Gallery",
+      "path": "packs/ponyfinder-bestiary-npc-gallery.db",
+      "type": "Actor",
+      "system": "pf2e"
+    }
+  ],
   "flags": {
     "ponyfinder-bestiary-foundryvtt-module": {
         "pf2e-homebrew": {

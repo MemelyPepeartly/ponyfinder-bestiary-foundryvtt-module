@@ -2,11 +2,26 @@ const gulp = require('gulp')
 const ts = require('gulp-typescript');
 const project = ts.createProject('tsconfig.json')
 
+const through2 = require("through2");
+const yaml = require("js-yaml");
+const Datastore = require("nedb");
+const cb = require("cb");
+const mergeStream = require("merge-stream");
+const fs = require("fs");
+const path = require("path");
+
+const MODULE = JSON.parse(fs.readFileSync("src/module.json"));
+const STATIC_FILES = ["src/module.json", "src/assets/**/*"];
+const PACK_SRC = "src/packs";
+const DIST_DIR = "dist";
+
 
 gulp.task('compile', () => {
+  compilePacks()
+
   return gulp.src('src/**/*.ts')
     .pipe(project())
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('dist/'));
 })
 
 gulp.task('copy', async () => {
@@ -20,6 +35,29 @@ gulp.task('copy', async () => {
     resolve();
   })
 })
+
+function compilePacks() {
+  // determine the source folders to process
+  const folders = fs.readdirSync(PACK_SRC).filter((file) => {
+    return fs.statSync(path.join(PACK_SRC, file)).isDirectory();
+  });
+
+  // process each folder into a compendium db
+  const packs = folders.map((folder) => {
+    
+    const db = new Datastore({
+      filename: path.resolve(__dirname, DIST_DIR, "packs",`${folder}`),
+      autoload: true });
+
+    return gulp.src(path.join(PACK_SRC, folder, "**.json")).pipe(through2.obj((file, enc, cb) => {
+        let json = yaml.loadAll(file.contents.toString());
+        db.insert(json);
+        cb(null, file);
+      })
+    );
+  });
+  return mergeStream.call(null, packs);
+}
 
 gulp.task('build', gulp.parallel('compile', 'copy'));
 
