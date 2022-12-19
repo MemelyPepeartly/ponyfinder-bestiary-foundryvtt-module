@@ -6,14 +6,18 @@
     {
       "name": "Memely",
       "discord": "Memely#0001"
+    },
+    {
+      "name": "David Silver",
+      "discord": "David Silver#8501"
     }
   ],
-  "version": "0.0.1",
+  "version": "",
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "10",
   "manifestPlusVersion": "1.0.0",
-  "url": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/download/latest/ponyfinder-bestiary-foundryvtt-module.zip",
-  "manifest": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/download/latest/module.json",
+  "url": "",
+  "manifest": "",
   "download": "",
   "type": "module",
   "includes": [
