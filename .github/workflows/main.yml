@@ -21,9 +21,7 @@ jobs:
         node-version: 16
     - run: npm install
 
-    - name: look at files
-      run: echo $(ls)
-
+    # Builds the project 
     - name: Build Files
       shell: bash
       id: build-files
@@ -40,12 +38,6 @@ jobs:
       shell: bash
       id: get-includes
       run: echo "files=$(node ./.github/workflows/get-includes.js)" >> $GITHUB_OUTPUT
-
-    - name: Echo Version
-      run: echo ${{steps.get-version.outputs.version}}
-
-    - name: Echo Files
-      run: echo ${{steps.get-includes.outputs.files}}
 
     # create a zip file with all files required by the module to add to the release
     - name: Zip Files
