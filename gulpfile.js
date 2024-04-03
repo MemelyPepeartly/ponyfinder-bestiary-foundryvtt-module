@@ -40,8 +40,15 @@ function copyModuleJson() {
     .pipe(gulp.dest(DIST_DIR));
 }
 
+// Function that copies over the assets directory
+function copyAssets() {
+  return gulp.src('src/assets/**/*')
+    .pipe(gulp.dest(path.join(DIST_DIR, 'assets')));
+}
+
 // Default task that runs everything
 export default gulp.series(
   compilePacks,
-  copyModuleJson
+  copyModuleJson,
+  copyAssets
 );
