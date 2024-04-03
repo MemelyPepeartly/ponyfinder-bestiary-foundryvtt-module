@@ -2,7 +2,7 @@
   "_id": "yJSgnrcsNq9KponA",
   "name": "Adult Rift Dragon",
   "type": "npc",
-  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/PonyfinderRiftDragonGreatWyrm.png",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderRiftDragonGreatWyrm.png",
   "system": {
     "attributes": {
       "hp": {
