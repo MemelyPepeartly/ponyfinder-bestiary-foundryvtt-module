@@ -1,0 +1,124 @@
+{
+  "_id": "JbERXQURfeg98pg8",
+  "name": "Wild Frenzy",
+  "type": "feat",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h1 dir=\"ltr\">Wild Frenzy[two-actions] FEAT 10</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">You strike wildly with wings and teeth. Make two unarmed attacks at the same multiple-attack penalty. One of them must be bludgeoning damage, the other piercing damage.</p>\n<p> </p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.werebat.archetypeFeatCount",
+        "value": 1
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "brawling",
+        "img": "icons/magic/control/buff-flight-wings-runes-red.webp",
+        "key": "Strike",
+        "label": "PF2E.Weapon.Base.wing",
+        "range": null,
+        "slug": "jaws",
+        "traits": [
+          "unarmed"
+        ],
+        "predicate": [
+          {
+            "or": [
+              "werebathybridform",
+              "werebatbatform"
+            ]
+          }
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 10,
+      "taken": null
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "action"
+    },
+    "actions": {
+      "value": 2
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [],
+      "languages": {
+        "granted": [],
+        "slots": 0
+      },
+      "proficiencies": {},
+      "senses": {}
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "tzWs6vvx7RiONsUa",
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1689731043086,
+    "modifiedTime": 1690323930395,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

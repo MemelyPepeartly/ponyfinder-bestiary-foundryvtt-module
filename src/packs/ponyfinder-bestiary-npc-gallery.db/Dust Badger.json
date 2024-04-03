@@ -1,0 +1,2456 @@
+{
+  "_id": "aNwm1cqAYTEDXVyJ",
+  "name": "Dust Badger",
+  "type": "npc",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/Assets/waxraven_dustbadger.png",
+  "system": {
+    "attributes": {
+      "hp": {
+        "slug": "hp",
+        "_modifiers": [],
+        "breakdown": "Base Max HP 123",
+        "totalModifier": 0,
+        "value": 123,
+        "temp": 0,
+        "max": 123,
+        "details": "",
+        "negativeHealing": false,
+        "unrecoverable": 0,
+        "base": 123
+      },
+      "speed": {
+        "slug": "land-speed",
+        "_modifiers": [],
+        "breakdown": "Base Land Speed 25",
+        "totalModifier": 0,
+        "total": 25,
+        "value": 25,
+        "otherSpeeds": [
+          {
+            "slug": "burrow-speed",
+            "_modifiers": [],
+            "breakdown": "Base Burrow Speed 25",
+            "totalModifier": 0,
+            "type": "burrow",
+            "label": "Burrow",
+            "value": 25
+          }
+        ],
+        "details": "",
+        "type": "land",
+        "label": "Land Speed"
+      },
+      "ac": {
+        "slug": "ac",
+        "label": "PF2E.ArmorClassLabel",
+        "value": 21,
+        "totalModifier": 11,
+        "dc": 21,
+        "attribute": "dex",
+        "breakdown": "Base DC 10, Modifier +11",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "all",
+              "dex-based"
+            ],
+            "modifier": 11,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "details": ""
+      },
+      "allSaves": {
+        "value": ""
+      },
+      "immunities": [],
+      "weaknesses": [],
+      "resistances": [],
+      "flanking": {
+        "canFlank": true,
+        "canGangUp": [],
+        "flankable": true,
+        "offGuardable": true
+      },
+      "hardness": {
+        "value": 0
+      },
+      "reach": {
+        "base": 5,
+        "manipulate": 5
+      },
+      "shield": {
+        "itemId": null,
+        "name": "PF2E.ArmorTypeShield",
+        "ac": 0,
+        "hp": {
+          "value": 0,
+          "max": 0
+        },
+        "brokenThreshold": 0,
+        "hardness": 0,
+        "raised": false,
+        "broken": false,
+        "destroyed": false,
+        "icon": "systems/pf2e/icons/actions/raise-a-shield.webp"
+      },
+      "doomed": {
+        "value": 0,
+        "max": 4
+      },
+      "dying": {
+        "value": 0,
+        "max": 4,
+        "recoveryDC": 10
+      },
+      "wounded": {
+        "value": 0,
+        "max": 3
+      },
+      "spellDC": null,
+      "classDC": {
+        "value": 22
+      },
+      "classOrSpellDC": {
+        "value": 22
+      },
+      "emitsSound": true
+    },
+    "initiative": {
+      "slug": "initiative",
+      "label": "Perception",
+      "value": 14,
+      "totalModifier": 14,
+      "dc": 24,
+      "attribute": "wis",
+      "breakdown": "Modifier +14",
+      "modifiers": [
+        {
+          "slug": "base",
+          "label": "Modifier",
+          "domains": [
+            "perception",
+            "wis-based",
+            "all",
+            "initiative"
+          ],
+          "modifier": 14,
+          "type": "untyped",
+          "ability": null,
+          "adjustments": [],
+          "force": false,
+          "enabled": true,
+          "ignored": false,
+          "source": null,
+          "custom": false,
+          "damageType": null,
+          "damageCategory": null,
+          "critical": null,
+          "traits": [],
+          "hideIfDisabled": false,
+          "kind": "modifier",
+          "predicate": []
+        }
+      ],
+      "statistic": "perception",
+      "tiebreakPriority": 1
+    },
+    "details": {
+      "languages": {
+        "value": [],
+        "details": ""
+      },
+      "level": {
+        "value": 6,
+        "base": 6
+      },
+      "blurb": "",
+      "publicNotes": "",
+      "privateNotes": "",
+      "publication": {
+        "title": "",
+        "authors": "",
+        "license": "OGL",
+        "remaster": false
+      },
+      "creatureType": "",
+      "alliance": "opposition"
+    },
+    "resources": {
+      "focus": {
+        "value": 0,
+        "max": 0,
+        "cap": 3
+      }
+    },
+    "_migration": {
+      "version": 0.925,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "abilities": {
+      "str": {
+        "mod": 6,
+        "label": "PF2E.AbilityStr",
+        "shortLabel": "PF2E.AbilityId.str"
+      },
+      "dex": {
+        "mod": 1,
+        "label": "PF2E.AbilityDex",
+        "shortLabel": "PF2E.AbilityId.dex"
+      },
+      "con": {
+        "mod": 6,
+        "label": "PF2E.AbilityCon",
+        "shortLabel": "PF2E.AbilityId.con"
+      },
+      "int": {
+        "mod": -4,
+        "label": "PF2E.AbilityInt",
+        "shortLabel": "PF2E.AbilityId.int"
+      },
+      "wis": {
+        "mod": 1,
+        "label": "PF2E.AbilityWis",
+        "shortLabel": "PF2E.AbilityId.wis"
+      },
+      "cha": {
+        "mod": -1,
+        "label": "PF2E.AbilityCha",
+        "shortLabel": "PF2E.AbilityId.cha"
+      }
+    },
+    "perception": {
+      "slug": "perception",
+      "label": "Perception",
+      "value": 14,
+      "totalModifier": 14,
+      "dc": 24,
+      "attribute": "wis",
+      "breakdown": "Modifier +14",
+      "modifiers": [
+        {
+          "slug": "base",
+          "label": "Modifier",
+          "domains": [
+            "perception",
+            "wis-based",
+            "all"
+          ],
+          "modifier": 14,
+          "type": "untyped",
+          "ability": null,
+          "adjustments": [],
+          "force": false,
+          "enabled": true,
+          "ignored": false,
+          "source": null,
+          "custom": false,
+          "damageType": null,
+          "damageCategory": null,
+          "critical": null,
+          "traits": [],
+          "hideIfDisabled": false,
+          "kind": "modifier",
+          "predicate": []
+        }
+      ],
+      "senses": [
+        {
+          "type": "darkvision",
+          "acuity": "precise",
+          "range": null,
+          "source": null,
+          "label": "Darkvision",
+          "emphasizeLabel": false
+        },
+        {
+          "type": "tremorsense",
+          "acuity": "imprecise",
+          "range": 30,
+          "source": null,
+          "label": "Tremorsense (Imprecise) 30 Feet",
+          "emphasizeLabel": false
+        }
+      ],
+      "vision": true,
+      "details": "scent (imprecise)",
+      "mod": 14
+    },
+    "saves": {
+      "fortitude": {
+        "value": 17,
+        "saveDetail": "",
+        "attribute": null,
+        "slug": "fortitude",
+        "label": "Fortitude",
+        "totalModifier": 17,
+        "dc": 27,
+        "breakdown": "Modifier +17",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "fortitude",
+              "con-based",
+              "saving-throw",
+              "all"
+            ],
+            "modifier": 17,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 17
+      },
+      "reflex": {
+        "value": 14,
+        "saveDetail": "",
+        "attribute": null,
+        "slug": "reflex",
+        "label": "Reflex",
+        "totalModifier": 14,
+        "dc": 24,
+        "breakdown": "Modifier +14",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "reflex",
+              "dex-based",
+              "saving-throw",
+              "all"
+            ],
+            "modifier": 14,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 14
+      },
+      "will": {
+        "value": 11,
+        "saveDetail": "",
+        "attribute": null,
+        "slug": "will",
+        "label": "Will",
+        "totalModifier": 11,
+        "dc": 21,
+        "breakdown": "Modifier +11",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "will",
+              "wis-based",
+              "saving-throw",
+              "all"
+            ],
+            "modifier": 11,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 11
+      }
+    },
+    "traits": {
+      "value": [
+        "animal"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "lg",
+        "length": 10,
+        "width": 10
+      }
+    },
+    "autoChanges": {},
+    "customModifiers": {},
+    "actions": [
+      {
+        "slug": "claw",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 16,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          },
+          {
+            "slug": "stubborn-rage",
+            "label": "stubbornRage",
+            "domains": [
+              "brawling-group-attack-roll",
+              "Onohmv5mPbkNdWEf-attack",
+              "claw-attack",
+              "claw-attack-roll",
+              "unarmed-attack-roll",
+              "melee-attack-roll",
+              "melee-strike-attack-roll",
+              "strike-attack-roll",
+              "attack-roll",
+              "attack",
+              "check",
+              "all",
+              "trained-attack",
+              "str-attack",
+              "str-based"
+            ],
+            "modifier": 0,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": "Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-npc-gallery.Actor.aNwm1cqAYTEDXVyJ.Item.hTY3N9ugAdGTAxo4",
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +16, stubbornRage +0",
+        "totalModifier": 16,
+        "label": "Claw",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "Onohmv5mPbkNdWEf",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [],
+        "item": {
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "name": "Claw",
+          "system": {
+            "description": {
+              "gm": "",
+              "value": ""
+            },
+            "rules": [],
+            "slug": null,
+            "_migration": {
+              "version": 0.925,
+              "lastMigration": null,
+              "previous": {
+                "schema": 0.845,
+                "foundry": "11.315",
+                "system": "5.14.4"
+              }
+            },
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "agile",
+                "unarmed"
+              ],
+              "rarity": "common"
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "weaponType": {
+              "value": "melee"
+            },
+            "attack": {
+              "value": ""
+            },
+            "damageRolls": {
+              "IlRvsU5DJswi4WTT": {
+                "damage": "2d6+8",
+                "damageType": "slashing"
+              }
+            },
+            "bonus": {
+              "value": 16
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "Onohmv5mPbkNdWEf",
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "oVmqWh8fUdNNBRRt": 3
+          },
+          "flags": {},
+          "_stats": {
+            "systemId": "pf2e",
+            "systemVersion": "4.6.1",
+            "coreVersion": "10.291",
+            "createdTime": 1673065958255,
+            "modifiedTime": 1673065990129,
+            "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+          }
+        },
+        "weapon": {
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "name": "Claw",
+          "system": {
+            "description": {
+              "gm": "",
+              "value": ""
+            },
+            "rules": [],
+            "slug": null,
+            "_migration": {
+              "version": 0.925,
+              "lastMigration": null,
+              "previous": {
+                "schema": 0.845,
+                "foundry": "11.315",
+                "system": "5.14.4"
+              }
+            },
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "agile",
+                "unarmed"
+              ],
+              "rarity": "common"
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "weaponType": {
+              "value": "melee"
+            },
+            "attack": {
+              "value": ""
+            },
+            "damageRolls": {
+              "IlRvsU5DJswi4WTT": {
+                "damage": "2d6+8",
+                "damageType": "slashing"
+              }
+            },
+            "bonus": {
+              "value": 16
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "Onohmv5mPbkNdWEf",
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "oVmqWh8fUdNNBRRt": 3
+          },
+          "flags": {},
+          "_stats": {
+            "systemId": "pf2e",
+            "systemVersion": "4.6.1",
+            "coreVersion": "10.291",
+            "createdTime": 1673065958255,
+            "modifiedTime": 1673065990129,
+            "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee",
+          "agile",
+          "unarmed"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          },
+          {
+            "name": "agile",
+            "label": "Agile",
+            "description": "PF2E.TraitDescriptionAgile"
+          },
+          {
+            "name": "unarmed",
+            "label": "Unarmed",
+            "description": "PF2E.TraitDescriptionUnarmed"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +16"
+          },
+          {
+            "label": "+12 (MAP -4)"
+          },
+          {
+            "label": "+8 (MAP -8)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      },
+      {
+        "slug": "jaws",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 16,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          },
+          {
+            "slug": "stubborn-rage",
+            "label": "stubbornRage",
+            "domains": [
+              "brawling-group-attack-roll",
+              "H8B71lHaW6D6l6IS-attack",
+              "jaws-attack",
+              "jaws-attack-roll",
+              "unarmed-attack-roll",
+              "melee-attack-roll",
+              "melee-strike-attack-roll",
+              "strike-attack-roll",
+              "attack-roll",
+              "attack",
+              "check",
+              "all",
+              "trained-attack",
+              "str-attack",
+              "str-based"
+            ],
+            "modifier": 0,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": "Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-npc-gallery.Actor.aNwm1cqAYTEDXVyJ.Item.hTY3N9ugAdGTAxo4",
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +16, stubbornRage +0",
+        "totalModifier": 16,
+        "label": "Jaws",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "H8B71lHaW6D6l6IS",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [],
+        "item": {
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "name": "Jaws",
+          "system": {
+            "description": {
+              "gm": "",
+              "value": ""
+            },
+            "rules": [],
+            "slug": null,
+            "_migration": {
+              "version": 0.925,
+              "lastMigration": null,
+              "previous": {
+                "schema": 0.845,
+                "foundry": "11.315",
+                "system": "5.14.4"
+              }
+            },
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "unarmed"
+              ],
+              "rarity": "common"
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "weaponType": {
+              "value": "melee"
+            },
+            "attack": {
+              "value": ""
+            },
+            "damageRolls": {
+              "qdQiLmPvT6X4iIVG": {
+                "damage": "2d8+9",
+                "damageType": "piercing"
+              }
+            },
+            "bonus": {
+              "value": 16
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "H8B71lHaW6D6l6IS",
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "oVmqWh8fUdNNBRRt": 3
+          },
+          "flags": {},
+          "_stats": {
+            "systemId": "pf2e",
+            "systemVersion": "4.6.1",
+            "coreVersion": "10.291",
+            "createdTime": 1673064430240,
+            "modifiedTime": 1673065920201,
+            "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+          }
+        },
+        "weapon": {
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "name": "Jaws",
+          "system": {
+            "description": {
+              "gm": "",
+              "value": ""
+            },
+            "rules": [],
+            "slug": null,
+            "_migration": {
+              "version": 0.925,
+              "lastMigration": null,
+              "previous": {
+                "schema": 0.845,
+                "foundry": "11.315",
+                "system": "5.14.4"
+              }
+            },
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "unarmed"
+              ],
+              "rarity": "common"
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "weaponType": {
+              "value": "melee"
+            },
+            "attack": {
+              "value": ""
+            },
+            "damageRolls": {
+              "qdQiLmPvT6X4iIVG": {
+                "damage": "2d8+9",
+                "damageType": "piercing"
+              }
+            },
+            "bonus": {
+              "value": 16
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "H8B71lHaW6D6l6IS",
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "oVmqWh8fUdNNBRRt": 3
+          },
+          "flags": {},
+          "_stats": {
+            "systemId": "pf2e",
+            "systemVersion": "4.6.1",
+            "coreVersion": "10.291",
+            "createdTime": 1673064430240,
+            "modifiedTime": 1673065920201,
+            "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee",
+          "unarmed"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          },
+          {
+            "name": "unarmed",
+            "label": "Unarmed",
+            "description": "PF2E.TraitDescriptionUnarmed"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +16"
+          },
+          {
+            "label": "+11 (MAP -5)"
+          },
+          {
+            "label": "+6 (MAP -10)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      }
+    ],
+    "spellcasting": {
+      "rituals": {
+        "dc": 0
+      }
+    },
+    "skills": {
+      "acr": {
+        "slug": "acrobatics",
+        "label": "Acrobatics",
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
+        "attribute": "dex",
+        "breakdown": "Modifier +1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "acrobatics",
+              "dex-based",
+              "skill-check",
+              "dex-skill-check",
+              "all"
+            ],
+            "modifier": 1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": 1,
+        "variants": [],
+        "visible": false
+      },
+      "arc": {
+        "slug": "arcana",
+        "label": "Arcana",
+        "value": -4,
+        "totalModifier": -4,
+        "dc": 6,
+        "attribute": "int",
+        "breakdown": "Modifier -4",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "arcana",
+              "int-based",
+              "skill-check",
+              "int-skill-check",
+              "all"
+            ],
+            "modifier": -4,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "penalty",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": -4,
+        "variants": [],
+        "visible": false
+      },
+      "ath": {
+        "slug": "athletics",
+        "label": "Athletics",
+        "value": 15,
+        "totalModifier": 15,
+        "dc": 25,
+        "attribute": "str",
+        "breakdown": "Modifier +15",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "athletics",
+              "str-based",
+              "skill-check",
+              "str-skill-check",
+              "all"
+            ],
+            "modifier": 15,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 15,
+        "itemId": "Gy6Bq6lky3bv1stL",
+        "lore": false,
+        "mod": 15,
+        "variants": [],
+        "visible": true
+      },
+      "cra": {
+        "slug": "crafting",
+        "label": "Crafting",
+        "value": -4,
+        "totalModifier": -4,
+        "dc": 6,
+        "attribute": "int",
+        "breakdown": "Modifier -4",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "crafting",
+              "int-based",
+              "skill-check",
+              "int-skill-check",
+              "all"
+            ],
+            "modifier": -4,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "penalty",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": -4,
+        "variants": [],
+        "visible": false
+      },
+      "dec": {
+        "slug": "deception",
+        "label": "Deception",
+        "value": -1,
+        "totalModifier": -1,
+        "dc": 9,
+        "attribute": "cha",
+        "breakdown": "Modifier -1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "deception",
+              "cha-based",
+              "skill-check",
+              "cha-skill-check",
+              "all"
+            ],
+            "modifier": -1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "penalty",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": -1,
+        "variants": [],
+        "visible": false
+      },
+      "dip": {
+        "slug": "diplomacy",
+        "label": "Diplomacy",
+        "value": -1,
+        "totalModifier": -1,
+        "dc": 9,
+        "attribute": "cha",
+        "breakdown": "Modifier -1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "diplomacy",
+              "cha-based",
+              "skill-check",
+              "cha-skill-check",
+              "all"
+            ],
+            "modifier": -1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "penalty",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": -1,
+        "variants": [],
+        "visible": false
+      },
+      "itm": {
+        "slug": "intimidation",
+        "label": "Intimidation",
+        "value": 13,
+        "totalModifier": 13,
+        "dc": 23,
+        "attribute": "cha",
+        "breakdown": "Modifier +13",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "intimidation",
+              "cha-based",
+              "skill-check",
+              "cha-skill-check",
+              "all"
+            ],
+            "modifier": 13,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 13,
+        "itemId": "U0XDFQInCevkAK2i",
+        "lore": false,
+        "mod": 13,
+        "variants": [],
+        "visible": true
+      },
+      "med": {
+        "slug": "medicine",
+        "label": "Medicine",
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
+        "attribute": "wis",
+        "breakdown": "Modifier +1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "medicine",
+              "wis-based",
+              "skill-check",
+              "wis-skill-check",
+              "all"
+            ],
+            "modifier": 1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": 1,
+        "variants": [],
+        "visible": false
+      },
+      "nat": {
+        "slug": "nature",
+        "label": "Nature",
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
+        "attribute": "wis",
+        "breakdown": "Modifier +1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "nature",
+              "wis-based",
+              "skill-check",
+              "wis-skill-check",
+              "all"
+            ],
+            "modifier": 1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": 1,
+        "variants": [],
+        "visible": false
+      },
+      "occ": {
+        "slug": "occultism",
+        "label": "Occultism",
+        "value": -4,
+        "totalModifier": -4,
+        "dc": 6,
+        "attribute": "int",
+        "breakdown": "Modifier -4",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "occultism",
+              "int-based",
+              "skill-check",
+              "int-skill-check",
+              "all"
+            ],
+            "modifier": -4,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "penalty",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": -4,
+        "variants": [],
+        "visible": false
+      },
+      "prf": {
+        "slug": "performance",
+        "label": "Performance",
+        "value": -1,
+        "totalModifier": -1,
+        "dc": 9,
+        "attribute": "cha",
+        "breakdown": "Modifier -1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "performance",
+              "cha-based",
+              "skill-check",
+              "cha-skill-check",
+              "all"
+            ],
+            "modifier": -1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "penalty",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": -1,
+        "variants": [],
+        "visible": false
+      },
+      "rel": {
+        "slug": "religion",
+        "label": "Religion",
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
+        "attribute": "wis",
+        "breakdown": "Modifier +1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "religion",
+              "wis-based",
+              "skill-check",
+              "wis-skill-check",
+              "all"
+            ],
+            "modifier": 1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": 1,
+        "variants": [],
+        "visible": false
+      },
+      "soc": {
+        "slug": "society",
+        "label": "Society",
+        "value": -4,
+        "totalModifier": -4,
+        "dc": 6,
+        "attribute": "int",
+        "breakdown": "Modifier -4",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "society",
+              "int-based",
+              "skill-check",
+              "int-skill-check",
+              "all"
+            ],
+            "modifier": -4,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "penalty",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": -4,
+        "variants": [],
+        "visible": false
+      },
+      "ste": {
+        "slug": "stealth",
+        "label": "Stealth",
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
+        "attribute": "dex",
+        "breakdown": "Modifier +1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "stealth",
+              "dex-based",
+              "skill-check",
+              "dex-skill-check",
+              "all"
+            ],
+            "modifier": 1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": 1,
+        "variants": [],
+        "visible": false
+      },
+      "sur": {
+        "slug": "survival",
+        "label": "Survival",
+        "value": 13,
+        "totalModifier": 13,
+        "dc": 23,
+        "attribute": "wis",
+        "breakdown": "Modifier +13",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "survival",
+              "wis-based",
+              "skill-check",
+              "wis-skill-check",
+              "all"
+            ],
+            "modifier": 13,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 13,
+        "itemId": "QJWYyIqe8j983RKZ",
+        "lore": false,
+        "mod": 13,
+        "variants": [],
+        "visible": true
+      },
+      "thi": {
+        "slug": "thievery",
+        "label": "Thievery",
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
+        "attribute": "dex",
+        "breakdown": "Modifier +1",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "thievery",
+              "dex-based",
+              "skill-check",
+              "dex-skill-check",
+              "all"
+            ],
+            "modifier": 1,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "base": 0,
+        "itemId": null,
+        "lore": false,
+        "mod": 1,
+        "variants": [],
+        "visible": false
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Dust Badger",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": true,
+    "texture": {
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/Assets/dustbadger%20token.png",
+      "scaleX": 1.3,
+      "scaleY": 1.3,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": null
+    },
+    "width": 2,
+    "height": 2,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {
+      "pf2e": {
+        "linkToActorSize": true,
+        "autoscale": false
+      }
+    },
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "Gy6Bq6lky3bv1stL",
+      "name": "Athletics",
+      "type": "lore",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 15
+        },
+        "proficient": {
+          "value": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "10.291",
+        "createdTime": 1671413826746,
+        "modifiedTime": 1671413853815,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "U0XDFQInCevkAK2i",
+      "name": "Intimidation",
+      "type": "lore",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 13
+        },
+        "proficient": {
+          "value": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "10.291",
+        "createdTime": 1671413831059,
+        "modifiedTime": 1671413853815,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "QJWYyIqe8j983RKZ",
+      "name": "Survival",
+      "type": "lore",
+      "img": "systems/pf2e/icons/default-icons/lore.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "mod": {
+          "value": 13
+        },
+        "proficient": {
+          "value": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.5.1",
+        "coreVersion": "10.291",
+        "createdTime": 1671413833198,
+        "modifiedTime": 1671413853815,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "hTY3N9ugAdGTAxo4",
+      "name": "Stubborn Rage",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>If the Dust Badger would be required to roll a Wisdom Saving throw, it may use its reaction to increase their result by one level of success. Additionally, they gain +2 to all attacks until they score a critical hit. As long as they have this bonus to attacks, they cannot use this ability.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [
+          {
+            "key": "FlatModifier",
+            "label": "stubbornRage",
+            "selector": [
+              "attack"
+            ],
+            "value": 0,
+            "slug": null,
+            "priority": 100,
+            "ignored": false,
+            "predicate": [],
+            "type": "untyped",
+            "force": false,
+            "hideIfDisabled": false,
+            "fromEquipment": true,
+            "critical": null,
+            "removeAfterRoll": false
+          },
+          {
+            "domain": "all",
+            "key": "RollOption",
+            "label": "stubbornRage",
+            "toggleable": "totm",
+            "priority": 50,
+            "slug": null,
+            "ignored": false,
+            "predicate": [],
+            "phase": "applyAEs",
+            "suboptions": [],
+            "mergeable": false,
+            "value": false
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.6.1",
+        "coreVersion": "10.291",
+        "createdTime": 1673064224465,
+        "modifiedTime": 1673064424328,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "H8B71lHaW6D6l6IS",
+      "name": "Jaws",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "unarmed"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "weaponType": {
+          "value": "melee"
+        },
+        "attack": {
+          "value": ""
+        },
+        "damageRolls": {
+          "qdQiLmPvT6X4iIVG": {
+            "damage": "2d8 + 9",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 16
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "material": {
+          "type": null,
+          "grade": null,
+          "effects": []
+        },
+        "runes": {
+          "property": []
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.6.1",
+        "coreVersion": "10.291",
+        "createdTime": 1673064430240,
+        "modifiedTime": 1673065920201,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "Onohmv5mPbkNdWEf",
+      "name": "Claw",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile",
+            "unarmed"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "weaponType": {
+          "value": "melee"
+        },
+        "attack": {
+          "value": ""
+        },
+        "damageRolls": {
+          "IlRvsU5DJswi4WTT": {
+            "damage": "2d6 + 8",
+            "damageType": "slashing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 16
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "material": {
+          "type": null,
+          "grade": null,
+          "effects": []
+        },
+        "runes": {
+          "property": []
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.6.1",
+        "coreVersion": "10.291",
+        "createdTime": 1673065958255,
+        "modifiedTime": 1673065990129,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "5MWZMWdUIKEl55MW",
+      "name": "Maul",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The Dust Badger makes two Claw attacks against a creature it can reach. Both count toward its multiple attack penalty, but the penalty increases only after both attacks are made.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": null,
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.6.1",
+        "coreVersion": "10.291",
+        "createdTime": 1673065992426,
+        "modifiedTime": 1673066008100,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "vnDTn4zPZCOkwGKQ",
+      "name": "Rampage",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/FreeAction.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Requirement</strong> The Dust Badger reduces an enemy to zero hit points.</p>\n<p><strong>Effect</strong> The Dust Badger may Stride.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "free"
+        },
+        "category": null,
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.6.1",
+        "coreVersion": "10.291",
+        "createdTime": 1673066053481,
+        "modifiedTime": 1673066113423,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    },
+    {
+      "_id": "XEsRG4sWGyLVMihV",
+      "name": "Spicy Dust",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/TwoActions.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The Dust Badger shakes out its fur, releasing a cloud of spicy dust in a 15 foot radius centered on it. All creatures within the mist become @Compendium[pf2e.conditionitems.Concealed]{Concealed}, and all creatures outside the mist become concealed to creatures within it. Creatures that start their turn within the cloud take Fortitude save as the spicy mixture burns their eyes and orifices. The cloud persists for 1 minute or until strong winds, such as a Gust of Wind spell, blow it away. The Dust Badger is immune to the effects of this ability.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes [[/r 2d4[poison]]]{2d4 poison damage}.</p>\n<p><strong>Failure</strong> The target takes 4d4 damage and is @Compendium[pf2e.conditionitems.Blinded]{Blinded} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes [[/r 8d4[poison]]]{8d4 poison damage} and is blinded for 1 minute.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.925,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.845,
+            "foundry": "11.315",
+            "system": "5.14.4"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "inhaled",
+            "poison"
+          ],
+          "rarity": "common",
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": null,
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "oVmqWh8fUdNNBRRt": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "systemId": "pf2e",
+        "systemVersion": "4.6.1",
+        "coreVersion": "10.291",
+        "createdTime": 1673066120464,
+        "modifiedTime": 1673066476059,
+        "lastModifiedBy": "oVmqWh8fUdNNBRRt"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": "c1P84Owl8HLyylbA",
+  "sort": 1000000,
+  "ownership": {
+    "default": 0,
+    "oVmqWh8fUdNNBRRt": 3,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rollOptions": {
+        "all": {
+          "self:type:npc": true,
+          "self:signature:0b09cf59-b4d6-5f6f-859b-1c72575dd1da": true,
+          "self:creature": true,
+          "self:level:6": true,
+          "self:mode:living": true,
+          "self:trait:animal": true,
+          "self:armored": false,
+          "self:size:3": true,
+          "self:size:large": true,
+          "hp-remaining:123": true,
+          "hp-percent:100": true,
+          "speed:land": true,
+          "speed:burrow": true
+        }
+      },
+      "trackedItems": {},
+      "lootable": false
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.0",
+    "coreVersion": "11.304",
+    "createdTime": 1671412725869,
+    "modifiedTime": 1688662898684,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

@@ -2,6 +2,7 @@
   "name": "ponyfinder-bestiary-foundryvtt-module",
   "title": "Ponyfinder: Bestiary of Everglow - Unified Edition for Pathfinder 2e",
   "description": "A collection of Ponyfinder: Bestiary of Everglow - Unified Edition content for Pathfinder 2e", 
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Memely",
@@ -12,23 +13,30 @@
       "discord": "David Silver#8501"
     }
   ],
-  "version": "0.1.2",
-  "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "10",
-  "manifestPlusVersion": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11",
+    "maximum": "11.999"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
+        "compatibility": {
+          "minimum": "5.14.1",
+          "verified": "5.14.1"
+        }
+      }
+    ]
+  },
+  "manifestPlusVersion": "1.2.0",
+  "allowBugReporter": true,
   "url": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module",
   "manifest": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/latest/download/module.json",
   "download": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/latest/download/module.zip",
   "type": "module",
-  "includes": [
-    "./assets/**",
-    "./lang/**",
-    "./scripts/**",
-    "./styles/**",
-    "./packs/**",
-    "./module.json",
-    "./README.md"
-  ],
   "media": [
     {
       "type": "icon",
@@ -43,12 +51,6 @@
       "location": ""
     }
   ],
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
   "languages": [
     {
       "lang": "en",
@@ -58,9 +60,23 @@
   ],
   "packs": [
     {
+      "name": "ponyfinder-bestiary-actions",
+      "label": "Ponyfinder Bestiary Actions",
+      "path": "packs/ponyfinder-bestiary-actions.db",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
       "name": "ponyfinder-bestiary-ancestries",
       "label": "Ponyfinder Bestiary Ancestries",
       "path": "packs/ponyfinder-bestiary-ancestries.db",
+      "type": "Item",
+      "system": "pf2e"
+    },
+    {
+      "name": "ponyfinder-bestiary-animal-companions",
+      "label": "Ponyfinder Bestiary Animal Companions",
+      "path": "packs/ponyfinder-bestiary-animal-companions.db",
       "type": "Item",
       "system": "pf2e"
     },
@@ -79,16 +95,16 @@
       "system": "pf2e"
     },
     {
-      "name": "ponyfinder-bestiary-items",
-      "label": "Ponyfinder Bestiary Items",
-      "path": "packs/ponyfinder-bestiary-items.db",
+      "name": "ponyfinder-bestiary-heritages",
+      "label": "Ponyfinder Bestiary Heritages",
+      "path": "packs/ponyfinder-bestiary-heritages.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
-      "name": "ponyfinder-bestiary-npc-actions",
-      "label": "Ponyfinder Bestiary NPC Actions",
-      "path": "packs/ponyfinder-bestiary-npc-actions.db",
+      "name": "ponyfinder-bestiary-items",
+      "label": "Ponyfinder Bestiary Items",
+      "path": "packs/ponyfinder-bestiary-items.db",
       "type": "Item",
       "system": "pf2e"
     },
@@ -98,21 +114,45 @@
       "path": "packs/ponyfinder-bestiary-npc-gallery.db",
       "type": "Actor",
       "system": "pf2e"
+    },
+    {
+      "name": "ponyfinder-bestiary-spells",
+      "label": "Ponyfinder Bestiary Spells",
+      "path": "packs/ponyfinder-bestiary-spells.db",
+      "type": "Actor",
+      "system": "pf2e"
     }
   ],
-  "flags": {
-    "ponyfinder-bestiary-foundryvtt-module": {
-        "pf2e-homebrew": {
-            "creatureTraits": {
-                "beastfolk": "Beastfolk"
-            },
-            "featTraits": {
-                "testFeatTrait": "Test Feat Trait"
-            },
-            "languages": {
-                "reptim": "Reptim"
-            }
+  "packFolders": [
+    {
+      "name": "Ponyfinder",
+      "sorting": "m",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "folders": [
+        {
+          "name": "Bestiary",
+          "sorting": "m",
+          "ownership": {
+            "PLAYER": "OBSERVER",
+            "ASSISTANT": "OWNER"
+          },
+          "packs": [
+            "ponyfinder-bestiary-actions",
+            "ponyfinder-bestiary-ancestries",
+            "ponyfinder-bestiary-animal-companions",
+            "ponyfinder-bestiary-effects",
+            "ponyfinder-bestiary-feats",
+            "ponyfinder-bestiary-heritages",
+            "ponyfinder-bestiary-items",
+            "ponyfinder-bestiary-npc-gallery",
+            "ponyfinder-bestiary-spells"
+          ]
         }
+      ],
+      "packs": []
     }
-  }
+  ]
 }

@@ -1,0 +1,97 @@
+{
+  "_id": "zna9B0k3tNIo0f9T",
+  "name": "Infectious Bite",
+  "type": "feat",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h1 dir=\"ltr\">Infectious Bite FEAT 6</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">Those struck with your infectious bite can suffer the curse of the werebat if they fail a Fortitude save against your class or spell DC(whichever is higher). Unlike other lycanthropes, those with this curse gain no benefits, only the curse, unless they walk the path you now walk, trying to master this fell power. Your growing connection with your curse grants you Animal Empathy, allowing you to communicate with other bats and similar creatures.</p>\n<p> </p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "flags.pf2e.werebat.archetypeFeatCount",
+        "value": 1
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype"
+      ],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 6,
+      "taken": null
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [],
+      "languages": {
+        "granted": [],
+        "slots": 0
+      },
+      "proficiencies": {},
+      "senses": {}
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "tzWs6vvx7RiONsUa",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1689731043086,
+    "modifiedTime": 1690323862712,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

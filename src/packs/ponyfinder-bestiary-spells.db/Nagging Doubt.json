@@ -1,0 +1,119 @@
+{
+  "_id": "nmYbQrgUlpWGgqIO",
+  "name": "Nagging Doubt",
+  "type": "spell",
+  "img": "icons/creatures/invertebrates/wasp-swarm-movement.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h1 dir=\"ltr\">Nagging Doubt SPELL 2</h1>\n<p dir=\"ltr\">[Dynamic Heightening][Emotion][Enchantment][Mental]</p>\n<p dir=\"ltr\">Traditions occult, divine</p>\n<p dir=\"ltr\">Cast [two-actions] somatic, verbal</p>\n<p dir=\"ltr\">Range 30 feet; Target 1 creature</p>\n<p dir=\"ltr\">Duration sustained</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\">The target is plagued with thoughts of their past failings, or what they may have forgotten. Did they leave the stove on? They make a Will saving throw at the start of their turn for as long as this spell endures.</p>\n<p dir=\"ltr\"><strong>Critical Success</strong> The spell ends for this creature.</p>\n<p dir=\"ltr\"><strong>Success</strong> The creature takes 1d6 mental damage.</p>\n<p dir=\"ltr\"><strong>Failure </strong>The creature is</p>\n<h1 dir=\"ltr\">@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1}</h1>\n<p dir=\"ltr\">slowed 1, losing an action this turn. The creature takes 2d6 mental damage.</p>\n<p dir=\"ltr\"><strong>Critical Failure</strong> The creature is slowed 1 for as long as the spell endures without further saving throws. The creature takes 2d6 mental damage.</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> The spell can target another creature within range.</p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> The range of the spell increases by 30 feet.</p>\n<p><strong id=\"docs-internal-guid-1f3f3ff1-7fff-9623-1143-ac5da30f824b\">Heightened (+1) </strong>Increase the damage by 1d6.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "concentrate",
+        "emotion",
+        "manipulate",
+        "mental"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "divine",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 2
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": false
+    },
+    "damage": {
+      "DBLuChhYZGrOd5dW": {
+        "applyMod": false,
+        "formula": "2d6",
+        "type": "mental",
+        "category": null,
+        "materials": [],
+        "kinds": {}
+      }
+    },
+    "defense": {
+      "passive": null,
+      "save": {
+        "statistic": "will",
+        "basic": false
+      }
+    },
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "type": "interval",
+      "interval": 1,
+      "damage": {
+        "DBLuChhYZGrOd5dW": "0"
+      }
+    },
+    "cast": {
+      "focusPoints": 0
+    }
+  },
+  "effects": [],
+  "folder": "vqjhSR4v0o24wWHk",
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1689289473327,
+    "modifiedTime": 1689292313669,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

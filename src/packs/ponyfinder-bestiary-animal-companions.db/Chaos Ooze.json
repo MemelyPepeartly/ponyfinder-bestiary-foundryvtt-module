@@ -1,0 +1,192 @@
+{
+  "_id": "gxBbVNy8G6uYKQm4",
+  "name": "Chaos Ooze",
+  "type": "ancestry",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/Assets/chaosooze%20token.png",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h2 dir=\"ltr\">Chaos ooze</h2>\n<p dir=\"ltr\">Your companion is a brightly-colored ooze.</p>\n<p dir=\"ltr\"><strong>Size </strong>Large</p>\n<p dir=\"ltr\"><strong>Melee </strong><span class=\"pf2-icon\">A</span> pseudopod (agile), <strong>Damage </strong>1d8 bludgeoning</p>\n<p dir=\"ltr\">Str +4, Dex -1, Con +2, Int –5, Wis -4, Cha -4</p>\n<p dir=\"ltr\"><strong>Ooze Immunities </strong>acid, critical hits, mental, precision, unconscious, visual</p>\n<p dir=\"ltr\"><strong>Hit Points </strong>10</p>\n<p dir=\"ltr\"><strong>Skill </strong>Athletics</p>\n<p dir=\"ltr\"><strong>Senses </strong>motion sense 60 feet, no vision</p>\n<p dir=\"ltr\"><strong>Speed </strong>15 feet, climb Speed 10 feet</p>\n<p dir=\"ltr\"><strong>Support Benefit </strong>The chaos ooze looks for chances to devour the magic of your foes. Any foe you Strike within reach of the ooze is subjected to dispel magic against a random magic item or effect using the ooze's Athletics check and a level of half yours, rounded up.</p>\n<p><strong> </strong></p>\n<p dir=\"ltr\"><strong>Advanced Maneuver</strong> Magic Devour</p>\n<p dir=\"ltr\"><strong>Magic Devour</strong><span class=\"pf2-icon\">[D]</span></p>\n<p dir=\"ltr\">The ooze Strikes a creature or object and attempts to counteract an effect on it as if using dispel magic with its Athletics check. If told a specific effect, it will target that, otherwise it will choose randomly.</p>\n<p> </p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "value": 3,
+        "mode": "add",
+        "path": "system.abilities.str.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": -1,
+        "mode": "add",
+        "path": "system.abilities.dex.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.con.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": -4,
+        "mode": "add",
+        "path": "system.abilities.wis.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.skills.itm.rank"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6",
+        "allowDuplicate": false
+      },
+      {
+        "key": "Immunity",
+        "type": [
+          "mental"
+        ]
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d8"
+          }
+        },
+        "group": "brawling",
+        "key": "Strike",
+        "label": "Psuedopod",
+        "range": null,
+        "traits": [
+          "unarmed",
+          "agile"
+        ],
+        "img": "icons/creatures/tentacles/tentacle-earth-green.webp"
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "self:ancestry:chaos ooze",
+        "priority": 1
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-ancestries.Item.gc8RPvKuZnDP1vyg"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": -1,
+        "mode": "add",
+        "path": "system.abilities.int.mod"
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "ooze"
+        ]
+      },
+      {
+        "key": "Immunity",
+        "type": "precision"
+      },
+      {
+        "key": "Immunity",
+        "type": "unconscious"
+      },
+      {
+        "key": "Immunity",
+        "type": "critical hits"
+      },
+      {
+        "key": "Immunity",
+        "type": "visual"
+      }
+    ],
+    "slug": "chaos-ooze",
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "animal"
+      ],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Pathfinder #177: Burning Tundra",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 8,
+    "size": "lg",
+    "reach": 5,
+    "speed": 35,
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": []
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [],
+      "custom": ""
+    },
+    "items": {},
+    "vision": "low-light-vision"
+  },
+  "effects": [],
+  "folder": "wiKKkGcmogVS605G",
+  "sort": 500000,
+  "ownership": {
+    "default": 0,
+    "thw0Ox3kKEThnAFP": 3,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1663468948990,
+    "modifiedTime": 1689344841386,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

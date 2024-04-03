@@ -1,0 +1,103 @@
+{
+  "_id": "xyS1KjBU86MJ453r",
+  "name": "Unseen Orchestra",
+  "type": "spell",
+  "img": "systems/pf2e/icons/spells/summon-instrument.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h1 dir=\"ltr\">Unseen Orchestra CANTRIP 1</h1>\n<p dir=\"ltr\">[Auditory][Cantrip][Illusion]</p>\n<p dir=\"ltr\">Traditions arcane, occult</p>\n<p dir=\"ltr\">Cast [two-actions] somatic, verbal</p>\n<p dir=\"ltr\">Range 30 feet; Target one creature</p>\n<p dir=\"ltr\">Duration Sustained</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\">You create an auditory illusion of music. This music will follow what you or anyone you can see is doing, forming a background or accompanying soundtrack to what they're doing. This can replicate one instrument at a time. The spell has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range.</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p><strong id=\"docs-internal-guid-d90fb8cc-7fff-cc2b-e705-45f51b1129d9\">Heightened (+2) </strong>One additional instrument can be added to your orchestra and the maximum volume increases by 1 person.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "auditory",
+        "cantrip",
+        "concentrate",
+        "illusion",
+        "manipulate"
+      ],
+      "rarity": "common",
+      "traditions": [
+        "arcane",
+        "occult"
+      ]
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "requirements": "",
+    "target": {
+      "value": "1 creature"
+    },
+    "range": {
+      "value": "30 feet"
+    },
+    "area": null,
+    "time": {
+      "value": "2"
+    },
+    "duration": {
+      "value": "",
+      "sustained": true
+    },
+    "damage": {},
+    "defense": null,
+    "cost": {
+      "value": ""
+    },
+    "location": {
+      "value": null
+    },
+    "counteraction": false,
+    "heightening": {
+      "type": "interval",
+      "interval": 1,
+      "damage": {}
+    },
+    "cast": {
+      "focusPoints": 0
+    }
+  },
+  "effects": [],
+  "folder": "vqjhSR4v0o24wWHk",
+  "sort": 600000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1689289473327,
+    "modifiedTime": 1689292337775,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

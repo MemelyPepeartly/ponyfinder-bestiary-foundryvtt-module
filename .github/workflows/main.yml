@@ -1,84 +1,48 @@
-name: Module CI/CD
+name: Simplified Module CI/CD
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 
 permissions:
-    contents: write
-    pull-requests: write
+  contents: write
+  pull-requests: write
 
 jobs: 
-  build:
+  build-and-release:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    # Sets up node
-    - uses: actions/setup-node@v1
+    # Setup Node.js environment
+    - uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: '20'
+        cache: 'npm'
+
+    # Install dependencies and run build script
     - run: npm install
+    - run: npm run build
 
-    # Builds the project 
-    - name: Build Files
-      shell: bash
-      id: build-files
-      run: npm run build
+    # Zip the contents of the dist directory
+    - name: Zip dist directory
+      run: |
+        cd dist
+        zip -r ../module.zip .
+        cd ..
 
-    # Get the version from 'module.json'
-    - name: Get Version
-      shell: bash
-      id: get-version
-      run: echo "version=$(node ./.github/workflows/get-version.js)" >> $GITHUB_OUTPUT
-
-    # Get the name from 'module.json'
-    - name: Get Includes
-      shell: bash
-      id: get-includes
-      run: echo "files=$(node ./.github/workflows/get-includes.js)" >> $GITHUB_OUTPUT
-
-    # create a zip file with all files required by the module to add to the release
-    - name: Zip Files
-      working-directory: dist #SORRY BUT YOU HAVE TO USE DIST JUST LIKE GET OVER IT OR FIGURE OUT A BETTER WAY
-      run: zip -r ../module.zip ${{steps.get-includes.outputs.files}}
-
-    #Useful only for the template so we can leave the manifest and download urls empty
-    - name: Substitute Manifest and Download Links For Versioned Ones
-      id: sub_manifest_link_latest
-      uses: microsoft/variable-substitution@v1
+    # Extract version for release
+    - name: Extract version for release
+      run: echo "RELEASE_VERSION=$(node -p "require('./src/module.json').version")" >> $GITHUB_ENV
+  
+    # Create Release
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
       with:
-        files: './dist/module.json'
+        tag_name: ${{ env.RELEASE_VERSION }}
+        files: |
+          module.zip
+          dist/module.json
       env:
-        version: ${{steps.get-version.outputs.version}}
-        url: https://github.com/${{github.repository}}
-        manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
-        download: https://github.com/${{github.repository}}/releases/latest/download/module.zip
-
-    # Update the 'latest' release
-    - name: Update Latest Release
-      id: create_latest_release
-      uses: ncipollo/release-action@v1
-      if: endsWith(github.ref, 'master')
-      with:
-        allowUpdates: true
-        name: Latest
-        draft: false
-        prerelease: false
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './dist/module.json, ./module.zip'
-        tag: latest
-    
-    # Create a release for this specific version
-    - name: Create Version Release
-      id: create_version_release
-      uses: ncipollo/release-action@v1
-      with:
-        allowUpdates: true # set this to false if you want to prevent updating existing releases
-        name: Release ${{ steps.get-version.outputs.version }}
-        draft: false
-        prerelease: false
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './dist/module.json,./module.zip'
-        tag: ${{ steps.get-version.outputs.version }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

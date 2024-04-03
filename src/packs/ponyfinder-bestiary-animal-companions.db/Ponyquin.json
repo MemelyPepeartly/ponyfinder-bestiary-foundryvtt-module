@@ -1,0 +1,192 @@
+{
+  "_id": "WrPWsy6PVDaYD0oX",
+  "name": "Ponyquin",
+  "type": "ancestry",
+  "img": "icons/magic/control/voodoo-doll-pain-damage-green.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h2 dir=\"ltr\">Ponyquin</h2>\n<p dir=\"ltr\">Your companion is an artificial pony, how odd.</p>\n<p dir=\"ltr\"><strong>Size </strong>Medium</p>\n<p dir=\"ltr\"><strong>Melee </strong>[one-action] hoof (agile), <strong>Damage </strong>1d6 bludgeoning</p>\n<p dir=\"ltr\">Str +2, Dex +2, Con +2, Int –4, Wis +1, Cha +0</p>\n<p dir=\"ltr\"><strong>Construct </strong>Does not breathe, eat, drink, or sleep. Immunities bleed, death effects, disease, doomed, drained, fatigued, healing, necromancy, nonlethal attacks, paralyzed, poison, sickened, unconscious</p>\n<p dir=\"ltr\"><strong>Hit Points</strong> 18</p>\n<p dir=\"ltr\"><strong>Skill</strong> Performance</p>\n<p dir=\"ltr\"><strong>Senses </strong>darkvision</p>\n<p dir=\"ltr\"><strong>Speed</strong> 40 feet</p>\n<p dir=\"ltr\"><strong>Support Benefit</strong> The ponyquin capers and cavorts wildly, distracting your enemies. Any time you Strike a creature the ponyquin threatens, the creature must make a Perception check against the ponyquin's Performance DC or be flat footed to that attack.</p>\n<h2 dir=\"ltr\"><strong> </strong></h2>\n<p dir=\"ltr\">Advanced Maneuver  Mimicry</p>\n<p dir=\"ltr\">Mimicry[one-action]</p>\n<p dir=\"ltr\">The ponyquin perfectly replicates words it has heard others speak, including their accents and inflections. It can mix and match words into new sentences, blending them together seamlessly. This allows the ponyquin to use Deception to imitate voices without difficulty no matter how different the imitated creature may be.</p>\n<h2 dir=\"ltr\"> </h2>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.str.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.dex.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.con.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.abilities.wis.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.skills.prf.rank"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6",
+        "allowDuplicate": false
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "key": "Strike",
+        "label": "PF2E.BattleForm.Attack.Hoof",
+        "range": null,
+        "traits": [
+          "unarmed",
+          "agile"
+        ],
+        "img": "systems/pf2e/icons/unarmed-attacks/foot.webp",
+        "replaceBasicUnarmed": true
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.traits.size.value",
+        "value": "{item|flags.pf2e.rulesSelections.companionSize}"
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "self:ancestry:ponyquin",
+        "priority": 1
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-ancestries.Item.6QBfYXeqGPVXVQdn"
+      },
+      {
+        "key": "Sense",
+        "selector": "darkvision"
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "construct"
+        ]
+      }
+    ],
+    "slug": "ponyquin",
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "animal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 18,
+    "size": "med",
+    "reach": 5,
+    "speed": 40,
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [],
+      "custom": ""
+    },
+    "items": {},
+    "vision": "low-light-vision",
+    "voluntaryBoosts": {},
+    "voluntaryFlaws": {},
+    "rarity": {
+      "value": "common"
+    }
+  },
+  "effects": [],
+  "folder": "wiKKkGcmogVS605G",
+  "sort": 150000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "exportSource": {
+      "world": "ac",
+      "system": "pf2e",
+      "coreVersion": "0.8.8",
+      "systemVersion": "2.6.0.6437"
+    },
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1663468948983,
+    "modifiedTime": 1689344842430,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

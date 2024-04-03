@@ -1,0 +1,139 @@
+{
+  "_id": "Pq8sJ0dFKXd2dDLW",
+  "name": "Thick Shell",
+  "type": "armor",
+  "img": "icons/consumables/nuts/nut-spiked-shell.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The built in shell of some husbryce is formidable indeed.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": "thick-shell",
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "uncommon"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "heldOrStowed": 0.1,
+      "value": 0,
+      "per": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "brokenThreshold": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "pp": 0,
+        "gp": 0,
+        "sp": 0,
+        "cp": 0
+      },
+      "per": 1
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null,
+      "effects": []
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Armor",
+        "img": "systems/pf2e/icons/unidentified_item_icons/armor.webp",
+        "data": {
+          "description": {
+            "value": "The nature of this plate is unclear."
+          }
+        }
+      },
+      "misidentified": {},
+      "identified": {
+        "name": "Thick Shell",
+        "img": "icons/consumables/nuts/nut-spiked-shell.webp",
+        "data": {
+          "description": {
+            "value": "<p>The built in shell of some husbryce is formidable indeed.</p>"
+          }
+        }
+      }
+    },
+    "category": "light",
+    "group": "plate",
+    "acBonus": 2,
+    "strength": 0,
+    "dexCap": 5,
+    "checkPenalty": 0,
+    "speedPenalty": 0,
+    "runes": {
+      "potency": 0,
+      "resilient": 0,
+      "property": []
+    },
+    "subitems": [],
+    "dex": {
+      "value": 2
+    },
+    "usage": {
+      "value": "wornarmor",
+      "type": "worn",
+      "where": "armor"
+    },
+    "stackGroup": null
+  },
+  "effects": [],
+  "folder": "PgQAwLo9r8vTxU1K",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1689352591857,
+    "modifiedTime": 1689352823498,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

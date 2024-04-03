@@ -1,0 +1,76 @@
+{
+  "_id": "f7CCTJDTsyVQJy9r",
+  "name": "Long Hopper Support Benefit",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>With unheard squeaks far too high for most to hear, the long hopper guides its partner's motions, granting a +1 to attack rolls and damage rolls until the end of their turn.</p>\n<p> </p>\n<p>@UUID[Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-ancestries.Item.nsDPAuBBeeGPVhe3]{Long Hopper Basic Support}</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": "elephant-support-benefit",
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Pathfinder #177: Burning Tundra",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "offensive",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "wiKKkGcmogVS605G",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1663468977434,
+    "modifiedTime": 1689344841386,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "_id": "XzgJFUPZzdEUsGyF",
+  "name": "Fey Horse Support Benefit",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The fey horse can move through difficult terrain even with a rider, ignoring foilage-caused difficult terrain. While performing this movement, difficult terrain or not, reactions are not triggered by its movement. This endures to the end of their turn.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": "fey-horse-support-benefit",
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "offensive",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    },
+    "weapon": {
+      "value": ""
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "wiKKkGcmogVS605G",
+  "sort": 700000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1663468977435,
+    "modifiedTime": 1689344841386,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

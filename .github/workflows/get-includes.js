@@ -1,2 +1,5 @@
-var fs = require('fs');
-console.log(JSON.parse(fs.readFileSync('src/module.json', 'utf8')).includes.join(" "));
+// ES Module Syntax
+import fs from 'fs';
+
+const moduleJson = JSON.parse(fs.readFileSync('src/module.json', { encoding: 'utf-8' }));
+console.log(moduleJson.includes.join(" "));

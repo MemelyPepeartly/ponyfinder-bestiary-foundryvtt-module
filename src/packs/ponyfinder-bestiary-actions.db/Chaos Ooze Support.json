@@ -1,0 +1,76 @@
+{
+  "_id": "gc8RPvKuZnDP1vyg",
+  "name": "Chaos Ooze Support",
+  "type": "action",
+  "img": "systems/pf2e/icons/actions/OneAction.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The chaos ooze looks for chances to devour the magic of your foes. Any foe you Strike within reach of the ooze is subjected to dispel magic against a random magic item or effect using the ooze's Athletics check and a level of half yours, rounded up.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": "chaos-ooze-support",
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Pathfinder #177: Burning Tundra",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "offensive",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "requirements": {
+      "value": ""
+    },
+    "trigger": {
+      "value": ""
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "wiKKkGcmogVS605G",
+  "sort": 600000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1663468977434,
+    "modifiedTime": 1689344841386,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}

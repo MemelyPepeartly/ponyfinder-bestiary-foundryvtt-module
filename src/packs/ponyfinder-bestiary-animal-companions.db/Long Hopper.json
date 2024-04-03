@@ -1,0 +1,182 @@
+{
+  "_id": "TGl8mtKMB6Nruhym",
+  "name": "Long Hopper",
+  "type": "ancestry",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/Assets/waxraven_longhoppers.png",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h2 dir=\"ltr\">Long Hopper</h2>\n<p dir=\"ltr\">Deviously intelligent, accepting a long hopper as a companion is much more a partnership than an ownership.</p>\n<p dir=\"ltr\"><strong>Size </strong>Medium</p>\n<p dir=\"ltr\"><strong>Type </strong>Fey</p>\n<p dir=\"ltr\"><strong>Melee </strong><span class=\"pf2-icon\">A</span> bite (finesse), <strong>Damage </strong>1d6 piercing</p>\n<p dir=\"ltr\">Str +0, Dex +3, Con +2, Int +0, Wis +1, Cha +0</p>\n<p dir=\"ltr\"><strong>Hit Points </strong>8</p>\n<p dir=\"ltr\"><strong>Skill </strong>Acrobatics</p>\n<p dir=\"ltr\"><strong>Senses </strong>low-light vision</p>\n<p dir=\"ltr\"><strong>Speed </strong>25 feet</p>\n<p dir=\"ltr\"><strong>Support Benefit </strong>(auditory) With unheard squeaks far too high for most to hear, the long hopper guides its partner's motions, granting a +1 to attack rolls and damage rolls until the end of their turn.</p>\n<h2 dir=\"ltr\"><strong> </strong></h2>\n<p dir=\"ltr\"><strong>Advanced Maneuver</strong>  Sudden Dash</p>\n<p dir=\"ltr\"><strong>Sudden Dash<span class=\"pf2-icon\">D</span></strong></p>\n<p dir=\"ltr\">Both the long hopper and its partner gain a +10 status bonus to their Speed for a minute. This cannot be used again for 20 minutes.</p>\n<h4 dir=\"ltr\">@UUID[Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-ancestries.Item.wCtY1gCeyPQvGHJC]{Sudden Dash}</h4>\n<h2 dir=\"ltr\"> </h2>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "type": "status",
+        "value": 10,
+        "selector": "land-speed"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 3,
+        "mode": "add",
+        "path": "system.abilities.dex.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.con.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.abilities.wis.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.skills.acr.rank"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6",
+        "allowDuplicate": false
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "piercing",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "key": "Strike",
+        "label": "PF2E.BattleForm.Attack.Bite",
+        "range": null,
+        "traits": [
+          "unarmed",
+          "finesse"
+        ],
+        "img": "icons/skills/wounds/bone-broken-tooth-fang-red.webp",
+        "replaceBasicUnarmed": true
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "self:ancestry:Long Hopper",
+        "priority": 1
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-ancestries.Item.XzgJFUPZzdEUsGyF"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 4,
+        "mode": "add",
+        "path": "system.abilities.int.mod"
+      }
+    ],
+    "slug": "long-hopper",
+    "_migration": {
+      "version": 0.925,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.845,
+        "foundry": "11.315",
+        "system": "5.14.4"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "animal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 8,
+    "size": "med",
+    "reach": 5,
+    "speed": 25,
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [],
+      "custom": ""
+    },
+    "items": {},
+    "vision": "low-light-vision",
+    "voluntaryBoosts": {},
+    "voluntaryFlaws": {},
+    "rarity": {
+      "value": "common"
+    }
+  },
+  "effects": [],
+  "folder": "wiKKkGcmogVS605G",
+  "sort": 800000,
+  "ownership": {
+    "default": 0,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "exportSource": {
+      "world": "ac",
+      "system": "pf2e",
+      "coreVersion": "0.8.8",
+      "systemVersion": "2.6.0.6437"
+    },
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "coreVersion": "11.304",
+    "createdTime": 1663468948983,
+    "modifiedTime": 1689352295949,
+    "lastModifiedBy": "7U4sXug561SwttNa"
+  }
+}
