@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Sound Burst[one-action] FEAT 6</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">With a shrill cry only you and those with similar senses can detect, you gain sonic vision as a precise sense with a range of 60 feet until the start of your next turn. Being sound-based, it cannot determine colors or other strictly visual features, or detect things without a physical body.</p>\n<section>\n<h4 dir=\"ltr\">@UUID[Compendium.ponyfinder-bestiary-of-everglow-for-pathfinder-2e.ponyfinder-bestiary-feats.Item.I5bmXFWJ5PvYbICO]{Sound Burst Buff}</h4>\n</section>\n<p> </p>",
+      "value": "<h1 dir=\"ltr\">Sound Burst[one-action] FEAT 6</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">With a shrill cry only you and those with similar senses can detect, you gain sonic vision as a precise sense with a range of 60 feet until the start of your next turn. Being sound-based, it cannot determine colors or other strictly visual features, or detect things without a physical body.</p>\n<section>\n<h4 dir=\"ltr\">@UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-feats.Item.I5bmXFWJ5PvYbICO]{Sound Burst Buff}</h4>\n</section>\n<p> </p>",
       "addenda": [],
       "override": null
     },

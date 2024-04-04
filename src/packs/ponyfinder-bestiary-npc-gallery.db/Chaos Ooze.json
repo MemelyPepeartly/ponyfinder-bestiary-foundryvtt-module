@@ -2,7 +2,7 @@
   "_id": "UARtGw9hRd0hWbTo",
   "name": "Chaos Ooze",
   "type": "npc",
-  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/ChaosOoze.png",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/ChaosOoze.png",
   "system": {
     "attributes": {
       "hp": {
@@ -2093,7 +2093,7 @@
     "appendNumber": false,
     "prependAdjective": false,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/chaosooze%20token.png",
+      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/chaosooze%20token.png",
       "scaleX": 1.3,
       "scaleY": 1.3,
       "offsetX": 0,
