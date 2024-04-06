@@ -2,7 +2,7 @@
   "_id": "lhRGTk5vrxBaYGpO",
   "name": "Cobbleguard",
   "type": "npc",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/Cobbleguard.tif",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/waxraven_cobbleguard_R.png",
   "system": {
     "attributes": {
       "hp": {
