@@ -2,7 +2,7 @@
   "_id": "Bw6pdFNZAMPpSewS",
   "name": "Bone Prancer",
   "type": "npc",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/BonePrancer.png",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/bone-prancer.png",
   "system": {
     "attributes": {
       "hp": {
