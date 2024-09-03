@@ -1222,16 +1222,7 @@
         "width": 15
       }
     },
-    "autoChanges": {
-      "flags.pf2e.riftDragon.element": [
-        {
-          "mode": "override",
-          "level": null,
-          "value": "acid",
-          "source": "Breath Weapon"
-        }
-      ]
-    },
+    "autoChanges": {},
     "customModifiers": {},
     "actions": [
       {
