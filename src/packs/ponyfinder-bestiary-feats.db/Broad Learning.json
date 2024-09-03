@@ -1,0 +1,106 @@
+{
+  "_id": "vmP0xxlmfJHjtEki",
+  "name": "Broad Learning",
+  "type": "feat",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You gain training in one skill of your choice and qualify as a human for taking ancestry feats.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ChoiceSet",
+        "choices": {
+          "config": "skills"
+        },
+        "flag": "skill"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "path": "system.skills.{item|flags.pf2e.rulesSelections.skill}.rank",
+        "value": 1,
+        "mode": "upgrade"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.details.ancestry.countsAs",
+        "value": "human"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "husbryce-scout"
+      ],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1,
+      "taken": null
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [],
+      "languages": {
+        "granted": [],
+        "slots": 0
+      },
+      "proficiencies": {},
+      "senses": {}
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "jagMe3F6atpfjRfM",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

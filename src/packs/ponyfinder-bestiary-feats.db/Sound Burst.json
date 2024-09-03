@@ -1,36 +1,34 @@
 {
-  "_id": "SJ55OWM2VGDMyfEt",
+  "_id": "jZVKADipWCFwxDtD",
   "name": "Sound Burst",
   "type": "feat",
-  "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Sound Burst[one-action] FEAT 6</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">With a shrill cry only you and those with similar senses can detect, you gain sonic vision as a precise sense with a range of 60 feet until the start of your next turn. Being sound-based, it cannot determine colors or other strictly visual features, or detect things without a physical body.</p>\n<section>\n<h4 dir=\"ltr\">@UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-feats.Item.I5bmXFWJ5PvYbICO]{Sound Burst Buff}</h4>\n</section>\n<p> </p>",
+      "value": "<p>With a shrill cry only you and those with similar senses can detect, you gain sonic vision as a precise sense with a range of 60 feet until the start of your next turn. Being sound-based, it cannot determine colors or other strictly visual features, or detect things without a physical body.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [
       {
         "key": "ActiveEffectLike",
+        "value": 1,
         "mode": "add",
-        "path": "flags.pf2e.werebat.archetypeFeatCount",
-        "value": 1
+        "path": "flags.pf2e.werebat.featCount"
       }
     ],
     "slug": null,
     "_migration": {
-      "version": 0.925,
-      "lastMigration": null,
-      "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
-      }
+      "version": 0.932,
+      "lastMigration": null
     },
     "traits": {
       "otherTags": [],
-      "value": [],
+      "value": [
+        "archetype",
+        "werebat"
+      ],
       "rarity": "common",
       "toggles": {
         "mindshift": null
@@ -38,7 +36,7 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
       "remaster": false
     },
@@ -46,7 +44,7 @@
       "value": 6,
       "taken": null
     },
-    "category": "bonus",
+    "category": "class",
     "onlyLevel1": false,
     "maxTakable": 1,
     "actionType": {
@@ -68,14 +66,18 @@
       "proficiencies": {},
       "senses": {}
     },
-    "selfEffect": null
+    "selfEffect": {
+      "uuid": "Compendium.world.ponyfinder-bestiary-effects.Item.UDwjBQrp5G6Fj8ro",
+      "name": "Effect: Sound Burst",
+      "img": "icons/magic/sonic/projectile-sound-rings-wave.webp"
+    }
   },
   "effects": [],
-  "folder": "tzWs6vvx7RiONsUa",
-  "sort": 500000,
+  "folder": "pAo5V9scGcMNEY4D",
+  "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
     "pf2e": {
@@ -84,11 +86,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1689731217162,
-    "modifiedTime": 1690247332223,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723786781670,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": "Compendium.world.ponyfinder-bestiary-feats.Item.jZVKADipWCFwxDtD",
+    "duplicateSource": null
   }
 }

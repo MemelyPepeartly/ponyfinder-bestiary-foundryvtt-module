@@ -1,135 +1,123 @@
 {
-  "_id": "YwzI4CvTeOpOVxEy",
+  "_id": "R674eGiFhuvlpmg7",
   "name": "Lycanthropic Control",
   "type": "feat",
-  "img": "icons/creatures/mammals/bats-movement-flying-purple.webp",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
   "system": {
     "description": {
       "gm": "",
-      "value": "<p dir=\"ltr\">Those suffering the curse of the werebat become monsters under the full moon, and can often be surly and hard to deal with even outside that. While some rush to find a cure, others attempt to grapple with the curse dead on, trying to master its fell power and perhaps turn it towards their own ends.</p>\n<p dir=\"ltr\">Taking feats in this archetype causes you to gain +3 hit points per feat, but also increases your weakness to silver by 1.</p>\n<h1 dir=\"ltr\">Lycanthropic Control[<span class=\"pf2-icon\">D</span>]FEAT 1</h1>\n<p dir=\"ltr\">[Archetype][Dedication][Werebat]</p>\n<p dir=\"ltr\">Prerequisites Have the curse of the werebat</p>\n<p dir=\"ltr\">You have begun to take control of this curse, to bend it to your will. Perhaps, with enough effort, you can master it. You can attempt to become a hybrid, making a flat check against DC 15 ([two-actions]) to enter your hybrid form, your bat form, or to return to your natural form. In either changed form, you gain the following benefits:</p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\">You gain a bite attack.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\">You gain a scent imprecise sense with a range of 30 feet.</p>\n</li>\n</ul>\n<p dir=\"ltr\">As a bat you gain:</p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\">You become Large.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\">You gain a fly Speed of 40 feet.</p>\n</li>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\">You have no hands or fingers.</p>\n</li>\n</ul>\n<p dir=\"ltr\">In your hybrid form you gain:</p>\n<ul>\n<li dir=\"ltr\" aria-level=\"1\">\n<p dir=\"ltr\">You gain a fly Speed of 20 feet.</p>\n</li>\n</ul>\n<p>Special You cannot select another dedication feat until you have gained two other feats from the werebat archetype.</p>",
+      "value": "<p>ou have begun to take control of this curse, to bend it to your will. Perhaps, with enough effort, you can master it. You can attempt to become a hybrid, making a @Check[flat|dc:15] (<span class=\"pf2-icon\">2</span>) to enter your hybrid form, your bat form, or to return to your natural form. In either changed form, you gain the following benefits:</p><ul><li><p>Natural attacks deal 1 extra damage, become versatile s and versatile p.</p></li><li><p>You gain a scent imprecise sense with a range of 30 feet.</p></li></ul><p>As a bat you gain:</p><ul><li><p>You become Large.</p></li><li><p>You gain a fly Speed of 40 feet.</p></li><li><p>You have no hands or fingers.</p></li></ul><p>In your hybrid form you gain:</p><ul><li><p>You gain a fly Speed of 20 feet.</p></li></ul><hr /><p><strong>Special</strong> You cannot select another dedication feat until you have gained two other feats from the werebat archetype.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [
       {
-        "key": "ActiveEffectLike",
-        "mode": "add",
-        "path": "flags.pf2e.werebat.archetypeFeatCount",
-        "value": 1
+        "key": "RollOption",
+        "option": "lycanthropic-control",
+        "suboptions": [
+          {
+            "label": "Bat Form",
+            "value": "bat"
+          },
+          {
+            "label": "Hybrid Form",
+            "value": "hybrid"
+          }
+        ],
+        "toggleable": true
       },
       {
         "key": "FlatModifier",
-        "selector": "hp",
-        "value": "3 * @actor.flags.pf2e.werebat.archetypeFeatCount"
-      },
-      {
-        "key": "Weakness",
-        "type": "silver",
-        "value": "@actor.flags.pf2e.werebat.archetypeFeatCount"
-      },
-      {
-        "key": "RollOption",
-        "label": "Werebat Bat Form",
-        "option": "werebatbatform",
-        "toggleable": true
-      },
-      {
-        "key": "RollOption",
-        "label": "Werebat Hybrid Form",
-        "option": "werebathybridform",
-        "toggleable": true
-      },
-      {
-        "key": "Sense",
-        "label": "werebat",
-        "range": 30,
-        "selector": "scent",
+        "selector": "unarmed-damage",
+        "value": 1,
         "predicate": [
-          "werebathybridform"
-        ],
-        "acuity": "imprecise"
-      },
-      {
-        "key": "Sense",
-        "label": "werebat",
-        "range": 30,
-        "selector": "scent",
-        "predicate": [
-          "werebatbatform"
-        ],
-        "acuity": "imprecise"
-      },
-      {
-        "baseType": "jaws",
-        "category": "unarmed",
-        "damage": {
-          "base": {
-            "damageType": "piercing",
-            "dice": 1,
-            "die": "d6"
-          }
-        },
-        "group": "brawling",
-        "img": "systems/pf2e/icons/unarmed-attacks/jaws.webp",
-        "key": "Strike",
-        "label": "PF2E.Weapon.Base.jaws",
-        "range": null,
-        "slug": "jaws",
-        "traits": [
-          "unarmed"
-        ],
-        "predicate": [
-          {
-            "or": [
-              "werebathybridform",
-              "werebatbatform"
-            ]
-          }
+          "lycanthropic-control"
         ]
       },
       {
-        "key": "BaseSpeed",
-        "value": 40,
-        "selector": "fly",
+        "key": "AdjustStrike",
+        "definition": [
+          "item:category:unarmed"
+        ],
+        "property": "weapon-traits",
+        "value": "versatile-s",
+        "mode": "add",
         "predicate": [
-          "werebatbatform"
+          "lycanthropic-control"
         ]
       },
       {
-        "key": "BaseSpeed",
-        "value": 20,
-        "selector": "fly",
+        "key": "AdjustStrike",
+        "definition": [
+          "item:category:unarmed"
+        ],
+        "property": "weapon-traits",
+        "value": "versatile-p",
+        "mode": "add",
         "predicate": [
-          "werebathybridform"
+          "lycanthropic-control"
+        ]
+      },
+      {
+        "key": "Sense",
+        "selector": "scent",
+        "acuity": "imprecise",
+        "value": 30,
+        "predicate": [
+          "lycanthropic-control"
         ]
       },
       {
         "key": "CreatureSize",
-        "reach": {
-          "override": 10
-        },
-        "resizeEquipment": true,
-        "value": "large",
+        "value": "lg",
         "predicate": [
-          "werebathybridform"
+          "lycanthropic-control:bat"
         ]
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": 40,
+        "predicate": [
+          "lycanthropic-control:bat"
+        ]
+      },
+      {
+        "key": "BaseSpeed",
+        "selector": "fly",
+        "value": 20,
+        "predicate": [
+          "lycanthropic-control:hybrid"
+        ]
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "flags.pf2e.werebat.featCount"
+      },
+      {
+        "key": "Weakness",
+        "type": "silver",
+        "value": "@actor.flags.pf2e.werebat.featCount"
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "hp",
+        "value": "3*@actor.flags.pf2e.werebat.featCount"
       }
     ],
-    "slug": "werebat-dedication",
+    "slug": null,
     "_migration": {
-      "version": 0.925,
-      "lastMigration": null,
-      "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
-      }
+      "version": 0.932,
+      "lastMigration": null
     },
     "traits": {
       "otherTags": [],
       "value": [
         "archetype",
-        "dedication"
+        "dedication",
+        "werebat"
       ],
       "rarity": "common",
       "toggles": {
@@ -138,7 +126,7 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
       "remaster": false
     },
@@ -175,11 +163,11 @@
     "selfEffect": null
   },
   "effects": [],
-  "folder": "tzWs6vvx7RiONsUa",
-  "sort": 700000,
+  "folder": "pAo5V9scGcMNEY4D",
+  "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
     "pf2e": {
@@ -188,11 +176,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1689707969265,
-    "modifiedTime": 1690247332223,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
   }
 }

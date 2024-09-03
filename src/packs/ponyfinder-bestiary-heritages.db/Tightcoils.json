@@ -1,0 +1,73 @@
+{
+  "_id": "EsGuRScDLJk7x0IU",
+  "name": "Tightcoils",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Taking more after a constrictor, you are especially adept at taking hold of things. You begin with the @UUID[Compendium.pf2e.feats-srd.Item.KxaYlC50zzHysJj8]{Titan Wrestler} feat and gain a +1 circumstance bonus when attempting to Grab.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "selector": "athletics",
+        "value": 1,
+        "type": "circumstance",
+        "predicate": [
+          "action:grapple"
+        ]
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.KxaYlC50zzHysJj8"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Reptilin",
+      "slug": "reptilin",
+      "uuid": "Compendium.world.ponyfinder-bestiary-ancestries.Item.0P4ZmCBvCiKysQ80"
+    }
+  },
+  "effects": [],
+  "folder": "alIER9SzPpVa3GHx",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762219536,
+    "modifiedTime": 1723785703144,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

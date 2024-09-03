@@ -1,0 +1,93 @@
+{
+  "_id": "AjfCoWE5F0CTFlKc",
+  "name": "Shared Breath",
+  "type": "feat",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Those within 5 feet of you, including you, gain the ability to breathe water while they remain so close. When you Swim, those next to you can Swim as a reaction to keep up with you.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "two-pelted"
+      ],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 9,
+      "taken": null
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": [
+        {
+          "value": "Two-pelted feat"
+        },
+        {
+          "value": "animal chosen with a swim speed"
+        }
+      ]
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [],
+      "languages": {
+        "granted": [],
+        "slots": 0
+      },
+      "proficiencies": {},
+      "senses": {}
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "A72Vz5xsADVp6h0s",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "_id": "LwqouPTWulA1fXHY",
+  "name": "Powerful Tail",
+  "type": "feat",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your tail makes up more than half of your body and is mostly muscle. This allows your unarmed attacks to deal one more damage. When you would be slowed due to weight, @UUID[Compendium.pf2e.conditionitems.Item.D5mg6Tc7Jzrj6ro7]{Encumbrance}, or armor, that slowness is reduced by 5 feet, to a minimum of moving at normal speed.</p><p></p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "AdjustModifier",
+        "selectors": [
+          "land-speed"
+        ],
+        "slug": "armor-speed-penalty",
+        "mode": "add",
+        "value": 5
+      },
+      {
+        "key": "AdjustModifier",
+        "selectors": [
+          "land-speed"
+        ],
+        "slug": "encumbered",
+        "mode": "add",
+        "value": 5
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "reptilin"
+      ],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1,
+      "taken": null
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [],
+      "languages": {
+        "granted": [],
+        "slots": 0
+      },
+      "proficiencies": {},
+      "senses": {}
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "zxlFkkhZIG5kdCYq",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

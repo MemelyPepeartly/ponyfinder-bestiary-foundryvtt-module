@@ -1,0 +1,86 @@
+{
+  "_id": "4I7XxptaljAgmPwB",
+  "name": "Bestial Touched",
+  "type": "feat",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>You have a connection to the creatures of the natural world that allows you to communicate with them on a rudimentary level. You can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{Make an Impression} on animals and to make very simple Requests of them. In most cases, wild animals will give you time to make your case. This counts as having wild empathy for any requirements.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "two-pelted"
+      ],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5,
+      "taken": null
+    },
+    "category": "ancestry",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "passive"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [],
+      "languages": {
+        "granted": [],
+        "slots": 0
+      },
+      "proficiencies": {},
+      "senses": {}
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "A72Vz5xsADVp6h0s",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "_id": "dhFbAiHcyOovKqkA",
+  "name": "Living Art",
+  "type": "action",
+  "img": "systems/pf2e/icons/default-icons/action.svg",
+  "system": {
+    "description": {
+      "gm": "<p><em><strong>Note:</strong> In order to use this, drag the ability on a creature and it will be granted the actions and statistics changes </em><span style=\"text-decoration:underline\"><em><span style=\"text-decoration:underline\">except for increasing its level,</span></em></span> which must be done manually</p>",
+      "value": "<p>You can turn any creature into living art by completing the following steps. While it's always better to do so from scratch, this provides an easy and fast way to make a living art version of another creature.</p><ul><li><p>Increase its level by 1 and change its statistics as follows.</p></li><li><p>Increase its attack rolls, AC, saving throws, Perception, and skills by 1, its HP by 5, and its Strike damage by 1.</p></li><li><p>It gains the construct trait. It no longer needs to eat, breathe, drink, or sleep.</p></li><li><p>If it did not have darkvision, it gains darkvision.</p></li><li><p>It gains the Turn Flat and Two-Dimensional abilities.</p></li></ul>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.world.ponyfinder-bestiary-actions.Item.ANWGIsaY7NPLTbX8"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.world.ponyfinder-bestiary-actions.Item.2Gk8X7zmGY7LCYk1"
+      },
+      {
+        "key": "ActorTraits",
+        "add": [
+          "construct"
+        ]
+      },
+      {
+        "key": "Sense",
+        "selector": "darkvision"
+      },
+      {
+        "key": "FlatModifier",
+        "slug": "living-art-bonus",
+        "selector": [
+          "attack-roll",
+          "ac",
+          "perception",
+          "saving-throw",
+          "strike-damage",
+          "skill-check"
+        ],
+        "value": 1
+      },
+      {
+        "key": "FlatModifier",
+        "selector": "hp",
+        "value": 5,
+        "slug": "living-art-hp"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "interaction",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762231560,
+    "modifiedTime": 1723785754399,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

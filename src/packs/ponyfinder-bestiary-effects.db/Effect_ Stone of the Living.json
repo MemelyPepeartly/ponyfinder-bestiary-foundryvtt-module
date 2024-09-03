@@ -1,0 +1,80 @@
+{
+  "_id": "H9c83JfpLzlQhCob",
+  "name": "Effect: Stone of the Living",
+  "type": "effect",
+  "img": "icons/commodities/stone/ore-chunk-silver-gray.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.world.ponyfinder-bestiary-npc-gallery.Actor.X1O2Bq4pm9Vz13la]{Skeletal Pony Slinger}'s Stone of the Living</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "Weakness",
+        "value": 5,
+        "type": "bludgeoning"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-end",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false,
+    "fromSpell": false,
+    "expired": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723783808935,
+    "modifiedTime": 1723786794900,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": "Compendium.world.ponyfinder-bestiary-effects.Item.H9c83JfpLzlQhCob",
+    "duplicateSource": null
+  }
+}

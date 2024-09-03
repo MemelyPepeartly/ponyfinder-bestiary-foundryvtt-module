@@ -1,0 +1,66 @@
+{
+  "_id": "PlUvjDxA6K7bGVQv",
+  "name": "Palescale",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>They say the first of your kind actually was pale. This isn't always the case. You gain your intelligence modifier (instead of half) in additional languages, and can select two common languages in addition to know. You are trained in Diplomacy.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "mode": "add",
+        "path": "system.build.languages.max",
+        "value": 2
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Reptilin",
+      "slug": "reptilin",
+      "uuid": "Compendium.world.ponyfinder-bestiary-ancestries.Item.0P4ZmCBvCiKysQ80"
+    }
+  },
+  "effects": [],
+  "folder": "alIER9SzPpVa3GHx",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762219536,
+    "modifiedTime": 1723785687062,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

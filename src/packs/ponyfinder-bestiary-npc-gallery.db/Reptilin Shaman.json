@@ -1,31 +1,50 @@
 {
-  "_id": "17mfP1lOPH4GfbAq",
+  "_id": "4kSOR2pv8chYXyzq",
   "name": "Reptilin Shaman",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderReptilinShaman1.webp",
   "type": "npc",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderReptilinShaman1.png",
   "system": {
     "attributes": {
       "hp": {
         "slug": "hp",
         "_modifiers": [],
-        "breakdown": "Base Max HP 10",
+        "breakdown": "Base Max HP 62",
         "totalModifier": 0,
-        "value": 10,
+        "value": 62,
         "temp": 0,
-        "max": 10,
+        "max": 62,
         "details": "",
         "negativeHealing": false,
         "unrecoverable": 0,
-        "base": 10
+        "base": 62
       },
       "speed": {
         "slug": "land-speed",
         "_modifiers": [],
-        "breakdown": "Base Land Speed 25",
+        "breakdown": "Base Land Speed 20",
         "totalModifier": 0,
-        "total": 25,
-        "value": 25,
-        "otherSpeeds": [],
+        "total": 20,
+        "value": 20,
+        "otherSpeeds": [
+          {
+            "slug": "climb-speed",
+            "_modifiers": [],
+            "breakdown": "Base Climb Speed 20",
+            "totalModifier": 0,
+            "type": "climb",
+            "label": "Climb",
+            "value": 20
+          },
+          {
+            "slug": "swim-speed",
+            "_modifiers": [],
+            "breakdown": "Base Swim Speed 15",
+            "totalModifier": 0,
+            "type": "swim",
+            "label": "Swim",
+            "value": 15
+          }
+        ],
         "details": "",
         "type": "land",
         "label": "Land Speed"
@@ -33,11 +52,11 @@
       "ac": {
         "slug": "ac",
         "label": "PF2E.ArmorClassLabel",
-        "value": 10,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 18,
+        "totalModifier": 8,
+        "dc": 18,
         "attribute": "dex",
-        "breakdown": "Base DC 10, Modifier +0",
+        "breakdown": "Base DC 10, Modifier +8",
         "modifiers": [
           {
             "slug": "base",
@@ -46,7 +65,7 @@
               "all",
               "dex-based"
             ],
-            "modifier": 0,
+            "modifier": 8,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -64,7 +83,7 @@
             "predicate": []
           }
         ],
-        "details": ""
+        "details": "(mystic armor)"
       },
       "allSaves": {
         "value": ""
@@ -113,23 +132,25 @@
         "value": 0,
         "max": 3
       },
-      "spellDC": null,
+      "spellDC": {
+        "value": 21
+      },
       "classDC": {
         "value": 19
       },
       "classOrSpellDC": {
-        "value": 19
+        "value": 21
       },
       "emitsSound": true
     },
     "initiative": {
       "slug": "initiative",
       "label": "Perception",
-      "value": 0,
-      "totalModifier": 0,
-      "dc": 10,
+      "value": 8,
+      "totalModifier": 8,
+      "dc": 18,
       "attribute": "wis",
-      "breakdown": "Modifier +0",
+      "breakdown": "Modifier +8",
       "modifiers": [
         {
           "slug": "base",
@@ -140,7 +161,7 @@
             "all",
             "initiative"
           ],
-          "modifier": 0,
+          "modifier": 8,
           "type": "untyped",
           "ability": null,
           "adjustments": [],
@@ -190,41 +211,41 @@
       }
     },
     "_migration": {
-      "version": 0.925,
+      "version": 0.932,
       "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
+        "schema": 0.925,
+        "foundry": "12.330",
+        "system": "6.2.1"
       }
     },
     "abilities": {
       "str": {
-        "mod": 0,
+        "mod": 5,
         "label": "PF2E.AbilityStr",
         "shortLabel": "PF2E.AbilityId.str"
       },
       "dex": {
-        "mod": 0,
+        "mod": 3,
         "label": "PF2E.AbilityDex",
         "shortLabel": "PF2E.AbilityId.dex"
       },
       "con": {
-        "mod": 0,
+        "mod": 4,
         "label": "PF2E.AbilityCon",
         "shortLabel": "PF2E.AbilityId.con"
       },
       "int": {
-        "mod": 0,
+        "mod": 2,
         "label": "PF2E.AbilityInt",
         "shortLabel": "PF2E.AbilityId.int"
       },
       "wis": {
-        "mod": 0,
+        "mod": 2,
         "label": "PF2E.AbilityWis",
         "shortLabel": "PF2E.AbilityId.wis"
       },
       "cha": {
-        "mod": 0,
+        "mod": 1,
         "label": "PF2E.AbilityCha",
         "shortLabel": "PF2E.AbilityId.cha"
       }
@@ -232,11 +253,11 @@
     "perception": {
       "slug": "perception",
       "label": "Perception",
-      "value": 0,
-      "totalModifier": 0,
-      "dc": 10,
+      "value": 8,
+      "totalModifier": 8,
+      "dc": 18,
       "attribute": "wis",
-      "breakdown": "Modifier +0",
+      "breakdown": "Modifier +8",
       "modifiers": [
         {
           "slug": "base",
@@ -246,7 +267,7 @@
             "wis-based",
             "all"
           ],
-          "modifier": 0,
+          "modifier": 8,
           "type": "untyped",
           "ability": null,
           "adjustments": [],
@@ -264,21 +285,38 @@
           "predicate": []
         }
       ],
-      "senses": [],
+      "senses": [
+        {
+          "type": "low-light-vision",
+          "acuity": "precise",
+          "range": null,
+          "source": null,
+          "label": "Low-Light Vision",
+          "emphasizeLabel": false
+        },
+        {
+          "type": "motion-sense",
+          "acuity": "imprecise",
+          "range": 10,
+          "source": null,
+          "label": "Motion Sense (Imprecise) 10 Feet",
+          "emphasizeLabel": false
+        }
+      ],
       "vision": true,
       "details": "",
-      "mod": 0
+      "mod": 8
     },
     "saves": {
       "fortitude": {
-        "value": 0,
+        "value": 14,
         "saveDetail": "",
         "attribute": null,
         "slug": "fortitude",
         "label": "Fortitude",
-        "totalModifier": 0,
-        "dc": 10,
-        "breakdown": "Modifier +0",
+        "totalModifier": 14,
+        "dc": 24,
+        "breakdown": "Modifier +14",
         "modifiers": [
           {
             "slug": "base",
@@ -289,7 +327,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 14,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -307,17 +345,17 @@
             "predicate": []
           }
         ],
-        "base": 0
+        "base": 14
       },
       "reflex": {
-        "value": 0,
+        "value": 12,
         "saveDetail": "",
         "attribute": null,
         "slug": "reflex",
         "label": "Reflex",
-        "totalModifier": 0,
-        "dc": 10,
-        "breakdown": "Modifier +0",
+        "totalModifier": 12,
+        "dc": 22,
+        "breakdown": "Modifier +12",
         "modifiers": [
           {
             "slug": "base",
@@ -328,7 +366,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 12,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -346,17 +384,17 @@
             "predicate": []
           }
         ],
-        "base": 0
+        "base": 12
       },
       "will": {
-        "value": 0,
+        "value": 11,
         "saveDetail": "",
         "attribute": null,
         "slug": "will",
         "label": "Will",
-        "totalModifier": 0,
-        "dc": 10,
-        "breakdown": "Modifier +0",
+        "totalModifier": 11,
+        "dc": 21,
+        "breakdown": "Modifier +11",
         "modifiers": [
           {
             "slug": "base",
@@ -367,7 +405,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 11,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -385,35 +423,19 @@
             "predicate": []
           }
         ],
-        "base": 0
-      }
-    },
-    "traits": {
-      "value": [],
-      "rarity": "common",
-      "size": {
-        "value": "med",
-        "length": 5,
-        "width": 5
-      }
-    },
-    "autoChanges": {},
-    "customModifiers": {},
-    "actions": [],
-    "spellcasting": {
-      "rituals": {
-        "dc": 0
+        "base": 11
       }
     },
     "skills": {
-      "acr": {
+      "acrobatics": {
+        "base": 0,
         "slug": "acrobatics",
         "label": "Acrobatics",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 3,
+        "totalModifier": 3,
+        "dc": 13,
         "attribute": "dex",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +3",
         "modifiers": [
           {
             "slug": "base",
@@ -425,7 +447,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 3,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -443,21 +465,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 3,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "arc": {
+      "arcana": {
+        "base": 0,
         "slug": "arcana",
         "label": "Arcana",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -469,7 +491,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -487,21 +509,22 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "ath": {
+      "athletics": {
+        "base": 12,
+        "special": [],
         "slug": "athletics",
         "label": "Athletics",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 12,
+        "totalModifier": 12,
+        "dc": 22,
         "attribute": "str",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +12",
         "modifiers": [
           {
             "slug": "base",
@@ -513,7 +536,7 @@
               "str-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 12,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -531,21 +554,20 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 12,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": true
       },
-      "cra": {
+      "crafting": {
+        "base": 0,
         "slug": "crafting",
         "label": "Crafting",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -557,7 +579,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -575,21 +597,22 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "dec": {
+      "deception": {
+        "base": 7,
+        "special": [],
         "slug": "deception",
         "label": "Deception",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 7,
+        "totalModifier": 7,
+        "dc": 17,
         "attribute": "cha",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +7",
         "modifiers": [
           {
             "slug": "base",
@@ -601,7 +624,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 7,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -619,21 +642,20 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 7,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": true
       },
-      "dip": {
+      "diplomacy": {
+        "base": 0,
         "slug": "diplomacy",
         "label": "Diplomacy",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "cha",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -645,7 +667,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -663,21 +685,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "itm": {
+      "intimidation": {
+        "base": 0,
         "slug": "intimidation",
         "label": "Intimidation",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "cha",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -689,7 +711,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -707,21 +729,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "med": {
+      "medicine": {
+        "base": 0,
         "slug": "medicine",
         "label": "Medicine",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -733,7 +755,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -751,21 +773,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "nat": {
+      "nature": {
+        "base": 0,
         "slug": "nature",
         "label": "Nature",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -777,7 +799,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -795,21 +817,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "occ": {
+      "occultism": {
+        "base": 0,
         "slug": "occultism",
         "label": "Occultism",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -821,7 +843,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -839,21 +861,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "prf": {
+      "performance": {
+        "base": 0,
         "slug": "performance",
         "label": "Performance",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "cha",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -865,7 +887,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -883,21 +905,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "rel": {
+      "religion": {
+        "base": 0,
         "slug": "religion",
         "label": "Religion",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -909,7 +931,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -927,21 +949,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "soc": {
+      "society": {
+        "base": 0,
         "slug": "society",
         "label": "Society",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -953,7 +975,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -971,21 +993,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "ste": {
+      "stealth": {
+        "base": 0,
         "slug": "stealth",
         "label": "Stealth",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 3,
+        "totalModifier": 3,
+        "dc": 13,
         "attribute": "dex",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +3",
         "modifiers": [
           {
             "slug": "base",
@@ -997,7 +1019,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 3,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1015,21 +1037,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 3,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "sur": {
+      "survival": {
+        "base": 0,
         "slug": "survival",
         "label": "Survival",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -1041,7 +1063,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1059,21 +1081,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "thi": {
+      "thievery": {
+        "base": 0,
         "slug": "thievery",
         "label": "Thievery",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 3,
+        "totalModifier": 3,
+        "dc": 13,
         "attribute": "dex",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +3",
         "modifiers": [
           {
             "slug": "base",
@@ -1085,7 +1107,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 3,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1103,12 +1125,410 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 3,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
+      }
+    },
+    "traits": {
+      "value": [
+        "fey"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "lg",
+        "length": 5,
+        "width": 5
+      }
+    },
+    "autoChanges": {},
+    "customModifiers": {},
+    "actions": [
+      {
+        "slug": "obsidian-longspear",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 12,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +12",
+        "totalModifier": 12,
+        "label": "Obsidian Longspear",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "QEOs4KcRqmSvCzP1",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [],
+        "item": {
+          "type": "melee",
+          "name": "Obsidian Longspear",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "reach"
+              ]
+            },
+            "damageRolls": {
+              "GhHuUpsqtOWRiOLV": {
+                "damage": "2d6+5",
+                "damageType": "piercing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 12
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "QEOs4KcRqmSvCzP1",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          }
+        },
+        "weapon": {
+          "type": "melee",
+          "name": "Obsidian Longspear",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "reach"
+              ]
+            },
+            "damageRolls": {
+              "GhHuUpsqtOWRiOLV": {
+                "damage": "2d6+5",
+                "damageType": "piercing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 12
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "QEOs4KcRqmSvCzP1",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee",
+          "reach"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          },
+          {
+            "name": "reach",
+            "label": "Reach",
+            "description": "PF2E.TraitDescriptionReach"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +12"
+          },
+          {
+            "label": "+7 (MAP -5)"
+          },
+          {
+            "label": "+2 (MAP -10)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      },
+      {
+        "slug": "tail-slap",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 12,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +12",
+        "totalModifier": 12,
+        "label": "Tail Slap",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "gfghVnfynTo3qDK9",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [
+          {
+            "tag": "grab",
+            "label": "PF2E.AttackEffectGrab"
+          }
+        ],
+        "item": {
+          "type": "melee",
+          "name": "Tail Slap",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "damageRolls": {
+              "H4cYlnobi105avly": {
+                "damage": "2d4+4",
+                "damageType": "bludgeoning",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 12
+            },
+            "attackEffects": {
+              "value": [
+                "grab"
+              ]
+            }
+          },
+          "_id": "gfghVnfynTo3qDK9",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          }
+        },
+        "weapon": {
+          "type": "melee",
+          "name": "Tail Slap",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "damageRolls": {
+              "H4cYlnobi105avly": {
+                "damage": "2d4+4",
+                "damageType": "bludgeoning",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 12
+            },
+            "attackEffects": {
+              "value": [
+                "grab"
+              ]
+            }
+          },
+          "_id": "gfghVnfynTo3qDK9",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +12"
+          },
+          {
+            "label": "+7 (MAP -5)"
+          },
+          {
+            "label": "+2 (MAP -10)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      }
+    ],
+    "spellcasting": {
+      "rituals": {
+        "dc": 0
       }
     }
   },
@@ -1118,22 +1538,27 @@
     "actorLink": false,
     "appendNumber": false,
     "prependAdjective": true,
+    "width": 2,
+    "height": 2,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/shaman%20token.png",
-      "scaleX": 1.3,
-      "scaleY": 1.3,
+      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/shaman%20token.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
       "offsetX": 0,
       "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1.3,
+      "scaleY": 1.3,
       "rotation": 0,
-      "tint": null
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
     },
-    "width": 1,
-    "height": 1,
+    "hexagonalShape": 0,
     "lockRotation": false,
     "rotation": 0,
     "alpha": 1,
     "disposition": -1,
-    "displayBars": 0,
+    "displayBars": 20,
     "bar1": {
       "attribute": "attributes.hp"
     },
@@ -1141,6 +1566,8 @@
       "attribute": null
     },
     "light": {
+      "negative": false,
+      "priority": 0,
       "alpha": 0.5,
       "angle": 360,
       "bright": 0,
@@ -1175,6 +1602,21 @@
       "contrast": 0
     },
     "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
     "flags": {
       "pf2e": {
         "linkToActorSize": true,
@@ -1183,13 +1625,1030 @@
     },
     "randomImg": false
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "QEOs4KcRqmSvCzP1",
+      "name": "Obsidian Longspear",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "reach"
+          ]
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "damageRolls": {
+          "GhHuUpsqtOWRiOLV": {
+            "damage": "2d6 + 5",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 12
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "gfghVnfynTo3qDK9",
+      "name": "Tail Slap",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "damageRolls": {
+          "H4cYlnobi105avly": {
+            "damage": "2d4 + 4",
+            "damageType": "bludgeoning",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 12
+        },
+        "attackEffects": {
+          "value": [
+            "grab"
+          ]
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "uK4WrxOfJbPTIqvC",
+      "name": "Primal Innate Spells",
+      "type": "spellcastingEntry",
+      "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null
+        },
+        "traits": {
+          "otherTags": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "ability": {
+          "value": "cha"
+        },
+        "spelldc": {
+          "value": 13,
+          "dc": 21
+        },
+        "tradition": {
+          "value": "primal"
+        },
+        "prepared": {
+          "value": "innate",
+          "flexible": false,
+          "validItems": null
+        },
+        "showSlotlessLevels": {
+          "value": true
+        },
+        "proficiency": {
+          "value": 1
+        },
+        "slots": {
+          "slot0": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot1": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot2": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot3": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot4": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot5": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot6": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot7": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot8": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot9": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot10": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          },
+          "slot11": {
+            "prepared": [],
+            "value": 0,
+            "max": 0
+          }
+        },
+        "autoHeightenLevel": {
+          "value": null
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "p7wNCA9sJuDURn8f",
+      "name": "Read Aura",
+      "type": "spell",
+      "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic} on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": "read-aura",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "cantrip",
+            "concentrate",
+            "detection",
+            "exploration",
+            "manipulate"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 object"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "1 minute"
+        },
+        "duration": {
+          "value": "",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": null,
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "uK4WrxOfJbPTIqvC",
+          "uses": {
+            "value": 1,
+            "max": 1
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "levels": {
+            "3": {
+              "target": {
+                "value": "10 objects"
+              }
+            },
+            "6": {
+              "target": {
+                "value": "any number of objects"
+              }
+            }
+          },
+          "type": "fixed"
+        },
+        "cast": {
+          "focusPoints": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA"
+        },
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA",
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "Cd8D1gQx1bwlGBxK",
+      "name": "Stabilize",
+      "type": "spell",
+      "img": "icons/magic/control/debuff-energy-hold-yellow.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Life energy shuts death's door. The target loses the @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} condition, though it remains @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} at 0 Hit Points.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": "stabilize",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "cantrip",
+            "concentrate",
+            "healing",
+            "manipulate",
+            "vitality"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "divine",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 dying creature"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": null,
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "uK4WrxOfJbPTIqvC",
+          "uses": {
+            "value": 1,
+            "max": 1
+          }
+        },
+        "counteraction": false,
+        "cast": {
+          "focusPoints": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.SnjhtQYexDtNDdEg"
+        },
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.SnjhtQYexDtNDdEg",
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "0m7nosnCqlNp0hy3",
+      "name": "Electric Arc",
+      "type": "spell",
+      "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>An arc of lightning leaps from one target to another. Each target takes 2d4 electricity damage with a basic Reflex save.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d4.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": "electric-arc",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "cantrip",
+            "concentrate",
+            "electricity",
+            "manipulate"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 or 2 creatures"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "",
+          "sustained": false
+        },
+        "damage": {
+          "0": {
+            "applyMod": false,
+            "category": null,
+            "formula": "2d4",
+            "kinds": {},
+            "materials": [],
+            "type": "electricity"
+          }
+        },
+        "defense": {
+          "save": {
+            "basic": true,
+            "statistic": "reflex"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "uK4WrxOfJbPTIqvC",
+          "uses": {
+            "value": 1,
+            "max": 1
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "damage": {
+            "0": "1d4"
+          },
+          "interval": 1,
+          "type": "interval"
+        },
+        "cast": {
+          "focusPoints": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf"
+        },
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.kBhaPuzLUSwS6vVf",
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "n9CFebN4Vnaf1QTZ",
+      "name": "Entangling Flora",
+      "type": "spell",
+      "img": "icons/magic/nature/root-vines-grow-brown.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Plants and fungi burst out or quickly grow, entangling creatures. All surfaces in the area are difficult terrain. Each round that a creature starts its turn in the area, it must attempt a Reflex save. On a failure, it takes a –10-foot circumstance penalty to its Speeds until it leaves the area, and on a critical failure, it's also @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round. Creatures can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape} to remove these effects.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.rjM25qfw5BKj9h97]{Spell Effect: Entangling Flora}</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": "entangling-flora",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "manipulate",
+            "plant",
+            "wood"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 2
+        },
+        "requirements": "",
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "120 feet"
+        },
+        "area": {
+          "details": "all squares in a 20-foot-radius burst that contain plants",
+          "type": "burst",
+          "value": 20
+        },
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "1 minute",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "reflex"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "uK4WrxOfJbPTIqvC",
+          "heightenedLevel": 2,
+          "uses": {
+            "value": 1,
+            "max": 1
+          }
+        },
+        "counteraction": false,
+        "cast": {
+          "focusPoints": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA"
+        },
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.J6vNvrUT3b1hx2iA",
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "iktQKS9GQDp8ozNu",
+      "name": "Charm",
+      "type": "spell",
+      "img": "systems/pf2e/icons/spells/charm.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes @UUID[Compendium.pf2e.conditionitems.Item.v66R7FdOf11l94im]{Friendly} toward you. If it was Friendly, it becomes @UUID[Compendium.pf2e.conditionitems.Item.v44P3WUcU1j0115l]{Helpful}. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": "charm",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "emotion",
+            "incapacitation",
+            "manipulate",
+            "mental",
+            "subtle"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "occult",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": "1 creature"
+        },
+        "range": {
+          "value": "30 feet"
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "1 hour",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": {
+          "save": {
+            "basic": false,
+            "statistic": "will"
+          }
+        },
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "uK4WrxOfJbPTIqvC",
+          "heightenedLevel": 1,
+          "uses": {
+            "value": 1,
+            "max": 1
+          }
+        },
+        "counteraction": false,
+        "heightening": {
+          "levels": {
+            "8": {
+              "target": {
+                "value": "10 creatures"
+              }
+            }
+          },
+          "type": "fixed"
+        },
+        "cast": {
+          "focusPoints": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6"
+        },
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6",
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "wcCbQZHMC4iuTbor",
+      "name": "Mystic Armor",
+      "type": "spell",
+      "img": "systems/pf2e/icons/spells/mage-armor.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>You ward yourself with shimmering magical energy, gaining a +1 item bonus to AC and a maximum Dexterity modifier of +5. While wearing <em>mystic armor</em>, you use your unarmored proficiency to calculate your AC.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.qkwb5DD3zmKwvbk0]{Spell Effect: Mystic Armor}</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (6th)</strong> The item bonus to AC increases to +2, and you gain a +1 item bonus to saving throws.</p>\n<p><strong>Heightened (8th)</strong> The item bonus to AC increases to +2, and you gain a +2 item bonus to saving throws.</p>\n<p><strong>Heightened (10th)</strong> The item bonus to AC increases to +3, and you gain a +3 item bonus to saving throws.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": "mystic-armor",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "concentrate",
+            "manipulate"
+          ],
+          "rarity": "common",
+          "traditions": [
+            "arcane",
+            "divine",
+            "occult",
+            "primal"
+          ]
+        },
+        "publication": {
+          "title": "Pathfinder Player Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "level": {
+          "value": 1
+        },
+        "requirements": "",
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": ""
+        },
+        "area": null,
+        "time": {
+          "value": "2"
+        },
+        "duration": {
+          "value": "until your next daily preparations",
+          "sustained": false
+        },
+        "damage": {},
+        "defense": null,
+        "cost": {
+          "value": ""
+        },
+        "location": {
+          "value": "uK4WrxOfJbPTIqvC",
+          "heightenedLevel": 1,
+          "uses": {
+            "value": 0,
+            "max": 1
+          }
+        },
+        "counteraction": false,
+        "cast": {
+          "focusPoints": 0
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.spells-srd.Item.aAbfKn8maGjJjk2W"
+        },
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.aAbfKn8maGjJjk2W",
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "Q4KQq2E02uQSGtjA",
+      "name": "Spirit Animal",
+      "type": "action",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The shaman has the service of a snake that it can direct, giving it two actions.</p><p>Other Abilities work together (Your snake holds your enemies with its coils, interfering with reactions. Until the start of your next turn, any creature your snake threatens can’t use reactions triggered by your actions unless its level is higher than yours.)</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.2.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "interaction",
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false,
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    }
+  ],
   "effects": [],
-  "folder": "vYEIZ7SbULhE8vs8",
-  "sort": 1200000,
+  "folder": null,
+  "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
     "pf2e": {
@@ -1205,7 +2664,16 @@
           "self:size:medium": true,
           "hp-remaining:10": true,
           "hp-percent:100": true,
-          "speed:land": true
+          "speed:land": true,
+          "self:signature:bfdea81d-a495-5323-8dc5-a108b9e07164": true,
+          "self:caster": true,
+          "self:caster:tradition:primal": true,
+          "self:trait:fey": true,
+          "self:size:3": true,
+          "self:size:large": true,
+          "hp-remaining:62": true,
+          "speed:climb": true,
+          "speed:swim": true
         }
       },
       "trackedItems": {},
@@ -1213,11 +2681,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1680164524262,
-    "modifiedTime": 1689104840256,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762245334,
+    "modifiedTime": 1723782888226,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
   }
 }

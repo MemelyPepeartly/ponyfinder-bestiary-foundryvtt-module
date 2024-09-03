@@ -1,0 +1,81 @@
+{
+  "_id": "onnoEPVU83cXLUtO",
+  "name": "Strongtail",
+  "type": "heritage",
+  "img": "systems/pf2e/icons/default-icons/heritage.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Your tail is a weapon. You can use it as an unarmed simple weapon that deals 1d8 bludgeoning damage with the backswing and reach traits. It can be used against adjacent foes.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d8"
+          }
+        },
+        "group": "brawling",
+        "img": "icons/commodities/biological/tail-scaled-green.webp",
+        "key": "Strike",
+        "label": "Tail",
+        "range": null,
+        "slug": "tail",
+        "traits": [
+          "unarmed",
+          "backswing",
+          "reach"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "ancestry": {
+      "name": "Reptilin",
+      "slug": "reptilin",
+      "uuid": "Compendium.world.ponyfinder-bestiary-ancestries.Item.0P4ZmCBvCiKysQ80"
+    }
+  },
+  "effects": [],
+  "folder": "alIER9SzPpVa3GHx",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762219536,
+    "modifiedTime": 1723785700901,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

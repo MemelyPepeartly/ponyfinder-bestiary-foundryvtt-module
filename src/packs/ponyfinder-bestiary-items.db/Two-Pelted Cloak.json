@@ -1,0 +1,124 @@
+{
+  "_id": "g9pGJUPonM0OKqh0",
+  "name": "Two-Pelted Cloak",
+  "type": "equipment",
+  "img": "icons/commodities/leather/fur-simple-brown.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>While invested, you can, as two actions cast @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form} at spell level 2 through it with a duration of until your next daily preparations. You become one specific animal, which cannot be retrained. You do not gain temporary hit points more than once an hour. As an action, you can remove the cloak in animal form to return to your humanoid form and end the spell.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "invested",
+        "primal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "heldOrStowed": 0.1,
+      "value": 0.1,
+      "per": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "brokenThreshold": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "pp": 0,
+        "gp": 0,
+        "sp": 0,
+        "cp": 0
+      },
+      "per": 1
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0,
+      "inSlot": false
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null,
+      "effects": []
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Object",
+        "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+        "data": {
+          "description": {
+            "value": "The nature of this cloak is unclear."
+          }
+        }
+      },
+      "misidentified": {},
+      "identified": {
+        "name": "Two-Pelted Cloak",
+        "img": "icons/commodities/leather/fur-simple-brown.webp",
+        "data": {
+          "description": {
+            "value": "<p>While invested, you can, as two actions cast @UUID[Compendium.pf2e.spells-srd.Item.wp09USMB3GIW1qbp]{Animal Form} at spell level 2 through it with a duration of until your next daily preparations. You become one specific animal, which cannot be retrained. You do not gain temporary hit points more than once an hour. As an action, you can remove the cloak in animal form to return to your humanoid form and end the spell.</p>"
+          }
+        }
+      }
+    },
+    "usage": {
+      "value": "worncloak",
+      "type": "worn",
+      "where": "cloak"
+    },
+    "subitems": [],
+    "stackGroup": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762226065,
+    "modifiedTime": 1723762591979,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

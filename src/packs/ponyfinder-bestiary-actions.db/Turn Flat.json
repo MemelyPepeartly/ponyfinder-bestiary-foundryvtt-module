@@ -1,0 +1,65 @@
+{
+  "_id": "ANWGIsaY7NPLTbX8",
+  "name": "Turn Flat",
+  "type": "action",
+  "img": "systems/pf2e/icons/default-icons/action.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The living art can turn against an incoming attack, becoming @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} to a specific creature and enjoying becoming @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and taking cover against that creature until the start of its next turn. It can only turn flat against multiple creatures if they are in the same or opposite directions.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "action"
+    },
+    "category": "defensive",
+    "actions": {
+      "value": 1
+    },
+    "deathNote": false,
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762139498,
+    "modifiedTime": 1723762139498,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

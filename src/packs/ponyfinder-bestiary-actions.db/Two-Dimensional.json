@@ -1,0 +1,65 @@
+{
+  "_id": "2Gk8X7zmGY7LCYk1",
+  "name": "Two-Dimensional",
+  "type": "action",
+  "img": "systems/pf2e/icons/default-icons/action.svg",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>The Living Art may move through any opening that is large enough to fit either the height, width, or length of the original creature. All Weapon attacks must make a @Check[flat|dc:11] to hit as weapons pass through its hollow points and against its outlandish two-dimensional nature</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "actionType": {
+      "value": "passive"
+    },
+    "category": "defensive",
+    "actions": {
+      "value": null
+    },
+    "deathNote": false,
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762140248,
+    "modifiedTime": 1723762140248,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

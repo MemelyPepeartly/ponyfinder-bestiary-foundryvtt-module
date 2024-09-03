@@ -1,30 +1,32 @@
 {
-  "_id": "QceBvRnWc536bqe6",
+  "_id": "X1O2Bq4pm9Vz13la",
   "name": "Skeletal Pony Slinger",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderSkeleton.webp",
   "type": "npc",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderSkeleton.png",
   "system": {
     "attributes": {
       "hp": {
         "slug": "hp",
         "_modifiers": [],
-        "breakdown": "Base Max HP 10",
+        "breakdown": "Base Max HP 35",
         "totalModifier": 0,
-        "value": 10,
+        "value": 35,
         "temp": 0,
-        "max": 10,
+        "max": 35,
         "details": "",
-        "negativeHealing": false,
+        "negativeHealing": true,
         "unrecoverable": 0,
-        "base": 10
+        "base": 35,
+        "adjustedHigher": false,
+        "adjustedLower": false
       },
       "speed": {
         "slug": "land-speed",
         "_modifiers": [],
-        "breakdown": "Base Land Speed 25",
+        "breakdown": "Base Land Speed 30",
         "totalModifier": 0,
-        "total": 25,
-        "value": 25,
+        "total": 30,
+        "value": 30,
         "otherSpeeds": [],
         "details": "",
         "type": "land",
@@ -33,11 +35,11 @@
       "ac": {
         "slug": "ac",
         "label": "PF2E.ArmorClassLabel",
-        "value": 10,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 17,
+        "totalModifier": 7,
+        "dc": 17,
         "attribute": "dex",
-        "breakdown": "Base DC 10, Modifier +0",
+        "breakdown": "Base DC 10, Modifier +7",
         "modifiers": [
           {
             "slug": "base",
@@ -46,7 +48,7 @@
               "all",
               "dex-based"
             ],
-            "modifier": 0,
+            "modifier": 7,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -69,9 +71,1040 @@
       "allSaves": {
         "value": ""
       },
-      "immunities": [],
+      "immunities": [
+        {
+          "type": "death-effects",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "auditory": "PF2E.Damage.IWR.Type.auditory",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "blinded": "PF2E.Damage.IWR.Type.blinded",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "clumsy": "PF2E.Damage.IWR.Type.clumsy",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "confused": "PF2E.Damage.IWR.Type.confused",
+            "controlled": "PF2E.Damage.IWR.Type.controlled",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "curse": "PF2E.Damage.IWR.Type.curse",
+            "custom": "",
+            "dazzled": "PF2E.Damage.IWR.Type.dazzled",
+            "deafened": "PF2E.Damage.IWR.Type.deafened",
+            "death-effects": "PF2E.Damage.IWR.Type.death-effects",
+            "detection": "PF2E.Damage.IWR.Type.detection",
+            "disease": "PF2E.Damage.IWR.Type.disease",
+            "doomed": "PF2E.Damage.IWR.Type.doomed",
+            "drained": "PF2E.Damage.IWR.Type.drained",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "emotion": "PF2E.Damage.IWR.Type.emotion",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "enfeebled": "PF2E.Damage.IWR.Type.enfeebled",
+            "fascinated": "PF2E.Damage.IWR.Type.fascinated",
+            "fatigued": "PF2E.Damage.IWR.Type.fatigued",
+            "fear-effects": "PF2E.Damage.IWR.Type.fear-effects",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "fleeing": "PF2E.Damage.IWR.Type.fleeing",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "frightened": "PF2E.Damage.IWR.Type.frightened",
+            "grabbed": "PF2E.Damage.IWR.Type.grabbed",
+            "healing": "PF2E.Damage.IWR.Type.healing",
+            "illusion": "PF2E.Damage.IWR.Type.illusion",
+            "immobilized": "PF2E.Damage.IWR.Type.immobilized",
+            "inhaled": "PF2E.Damage.IWR.Type.inhaled",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magic": "PF2E.Damage.IWR.Type.magic",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.IWR.Type.metal",
+            "misfortune-effects": "PF2E.Damage.IWR.Type.misfortune-effects",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "object-immunities": "PF2E.Damage.IWR.Type.object-immunities",
+            "off-guard": "PF2E.Damage.IWR.Type.off-guard",
+            "olfactory": "PF2E.Damage.IWR.Type.olfactory",
+            "paralyzed": "PF2E.Damage.IWR.Type.paralyzed",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "petrified": "PF2E.Damage.IWR.Type.petrified",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "polymorph": "PF2E.Damage.IWR.Type.polymorph",
+            "possession": "PF2E.Damage.IWR.Type.possession",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "prone": "PF2E.Damage.IWR.Type.prone",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "restrained": "PF2E.Damage.IWR.Type.restrained",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "scrying": "PF2E.Damage.IWR.Type.scrying",
+            "sickened": "PF2E.Damage.IWR.Type.sickened",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sleep": "PF2E.Damage.IWR.Type.sleep",
+            "slowed": "PF2E.Damage.IWR.Type.slowed",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spell-deflection": "PF2E.Damage.IWR.Type.spell-deflection",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "stunned": "PF2E.Damage.IWR.Type.stunned",
+            "stupefied": "PF2E.Damage.IWR.Type.stupefied",
+            "swarm-attacks": "PF2E.Damage.IWR.Type.swarm-attacks",
+            "swarm-mind": "PF2E.Damage.IWR.Type.swarm-mind",
+            "trip": "PF2E.Damage.IWR.Type.trip",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "unconscious": "PF2E.Damage.IWR.Type.unconscious",
+            "visual": "PF2E.Damage.IWR.Type.visual",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "wood": "PF2E.Damage.IWR.Type.wood",
+            "wounded": "PF2E.Damage.IWR.Type.wounded"
+          }
+        },
+        {
+          "type": "disease",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "auditory": "PF2E.Damage.IWR.Type.auditory",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "blinded": "PF2E.Damage.IWR.Type.blinded",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "clumsy": "PF2E.Damage.IWR.Type.clumsy",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "confused": "PF2E.Damage.IWR.Type.confused",
+            "controlled": "PF2E.Damage.IWR.Type.controlled",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "curse": "PF2E.Damage.IWR.Type.curse",
+            "custom": "",
+            "dazzled": "PF2E.Damage.IWR.Type.dazzled",
+            "deafened": "PF2E.Damage.IWR.Type.deafened",
+            "death-effects": "PF2E.Damage.IWR.Type.death-effects",
+            "detection": "PF2E.Damage.IWR.Type.detection",
+            "disease": "PF2E.Damage.IWR.Type.disease",
+            "doomed": "PF2E.Damage.IWR.Type.doomed",
+            "drained": "PF2E.Damage.IWR.Type.drained",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "emotion": "PF2E.Damage.IWR.Type.emotion",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "enfeebled": "PF2E.Damage.IWR.Type.enfeebled",
+            "fascinated": "PF2E.Damage.IWR.Type.fascinated",
+            "fatigued": "PF2E.Damage.IWR.Type.fatigued",
+            "fear-effects": "PF2E.Damage.IWR.Type.fear-effects",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "fleeing": "PF2E.Damage.IWR.Type.fleeing",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "frightened": "PF2E.Damage.IWR.Type.frightened",
+            "grabbed": "PF2E.Damage.IWR.Type.grabbed",
+            "healing": "PF2E.Damage.IWR.Type.healing",
+            "illusion": "PF2E.Damage.IWR.Type.illusion",
+            "immobilized": "PF2E.Damage.IWR.Type.immobilized",
+            "inhaled": "PF2E.Damage.IWR.Type.inhaled",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magic": "PF2E.Damage.IWR.Type.magic",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.IWR.Type.metal",
+            "misfortune-effects": "PF2E.Damage.IWR.Type.misfortune-effects",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "object-immunities": "PF2E.Damage.IWR.Type.object-immunities",
+            "off-guard": "PF2E.Damage.IWR.Type.off-guard",
+            "olfactory": "PF2E.Damage.IWR.Type.olfactory",
+            "paralyzed": "PF2E.Damage.IWR.Type.paralyzed",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "petrified": "PF2E.Damage.IWR.Type.petrified",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "polymorph": "PF2E.Damage.IWR.Type.polymorph",
+            "possession": "PF2E.Damage.IWR.Type.possession",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "prone": "PF2E.Damage.IWR.Type.prone",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "restrained": "PF2E.Damage.IWR.Type.restrained",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "scrying": "PF2E.Damage.IWR.Type.scrying",
+            "sickened": "PF2E.Damage.IWR.Type.sickened",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sleep": "PF2E.Damage.IWR.Type.sleep",
+            "slowed": "PF2E.Damage.IWR.Type.slowed",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spell-deflection": "PF2E.Damage.IWR.Type.spell-deflection",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "stunned": "PF2E.Damage.IWR.Type.stunned",
+            "stupefied": "PF2E.Damage.IWR.Type.stupefied",
+            "swarm-attacks": "PF2E.Damage.IWR.Type.swarm-attacks",
+            "swarm-mind": "PF2E.Damage.IWR.Type.swarm-mind",
+            "trip": "PF2E.Damage.IWR.Type.trip",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "unconscious": "PF2E.Damage.IWR.Type.unconscious",
+            "visual": "PF2E.Damage.IWR.Type.visual",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "wood": "PF2E.Damage.IWR.Type.wood",
+            "wounded": "PF2E.Damage.IWR.Type.wounded"
+          }
+        },
+        {
+          "type": "mental",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "auditory": "PF2E.Damage.IWR.Type.auditory",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "blinded": "PF2E.Damage.IWR.Type.blinded",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "clumsy": "PF2E.Damage.IWR.Type.clumsy",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "confused": "PF2E.Damage.IWR.Type.confused",
+            "controlled": "PF2E.Damage.IWR.Type.controlled",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "curse": "PF2E.Damage.IWR.Type.curse",
+            "custom": "",
+            "dazzled": "PF2E.Damage.IWR.Type.dazzled",
+            "deafened": "PF2E.Damage.IWR.Type.deafened",
+            "death-effects": "PF2E.Damage.IWR.Type.death-effects",
+            "detection": "PF2E.Damage.IWR.Type.detection",
+            "disease": "PF2E.Damage.IWR.Type.disease",
+            "doomed": "PF2E.Damage.IWR.Type.doomed",
+            "drained": "PF2E.Damage.IWR.Type.drained",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "emotion": "PF2E.Damage.IWR.Type.emotion",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "enfeebled": "PF2E.Damage.IWR.Type.enfeebled",
+            "fascinated": "PF2E.Damage.IWR.Type.fascinated",
+            "fatigued": "PF2E.Damage.IWR.Type.fatigued",
+            "fear-effects": "PF2E.Damage.IWR.Type.fear-effects",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "fleeing": "PF2E.Damage.IWR.Type.fleeing",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "frightened": "PF2E.Damage.IWR.Type.frightened",
+            "grabbed": "PF2E.Damage.IWR.Type.grabbed",
+            "healing": "PF2E.Damage.IWR.Type.healing",
+            "illusion": "PF2E.Damage.IWR.Type.illusion",
+            "immobilized": "PF2E.Damage.IWR.Type.immobilized",
+            "inhaled": "PF2E.Damage.IWR.Type.inhaled",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magic": "PF2E.Damage.IWR.Type.magic",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.IWR.Type.metal",
+            "misfortune-effects": "PF2E.Damage.IWR.Type.misfortune-effects",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "object-immunities": "PF2E.Damage.IWR.Type.object-immunities",
+            "off-guard": "PF2E.Damage.IWR.Type.off-guard",
+            "olfactory": "PF2E.Damage.IWR.Type.olfactory",
+            "paralyzed": "PF2E.Damage.IWR.Type.paralyzed",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "petrified": "PF2E.Damage.IWR.Type.petrified",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "polymorph": "PF2E.Damage.IWR.Type.polymorph",
+            "possession": "PF2E.Damage.IWR.Type.possession",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "prone": "PF2E.Damage.IWR.Type.prone",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "restrained": "PF2E.Damage.IWR.Type.restrained",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "scrying": "PF2E.Damage.IWR.Type.scrying",
+            "sickened": "PF2E.Damage.IWR.Type.sickened",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sleep": "PF2E.Damage.IWR.Type.sleep",
+            "slowed": "PF2E.Damage.IWR.Type.slowed",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spell-deflection": "PF2E.Damage.IWR.Type.spell-deflection",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "stunned": "PF2E.Damage.IWR.Type.stunned",
+            "stupefied": "PF2E.Damage.IWR.Type.stupefied",
+            "swarm-attacks": "PF2E.Damage.IWR.Type.swarm-attacks",
+            "swarm-mind": "PF2E.Damage.IWR.Type.swarm-mind",
+            "trip": "PF2E.Damage.IWR.Type.trip",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "unconscious": "PF2E.Damage.IWR.Type.unconscious",
+            "visual": "PF2E.Damage.IWR.Type.visual",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "wood": "PF2E.Damage.IWR.Type.wood",
+            "wounded": "PF2E.Damage.IWR.Type.wounded"
+          }
+        },
+        {
+          "type": "paralyzed",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "auditory": "PF2E.Damage.IWR.Type.auditory",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "blinded": "PF2E.Damage.IWR.Type.blinded",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "clumsy": "PF2E.Damage.IWR.Type.clumsy",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "confused": "PF2E.Damage.IWR.Type.confused",
+            "controlled": "PF2E.Damage.IWR.Type.controlled",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "curse": "PF2E.Damage.IWR.Type.curse",
+            "custom": "",
+            "dazzled": "PF2E.Damage.IWR.Type.dazzled",
+            "deafened": "PF2E.Damage.IWR.Type.deafened",
+            "death-effects": "PF2E.Damage.IWR.Type.death-effects",
+            "detection": "PF2E.Damage.IWR.Type.detection",
+            "disease": "PF2E.Damage.IWR.Type.disease",
+            "doomed": "PF2E.Damage.IWR.Type.doomed",
+            "drained": "PF2E.Damage.IWR.Type.drained",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "emotion": "PF2E.Damage.IWR.Type.emotion",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "enfeebled": "PF2E.Damage.IWR.Type.enfeebled",
+            "fascinated": "PF2E.Damage.IWR.Type.fascinated",
+            "fatigued": "PF2E.Damage.IWR.Type.fatigued",
+            "fear-effects": "PF2E.Damage.IWR.Type.fear-effects",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "fleeing": "PF2E.Damage.IWR.Type.fleeing",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "frightened": "PF2E.Damage.IWR.Type.frightened",
+            "grabbed": "PF2E.Damage.IWR.Type.grabbed",
+            "healing": "PF2E.Damage.IWR.Type.healing",
+            "illusion": "PF2E.Damage.IWR.Type.illusion",
+            "immobilized": "PF2E.Damage.IWR.Type.immobilized",
+            "inhaled": "PF2E.Damage.IWR.Type.inhaled",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magic": "PF2E.Damage.IWR.Type.magic",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.IWR.Type.metal",
+            "misfortune-effects": "PF2E.Damage.IWR.Type.misfortune-effects",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "object-immunities": "PF2E.Damage.IWR.Type.object-immunities",
+            "off-guard": "PF2E.Damage.IWR.Type.off-guard",
+            "olfactory": "PF2E.Damage.IWR.Type.olfactory",
+            "paralyzed": "PF2E.Damage.IWR.Type.paralyzed",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "petrified": "PF2E.Damage.IWR.Type.petrified",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "polymorph": "PF2E.Damage.IWR.Type.polymorph",
+            "possession": "PF2E.Damage.IWR.Type.possession",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "prone": "PF2E.Damage.IWR.Type.prone",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "restrained": "PF2E.Damage.IWR.Type.restrained",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "scrying": "PF2E.Damage.IWR.Type.scrying",
+            "sickened": "PF2E.Damage.IWR.Type.sickened",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sleep": "PF2E.Damage.IWR.Type.sleep",
+            "slowed": "PF2E.Damage.IWR.Type.slowed",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spell-deflection": "PF2E.Damage.IWR.Type.spell-deflection",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "stunned": "PF2E.Damage.IWR.Type.stunned",
+            "stupefied": "PF2E.Damage.IWR.Type.stupefied",
+            "swarm-attacks": "PF2E.Damage.IWR.Type.swarm-attacks",
+            "swarm-mind": "PF2E.Damage.IWR.Type.swarm-mind",
+            "trip": "PF2E.Damage.IWR.Type.trip",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "unconscious": "PF2E.Damage.IWR.Type.unconscious",
+            "visual": "PF2E.Damage.IWR.Type.visual",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "wood": "PF2E.Damage.IWR.Type.wood",
+            "wounded": "PF2E.Damage.IWR.Type.wounded"
+          }
+        },
+        {
+          "type": "poison",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "auditory": "PF2E.Damage.IWR.Type.auditory",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "blinded": "PF2E.Damage.IWR.Type.blinded",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "clumsy": "PF2E.Damage.IWR.Type.clumsy",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "confused": "PF2E.Damage.IWR.Type.confused",
+            "controlled": "PF2E.Damage.IWR.Type.controlled",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "curse": "PF2E.Damage.IWR.Type.curse",
+            "custom": "",
+            "dazzled": "PF2E.Damage.IWR.Type.dazzled",
+            "deafened": "PF2E.Damage.IWR.Type.deafened",
+            "death-effects": "PF2E.Damage.IWR.Type.death-effects",
+            "detection": "PF2E.Damage.IWR.Type.detection",
+            "disease": "PF2E.Damage.IWR.Type.disease",
+            "doomed": "PF2E.Damage.IWR.Type.doomed",
+            "drained": "PF2E.Damage.IWR.Type.drained",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "emotion": "PF2E.Damage.IWR.Type.emotion",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "enfeebled": "PF2E.Damage.IWR.Type.enfeebled",
+            "fascinated": "PF2E.Damage.IWR.Type.fascinated",
+            "fatigued": "PF2E.Damage.IWR.Type.fatigued",
+            "fear-effects": "PF2E.Damage.IWR.Type.fear-effects",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "fleeing": "PF2E.Damage.IWR.Type.fleeing",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "frightened": "PF2E.Damage.IWR.Type.frightened",
+            "grabbed": "PF2E.Damage.IWR.Type.grabbed",
+            "healing": "PF2E.Damage.IWR.Type.healing",
+            "illusion": "PF2E.Damage.IWR.Type.illusion",
+            "immobilized": "PF2E.Damage.IWR.Type.immobilized",
+            "inhaled": "PF2E.Damage.IWR.Type.inhaled",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magic": "PF2E.Damage.IWR.Type.magic",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.IWR.Type.metal",
+            "misfortune-effects": "PF2E.Damage.IWR.Type.misfortune-effects",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "object-immunities": "PF2E.Damage.IWR.Type.object-immunities",
+            "off-guard": "PF2E.Damage.IWR.Type.off-guard",
+            "olfactory": "PF2E.Damage.IWR.Type.olfactory",
+            "paralyzed": "PF2E.Damage.IWR.Type.paralyzed",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "petrified": "PF2E.Damage.IWR.Type.petrified",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "polymorph": "PF2E.Damage.IWR.Type.polymorph",
+            "possession": "PF2E.Damage.IWR.Type.possession",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "prone": "PF2E.Damage.IWR.Type.prone",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "restrained": "PF2E.Damage.IWR.Type.restrained",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "scrying": "PF2E.Damage.IWR.Type.scrying",
+            "sickened": "PF2E.Damage.IWR.Type.sickened",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sleep": "PF2E.Damage.IWR.Type.sleep",
+            "slowed": "PF2E.Damage.IWR.Type.slowed",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spell-deflection": "PF2E.Damage.IWR.Type.spell-deflection",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "stunned": "PF2E.Damage.IWR.Type.stunned",
+            "stupefied": "PF2E.Damage.IWR.Type.stupefied",
+            "swarm-attacks": "PF2E.Damage.IWR.Type.swarm-attacks",
+            "swarm-mind": "PF2E.Damage.IWR.Type.swarm-mind",
+            "trip": "PF2E.Damage.IWR.Type.trip",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "unconscious": "PF2E.Damage.IWR.Type.unconscious",
+            "visual": "PF2E.Damage.IWR.Type.visual",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "wood": "PF2E.Damage.IWR.Type.wood",
+            "wounded": "PF2E.Damage.IWR.Type.wounded"
+          }
+        },
+        {
+          "type": "unconscious",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "auditory": "PF2E.Damage.IWR.Type.auditory",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "blinded": "PF2E.Damage.IWR.Type.blinded",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "clumsy": "PF2E.Damage.IWR.Type.clumsy",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "confused": "PF2E.Damage.IWR.Type.confused",
+            "controlled": "PF2E.Damage.IWR.Type.controlled",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "curse": "PF2E.Damage.IWR.Type.curse",
+            "custom": "",
+            "dazzled": "PF2E.Damage.IWR.Type.dazzled",
+            "deafened": "PF2E.Damage.IWR.Type.deafened",
+            "death-effects": "PF2E.Damage.IWR.Type.death-effects",
+            "detection": "PF2E.Damage.IWR.Type.detection",
+            "disease": "PF2E.Damage.IWR.Type.disease",
+            "doomed": "PF2E.Damage.IWR.Type.doomed",
+            "drained": "PF2E.Damage.IWR.Type.drained",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "emotion": "PF2E.Damage.IWR.Type.emotion",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "enfeebled": "PF2E.Damage.IWR.Type.enfeebled",
+            "fascinated": "PF2E.Damage.IWR.Type.fascinated",
+            "fatigued": "PF2E.Damage.IWR.Type.fatigued",
+            "fear-effects": "PF2E.Damage.IWR.Type.fear-effects",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "fleeing": "PF2E.Damage.IWR.Type.fleeing",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "frightened": "PF2E.Damage.IWR.Type.frightened",
+            "grabbed": "PF2E.Damage.IWR.Type.grabbed",
+            "healing": "PF2E.Damage.IWR.Type.healing",
+            "illusion": "PF2E.Damage.IWR.Type.illusion",
+            "immobilized": "PF2E.Damage.IWR.Type.immobilized",
+            "inhaled": "PF2E.Damage.IWR.Type.inhaled",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magic": "PF2E.Damage.IWR.Type.magic",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.IWR.Type.metal",
+            "misfortune-effects": "PF2E.Damage.IWR.Type.misfortune-effects",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "object-immunities": "PF2E.Damage.IWR.Type.object-immunities",
+            "off-guard": "PF2E.Damage.IWR.Type.off-guard",
+            "olfactory": "PF2E.Damage.IWR.Type.olfactory",
+            "paralyzed": "PF2E.Damage.IWR.Type.paralyzed",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "petrified": "PF2E.Damage.IWR.Type.petrified",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "polymorph": "PF2E.Damage.IWR.Type.polymorph",
+            "possession": "PF2E.Damage.IWR.Type.possession",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "prone": "PF2E.Damage.IWR.Type.prone",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "restrained": "PF2E.Damage.IWR.Type.restrained",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "scrying": "PF2E.Damage.IWR.Type.scrying",
+            "sickened": "PF2E.Damage.IWR.Type.sickened",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sleep": "PF2E.Damage.IWR.Type.sleep",
+            "slowed": "PF2E.Damage.IWR.Type.slowed",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spell-deflection": "PF2E.Damage.IWR.Type.spell-deflection",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "stunned": "PF2E.Damage.IWR.Type.stunned",
+            "stupefied": "PF2E.Damage.IWR.Type.stupefied",
+            "swarm-attacks": "PF2E.Damage.IWR.Type.swarm-attacks",
+            "swarm-mind": "PF2E.Damage.IWR.Type.swarm-mind",
+            "trip": "PF2E.Damage.IWR.Type.trip",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "unconscious": "PF2E.Damage.IWR.Type.unconscious",
+            "visual": "PF2E.Damage.IWR.Type.visual",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "wood": "PF2E.Damage.IWR.Type.wood",
+            "wounded": "PF2E.Damage.IWR.Type.wounded"
+          }
+        }
+      ],
       "weaknesses": [],
-      "resistances": [],
+      "resistances": [
+        {
+          "type": "cold",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "all-damage": "PF2E.Damage.IWR.Type.all-damage",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "axes": "PF2E.Damage.IWR.Type.axes",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "custom": "",
+            "damage-from-spells": "PF2E.Damage.IWR.Type.damage-from-spells",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "ghost-touch": "PF2E.Damage.IWR.Type.ghost-touch",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magical": "PF2E.Damage.IWR.Type.magical",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.RollFlavor.metal",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal": "PF2E.Damage.IWR.Type.nonlethal",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "protean-anatomy": "PF2E.Damage.IWR.Type.protean-anatomy",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "salt": "PF2E.Damage.IWR.Type.salt",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spells": "PF2E.Damage.IWR.Type.spells",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "vorpal": "PF2E.Damage.IWR.Type.vorpal",
+            "vorpal-adamantine": "PF2E.Damage.IWR.Type.vorpal-adamantine",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "weapons": "PF2E.Damage.IWR.Type.weapons",
+            "weapons-shedding-bright-light": "PF2E.Damage.IWR.Type.weapons-shedding-bright-light",
+            "wood": "PF2E.Damage.IWR.Type.wood"
+          },
+          "value": 5,
+          "doubleVs": []
+        },
+        {
+          "type": "electricity",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "all-damage": "PF2E.Damage.IWR.Type.all-damage",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "axes": "PF2E.Damage.IWR.Type.axes",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "custom": "",
+            "damage-from-spells": "PF2E.Damage.IWR.Type.damage-from-spells",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "ghost-touch": "PF2E.Damage.IWR.Type.ghost-touch",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magical": "PF2E.Damage.IWR.Type.magical",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.RollFlavor.metal",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal": "PF2E.Damage.IWR.Type.nonlethal",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "protean-anatomy": "PF2E.Damage.IWR.Type.protean-anatomy",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "salt": "PF2E.Damage.IWR.Type.salt",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spells": "PF2E.Damage.IWR.Type.spells",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "vorpal": "PF2E.Damage.IWR.Type.vorpal",
+            "vorpal-adamantine": "PF2E.Damage.IWR.Type.vorpal-adamantine",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "weapons": "PF2E.Damage.IWR.Type.weapons",
+            "weapons-shedding-bright-light": "PF2E.Damage.IWR.Type.weapons-shedding-bright-light",
+            "wood": "PF2E.Damage.IWR.Type.wood"
+          },
+          "value": 5,
+          "doubleVs": []
+        },
+        {
+          "type": "fire",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "all-damage": "PF2E.Damage.IWR.Type.all-damage",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "axes": "PF2E.Damage.IWR.Type.axes",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "custom": "",
+            "damage-from-spells": "PF2E.Damage.IWR.Type.damage-from-spells",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "ghost-touch": "PF2E.Damage.IWR.Type.ghost-touch",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magical": "PF2E.Damage.IWR.Type.magical",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.RollFlavor.metal",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal": "PF2E.Damage.IWR.Type.nonlethal",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "protean-anatomy": "PF2E.Damage.IWR.Type.protean-anatomy",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "salt": "PF2E.Damage.IWR.Type.salt",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spells": "PF2E.Damage.IWR.Type.spells",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "vorpal": "PF2E.Damage.IWR.Type.vorpal",
+            "vorpal-adamantine": "PF2E.Damage.IWR.Type.vorpal-adamantine",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "weapons": "PF2E.Damage.IWR.Type.weapons",
+            "weapons-shedding-bright-light": "PF2E.Damage.IWR.Type.weapons-shedding-bright-light",
+            "wood": "PF2E.Damage.IWR.Type.wood"
+          },
+          "value": 5,
+          "doubleVs": []
+        },
+        {
+          "type": "piercing",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "all-damage": "PF2E.Damage.IWR.Type.all-damage",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "axes": "PF2E.Damage.IWR.Type.axes",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "custom": "",
+            "damage-from-spells": "PF2E.Damage.IWR.Type.damage-from-spells",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "ghost-touch": "PF2E.Damage.IWR.Type.ghost-touch",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magical": "PF2E.Damage.IWR.Type.magical",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.RollFlavor.metal",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal": "PF2E.Damage.IWR.Type.nonlethal",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "protean-anatomy": "PF2E.Damage.IWR.Type.protean-anatomy",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "salt": "PF2E.Damage.IWR.Type.salt",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spells": "PF2E.Damage.IWR.Type.spells",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "vorpal": "PF2E.Damage.IWR.Type.vorpal",
+            "vorpal-adamantine": "PF2E.Damage.IWR.Type.vorpal-adamantine",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "weapons": "PF2E.Damage.IWR.Type.weapons",
+            "weapons-shedding-bright-light": "PF2E.Damage.IWR.Type.weapons-shedding-bright-light",
+            "wood": "PF2E.Damage.IWR.Type.wood"
+          },
+          "value": 5,
+          "doubleVs": []
+        },
+        {
+          "type": "slashing",
+          "exceptions": [],
+          "definition": null,
+          "source": null,
+          "typeLabels": {
+            "abysium": "PF2E.Damage.IWR.Type.abysium",
+            "adamantine": "PF2E.Damage.IWR.Type.adamantine",
+            "cold-iron": "PF2E.Damage.IWR.Type.cold-iron",
+            "dawnsilver": "PF2E.Damage.IWR.Type.dawnsilver",
+            "djezet": "PF2E.Damage.IWR.Type.djezet",
+            "duskwood": "PF2E.Damage.IWR.Type.duskwood",
+            "inubrix": "PF2E.Damage.IWR.Type.inubrix",
+            "noqual": "PF2E.Damage.IWR.Type.noqual",
+            "orichalcum": "PF2E.Damage.IWR.Type.orichalcum",
+            "siccatite": "PF2E.Damage.IWR.Type.siccatite",
+            "silver": "PF2E.Damage.IWR.Type.silver",
+            "holy": "PF2E.Damage.IWR.Type.holy",
+            "unholy": "PF2E.Damage.IWR.Type.unholy",
+            "arcane": "PF2E.Damage.IWR.Type.arcane",
+            "divine": "PF2E.Damage.IWR.Type.divine",
+            "occult": "PF2E.Damage.IWR.Type.occult",
+            "primal": "PF2E.Damage.IWR.Type.primal",
+            "acid": "PF2E.Damage.RollFlavor.acid",
+            "air": "PF2E.Damage.RollFlavor.air",
+            "alchemical": "PF2E.Damage.IWR.Type.alchemical",
+            "all-damage": "PF2E.Damage.IWR.Type.all-damage",
+            "area-damage": "PF2E.Damage.IWR.Type.area-damage",
+            "axes": "PF2E.Damage.IWR.Type.axes",
+            "bleed": "PF2E.Damage.RollFlavor.bleed",
+            "bludgeoning": "PF2E.Damage.RollFlavor.bludgeoning",
+            "cold": "PF2E.Damage.RollFlavor.cold",
+            "critical-hits": "PF2E.Damage.IWR.Type.critical-hits",
+            "custom": "",
+            "damage-from-spells": "PF2E.Damage.IWR.Type.damage-from-spells",
+            "earth": "PF2E.Damage.RollFlavor.earth",
+            "electricity": "PF2E.Damage.RollFlavor.electricity",
+            "energy": "PF2E.Damage.IWR.Type.energy",
+            "fire": "PF2E.Damage.RollFlavor.fire",
+            "force": "PF2E.Damage.RollFlavor.force",
+            "ghost-touch": "PF2E.Damage.IWR.Type.ghost-touch",
+            "light": "PF2E.Damage.IWR.Type.light",
+            "magical": "PF2E.Damage.IWR.Type.magical",
+            "mental": "PF2E.Damage.RollFlavor.mental",
+            "metal": "PF2E.Damage.RollFlavor.metal",
+            "non-magical": "PF2E.Damage.IWR.Type.non-magical",
+            "nonlethal": "PF2E.Damage.IWR.Type.nonlethal",
+            "nonlethal-attacks": "PF2E.Damage.IWR.Type.nonlethal-attacks",
+            "persistent-damage": "PF2E.Damage.IWR.Type.persistent-damage",
+            "physical": "PF2E.Damage.IWR.Type.physical",
+            "piercing": "PF2E.Damage.RollFlavor.piercing",
+            "plant": "PF2E.Damage.IWR.Type.plant",
+            "poison": "PF2E.Damage.RollFlavor.poison",
+            "precision": "PF2E.Damage.RollFlavor.precision",
+            "protean-anatomy": "PF2E.Damage.IWR.Type.protean-anatomy",
+            "radiation": "PF2E.Damage.IWR.Type.radiation",
+            "salt": "PF2E.Damage.IWR.Type.salt",
+            "salt-water": "PF2E.Damage.IWR.Type.salt-water",
+            "slashing": "PF2E.Damage.RollFlavor.slashing",
+            "sonic": "PF2E.Damage.RollFlavor.sonic",
+            "spells": "PF2E.Damage.IWR.Type.spells",
+            "spirit": "PF2E.Damage.RollFlavor.spirit",
+            "unarmed-attacks": "PF2E.Damage.IWR.Type.unarmed-attacks",
+            "vitality": "PF2E.Damage.RollFlavor.vitality",
+            "void": "PF2E.Damage.RollFlavor.void",
+            "vorpal": "PF2E.Damage.IWR.Type.vorpal",
+            "vorpal-adamantine": "PF2E.Damage.IWR.Type.vorpal-adamantine",
+            "water": "PF2E.Damage.IWR.Type.water",
+            "weapons": "PF2E.Damage.IWR.Type.weapons",
+            "weapons-shedding-bright-light": "PF2E.Damage.IWR.Type.weapons-shedding-bright-light",
+            "wood": "PF2E.Damage.IWR.Type.wood"
+          },
+          "value": 5,
+          "doubleVs": []
+        }
+      ],
       "flanking": {
         "canFlank": true,
         "canGangUp": [],
@@ -125,11 +1158,11 @@
     "initiative": {
       "slug": "initiative",
       "label": "Perception",
-      "value": 0,
-      "totalModifier": 0,
-      "dc": 10,
+      "value": 8,
+      "totalModifier": 8,
+      "dc": 18,
       "attribute": "wis",
-      "breakdown": "Modifier +0",
+      "breakdown": "Modifier +8",
       "modifiers": [
         {
           "slug": "base",
@@ -140,7 +1173,7 @@
             "all",
             "initiative"
           ],
-          "modifier": 0,
+          "modifier": 8,
           "type": "untyped",
           "ability": null,
           "adjustments": [],
@@ -190,36 +1223,36 @@
       }
     },
     "_migration": {
-      "version": 0.925,
+      "version": 0.932,
       "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
+        "schema": 0.925,
+        "foundry": "12.330",
+        "system": "6.2.1"
       }
     },
     "abilities": {
       "str": {
-        "mod": 0,
+        "mod": 3,
         "label": "PF2E.AbilityStr",
         "shortLabel": "PF2E.AbilityId.str"
       },
       "dex": {
-        "mod": 0,
+        "mod": 2,
         "label": "PF2E.AbilityDex",
         "shortLabel": "PF2E.AbilityId.dex"
       },
       "con": {
-        "mod": 0,
+        "mod": 3,
         "label": "PF2E.AbilityCon",
         "shortLabel": "PF2E.AbilityId.con"
       },
       "int": {
-        "mod": 0,
+        "mod": 1,
         "label": "PF2E.AbilityInt",
         "shortLabel": "PF2E.AbilityId.int"
       },
       "wis": {
-        "mod": 0,
+        "mod": 1,
         "label": "PF2E.AbilityWis",
         "shortLabel": "PF2E.AbilityId.wis"
       },
@@ -232,11 +1265,11 @@
     "perception": {
       "slug": "perception",
       "label": "Perception",
-      "value": 0,
-      "totalModifier": 0,
-      "dc": 10,
+      "value": 8,
+      "totalModifier": 8,
+      "dc": 18,
       "attribute": "wis",
-      "breakdown": "Modifier +0",
+      "breakdown": "Modifier +8",
       "modifiers": [
         {
           "slug": "base",
@@ -246,7 +1279,7 @@
             "wis-based",
             "all"
           ],
-          "modifier": 0,
+          "modifier": 8,
           "type": "untyped",
           "ability": null,
           "adjustments": [],
@@ -264,21 +1297,30 @@
           "predicate": []
         }
       ],
-      "senses": [],
+      "senses": [
+        {
+          "type": "darkvision",
+          "acuity": "precise",
+          "range": null,
+          "source": null,
+          "label": "Darkvision",
+          "emphasizeLabel": false
+        }
+      ],
       "vision": true,
       "details": "",
-      "mod": 0
+      "mod": 8
     },
     "saves": {
       "fortitude": {
-        "value": 0,
+        "value": 8,
         "saveDetail": "",
         "attribute": null,
         "slug": "fortitude",
         "label": "Fortitude",
-        "totalModifier": 0,
-        "dc": 10,
-        "breakdown": "Modifier +0",
+        "totalModifier": 8,
+        "dc": 18,
+        "breakdown": "Modifier +8",
         "modifiers": [
           {
             "slug": "base",
@@ -289,7 +1331,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 8,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -307,17 +1349,17 @@
             "predicate": []
           }
         ],
-        "base": 0
+        "base": 8
       },
       "reflex": {
-        "value": 0,
+        "value": 7,
         "saveDetail": "",
         "attribute": null,
         "slug": "reflex",
         "label": "Reflex",
-        "totalModifier": 0,
-        "dc": 10,
-        "breakdown": "Modifier +0",
+        "totalModifier": 7,
+        "dc": 17,
+        "breakdown": "Modifier +7",
         "modifiers": [
           {
             "slug": "base",
@@ -328,7 +1370,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 7,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -346,17 +1388,17 @@
             "predicate": []
           }
         ],
-        "base": 0
+        "base": 7
       },
       "will": {
-        "value": 0,
+        "value": 5,
         "saveDetail": "",
         "attribute": null,
         "slug": "will",
         "label": "Will",
-        "totalModifier": 0,
-        "dc": 10,
-        "breakdown": "Modifier +0",
+        "totalModifier": 5,
+        "dc": 15,
+        "breakdown": "Modifier +5",
         "modifiers": [
           {
             "slug": "base",
@@ -367,7 +1409,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 5,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -385,35 +1427,19 @@
             "predicate": []
           }
         ],
-        "base": 0
-      }
-    },
-    "traits": {
-      "value": [],
-      "rarity": "common",
-      "size": {
-        "value": "med",
-        "length": 5,
-        "width": 5
-      }
-    },
-    "autoChanges": {},
-    "customModifiers": {},
-    "actions": [],
-    "spellcasting": {
-      "rituals": {
-        "dc": 0
+        "base": 5
       }
     },
     "skills": {
-      "acr": {
+      "acrobatics": {
+        "base": 0,
         "slug": "acrobatics",
         "label": "Acrobatics",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "dex",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -425,7 +1451,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -443,21 +1469,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "arc": {
+      "arcana": {
+        "base": 0,
         "slug": "arcana",
         "label": "Arcana",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -469,7 +1495,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -487,21 +1513,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "ath": {
+      "athletics": {
+        "base": 0,
         "slug": "athletics",
         "label": "Athletics",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 3,
+        "totalModifier": 3,
+        "dc": 13,
         "attribute": "str",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +3",
         "modifiers": [
           {
             "slug": "base",
@@ -513,7 +1539,7 @@
               "str-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 3,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -531,21 +1557,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 3,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "cra": {
+      "crafting": {
+        "base": 0,
         "slug": "crafting",
         "label": "Crafting",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -557,7 +1583,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -575,14 +1601,14 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "dec": {
+      "deception": {
+        "base": 0,
         "slug": "deception",
         "label": "Deception",
         "value": 0,
@@ -619,14 +1645,14 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "dip": {
+      "diplomacy": {
+        "base": 0,
         "slug": "diplomacy",
         "label": "Diplomacy",
         "value": 0,
@@ -663,14 +1689,14 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "itm": {
+      "intimidation": {
+        "base": 0,
         "slug": "intimidation",
         "label": "Intimidation",
         "value": 0,
@@ -707,21 +1733,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "med": {
+      "medicine": {
+        "base": 0,
         "slug": "medicine",
         "label": "Medicine",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -733,7 +1759,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -751,21 +1777,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "nat": {
+      "nature": {
+        "base": 0,
         "slug": "nature",
         "label": "Nature",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -777,7 +1803,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -795,21 +1821,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "occ": {
+      "occultism": {
+        "base": 0,
         "slug": "occultism",
         "label": "Occultism",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -821,7 +1847,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -839,14 +1865,14 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "prf": {
+      "performance": {
+        "base": 0,
         "slug": "performance",
         "label": "Performance",
         "value": 0,
@@ -883,21 +1909,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "rel": {
+      "religion": {
+        "base": 0,
         "slug": "religion",
         "label": "Religion",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -909,7 +1935,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -927,21 +1953,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "soc": {
+      "society": {
+        "base": 0,
         "slug": "society",
         "label": "Society",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -953,7 +1979,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -971,21 +1997,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "ste": {
+      "stealth": {
+        "base": 0,
         "slug": "stealth",
         "label": "Stealth",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "dex",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -997,7 +2023,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1015,21 +2041,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "sur": {
+      "survival": {
+        "base": 0,
         "slug": "survival",
         "label": "Survival",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 1,
+        "totalModifier": 1,
+        "dc": 11,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +1",
         "modifiers": [
           {
             "slug": "base",
@@ -1041,7 +2067,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 1,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1059,21 +2085,21 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 1,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
       },
-      "thi": {
+      "thievery": {
+        "base": 0,
         "slug": "thievery",
         "label": "Thievery",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 2,
+        "totalModifier": 2,
+        "dc": 12,
         "attribute": "dex",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +2",
         "modifiers": [
           {
             "slug": "base",
@@ -1085,7 +2111,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 2,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1103,12 +2129,410 @@
             "predicate": []
           }
         ],
-        "base": 0,
+        "mod": 2,
         "itemId": null,
         "lore": false,
-        "mod": 0,
-        "variants": [],
-        "visible": false
+        "visible": false,
+        "special": []
+      }
+    },
+    "traits": {
+      "value": [
+        "undead"
+      ],
+      "rarity": "common",
+      "size": {
+        "value": "med",
+        "length": 5,
+        "width": 5
+      }
+    },
+    "autoChanges": {
+      "system.attributes.hp.negativeHealing": [
+        {
+          "mode": "override",
+          "level": null,
+          "value": true,
+          "source": "Void Healing"
+        }
+      ]
+    },
+    "customModifiers": {},
+    "actions": [
+      {
+        "slug": "bite",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 9,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +9",
+        "totalModifier": 9,
+        "label": "Bite",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "Nn38LXeWGIqbBC7N",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [],
+        "item": {
+          "type": "melee",
+          "name": "Bite",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "damageRolls": {
+              "vjYxzm8jJCyxMxZq": {
+                "damage": "1d6+3",
+                "damageType": "piercing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 9
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "Nn38LXeWGIqbBC7N",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": 1723783575858,
+            "modifiedTime": 1723783588685,
+            "lastModifiedBy": "7V80iZREAvj5ZaV4"
+          }
+        },
+        "weapon": {
+          "type": "melee",
+          "name": "Bite",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "damageRolls": {
+              "vjYxzm8jJCyxMxZq": {
+                "damage": "1d6+3",
+                "damageType": "piercing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 9
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "Nn38LXeWGIqbBC7N",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": 1723783575858,
+            "modifiedTime": 1723783588685,
+            "lastModifiedBy": "7V80iZREAvj5ZaV4"
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +9"
+          },
+          {
+            "label": "+4 (MAP -5)"
+          },
+          {
+            "label": "-1 (MAP -10)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      },
+      {
+        "slug": "sling",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 8,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +8",
+        "totalModifier": 8,
+        "label": "Sling",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "AizyI3K2hWPcQxHC",
+        "attackRollType": "PF2E.NPCAttackRanged",
+        "additionalEffects": [],
+        "item": {
+          "type": "melee",
+          "name": "Sling",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "range-increment-50"
+              ]
+            },
+            "damageRolls": {
+              "4oqM5JVZB3snpV0q": {
+                "damage": "1d8+4",
+                "damageType": "bludgeoning",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 8
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "AizyI3K2hWPcQxHC",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": 1723783597283,
+            "modifiedTime": 1723783622052,
+            "lastModifiedBy": "7V80iZREAvj5ZaV4"
+          }
+        },
+        "weapon": {
+          "type": "melee",
+          "name": "Sling",
+          "effects": [],
+          "system": {
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "range-increment-50"
+              ]
+            },
+            "damageRolls": {
+              "4oqM5JVZB3snpV0q": {
+                "damage": "1d8+4",
+                "damageType": "bludgeoning",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 8
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "_id": "AizyI3K2hWPcQxHC",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "7V80iZREAvj5ZaV4": 3
+          },
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": 1723783597283,
+            "modifiedTime": 1723783622052,
+            "lastModifiedBy": "7V80iZREAvj5ZaV4"
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "ranged",
+          "range-increment-50"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          },
+          {
+            "name": "range-increment-50",
+            "label": "Range Increment 50 feet",
+            "description": "PF2E.TraitDescriptionRange"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +8"
+          },
+          {
+            "label": "+3 (MAP -5)"
+          },
+          {
+            "label": "-2 (MAP -10)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      }
+    ],
+    "spellcasting": {
+      "rituals": {
+        "dc": 0
       }
     }
   },
@@ -1116,24 +2540,29 @@
     "name": "Skeletal Pony Slinger",
     "displayName": 20,
     "actorLink": false,
-    "appendNumber": true,
+    "appendNumber": false,
     "prependAdjective": false,
-    "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/pony%20skeleton%20token.png",
-      "scaleX": 1.3,
-      "scaleY": 1.3,
-      "offsetX": 0,
-      "offsetY": 0,
-      "rotation": 0,
-      "tint": null
-    },
     "width": 1,
     "height": 1,
+    "texture": {
+      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/pony%20skeleton%20token.webp",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1.3,
+      "scaleY": 1.3,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "hexagonalShape": 0,
     "lockRotation": false,
     "rotation": 0,
     "alpha": 1,
     "disposition": -1,
-    "displayBars": 0,
+    "displayBars": 20,
     "bar1": {
       "attribute": "attributes.hp"
     },
@@ -1141,6 +2570,8 @@
       "attribute": null
     },
     "light": {
+      "negative": false,
+      "priority": 0,
       "alpha": 0.5,
       "angle": 360,
       "bright": 0,
@@ -1175,6 +2606,21 @@
       "contrast": 0
     },
     "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
     "flags": {
       "pf2e": {
         "linkToActorSize": true,
@@ -1183,13 +2629,367 @@
     },
     "randomImg": false
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "peOjFHP1QU1D2x0h",
+      "name": "Void Healing",
+      "type": "action",
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "system.attributes.hp.negativeHealing",
+            "value": true,
+            "slug": null,
+            "priority": 50,
+            "ignored": false,
+            "predicate": [],
+            "testDomains": [],
+            "phase": "applyAEs"
+          }
+        ],
+        "slug": "void-healing",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": null
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common",
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "Pathfinder Monster Core",
+          "authors": "",
+          "license": "ORC",
+          "remaster": true
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x"
+        },
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": 1723783334419,
+        "modifiedTime": 1723783334419,
+        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x",
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "Nn38LXeWGIqbBC7N",
+      "name": "Bite",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": []
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "damageRolls": {
+          "vjYxzm8jJCyxMxZq": {
+            "damage": "1d6 + 3",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 9
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": 1723783575858,
+        "modifiedTime": 1723783588685,
+        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "AizyI3K2hWPcQxHC",
+      "name": "Sling",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "range-increment-50"
+          ]
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": null
+        },
+        "damageRolls": {
+          "4oqM5JVZB3snpV0q": {
+            "damage": "1d8 + 4",
+            "damageType": "bludgeoning",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 8
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": 1723783597283,
+        "modifiedTime": 1723783622052,
+        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "UyeiasDy4eH0ChFp",
+      "name": "Team Practice",
+      "type": "action",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>For every other creature with this ability that has missed a target since the start of the attacking creature's last turn, they get a +1 circumstance bonus to their attack roll. Add this bonus last, and it cannot turn a hit into a critical.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.2.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": 1723783651010,
+        "modifiedTime": 1723783735325,
+        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "PGxlYMjUdZYlozSK",
+      "name": "Stone of the Living",
+      "type": "action",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Strike an enemy with full hit points. On a hit, they are filled with the cold dead weight of unresponsive bones. They gain weakness 5 to bludgeoning until the end of the skeleton slinger's next turn.</p><p>@UUID[Compendium.world.ponyfinder-bestiary-effects.Item.H9c83JfpLzlQhCob]{Effect: Stone of the Living}</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.2.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 1
+        },
+        "deathNote": false,
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "7V80iZREAvj5ZaV4": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": 1723783764257,
+        "modifiedTime": 1723786810856,
+        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    }
+  ],
   "effects": [],
-  "folder": "vYEIZ7SbULhE8vs8",
-  "sort": 800000,
+  "folder": null,
+  "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
     "pf2e": {
@@ -1205,7 +3005,12 @@
           "self:size:medium": true,
           "hp-remaining:10": true,
           "hp-percent:100": true,
-          "speed:land": true
+          "speed:land": true,
+          "self:signature:5451288e-e97e-584d-a432-418853ab04a4": true,
+          "self:mode:undead": true,
+          "self:trait:undead": true,
+          "self:negative-healing": true,
+          "hp-remaining:35": true
         }
       },
       "trackedItems": {},
@@ -1213,11 +3018,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.14.4",
-    "coreVersion": "11.315",
-    "createdTime": 1680164781589,
-    "modifiedTime": 1711437419438,
-    "lastModifiedBy": "0g5yUyfOblB2pGL3"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762245334,
+    "modifiedTime": 1723783570877,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": "Compendium.world.ponyfinder-bestiary-npc-gallery.Actor.X1O2Bq4pm9Vz13la",
+    "duplicateSource": null
   }
 }

@@ -1,0 +1,120 @@
+{
+  "_id": "Li1XOqeFqCzg8Y1N",
+  "name": "Winged Assault",
+  "type": "feat",
+  "img": "icons/sundries/books/book-red-exclamation.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><strong>Requirements</strong> You must be in bat or hybrid form.</p><p><strong>Frequency</strong> once a round</p><p><strong>Trigger</strong> Your last action was Strike, and you hit.</p><hr /><p>You Strike with your wings, a 1d4 damage bludgeoning weapon. It is of the brawling group and has the finesse, agile, nonlethal, and unarmed traits. You can deal lethal damage with it without penalty. You can use this weapon outside of this ability.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "flags.pf2e.werebat.featCount"
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d4"
+          }
+        },
+        "group": "brawling",
+        "img": "icons/creatures/abilities/wing-batlike-purple-blue.webp",
+        "key": "Strike",
+        "label": "Wing",
+        "range": null,
+        "slug": "wing",
+        "traits": [
+          "unarmed",
+          "finesse",
+          "agile",
+          "nonlethal"
+        ]
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "archetype",
+        "werebat"
+      ],
+      "rarity": "common",
+      "toggles": {
+        "mindshift": null
+      }
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 8,
+      "taken": null
+    },
+    "category": "class",
+    "onlyLevel1": false,
+    "maxTakable": 1,
+    "actionType": {
+      "value": "free"
+    },
+    "actions": {
+      "value": null
+    },
+    "prerequisites": {
+      "value": []
+    },
+    "location": null,
+    "subfeatures": {
+      "keyOptions": [],
+      "languages": {
+        "granted": [],
+        "slots": 0
+      },
+      "proficiencies": {},
+      "senses": {}
+    },
+    "frequency": {
+      "max": 1,
+      "per": "round"
+    },
+    "selfEffect": null
+  },
+  "effects": [],
+  "folder": "pAo5V9scGcMNEY4D",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

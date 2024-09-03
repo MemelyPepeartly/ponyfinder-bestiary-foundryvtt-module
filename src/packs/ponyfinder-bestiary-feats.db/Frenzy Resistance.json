@@ -1,37 +1,33 @@
 {
-  "_id": "R5yCIPRvSsZ7NlJf",
+  "_id": "riDz3gCCA70sUfnC",
   "name": "Frenzy Resistance",
   "type": "feat",
   "img": "icons/sundries/books/book-red-exclamation.webp",
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Frenzy Resistance FEAT 4</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">The rising of the full moon does not plunge you into insanity. Perhaps you can win the test of wills that this curse provides. You do not gain size, strength, or insanity when the full moon appears, but still become fatigued when it sets due to your internal struggle.</p>\n<p> </p>",
+      "value": "<p>The rising of the full moon does not plunge you into insanity. Perhaps you can win the test of wills that this curse provides. You do not gain size, strength, or insanity when the full moon appears, but still become @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} when it sets due to your internal struggle.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [
       {
         "key": "ActiveEffectLike",
+        "value": 1,
         "mode": "add",
-        "path": "flags.pf2e.werebat.archetypeFeatCount",
-        "value": 1
+        "path": "flags.pf2e.werebat.featCount"
       }
     ],
     "slug": null,
     "_migration": {
-      "version": 0.925,
-      "lastMigration": null,
-      "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
-      }
+      "version": 0.932,
+      "lastMigration": null
     },
     "traits": {
       "otherTags": [],
       "value": [
-        "archetype"
+        "archetype",
+        "werebat"
       ],
       "rarity": "common",
       "toggles": {
@@ -40,7 +36,7 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
       "remaster": false
     },
@@ -73,11 +69,11 @@
     "selfEffect": null
   },
   "effects": [],
-  "folder": "tzWs6vvx7RiONsUa",
-  "sort": 300000,
+  "folder": "pAo5V9scGcMNEY4D",
+  "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
     "pf2e": {
@@ -86,11 +82,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1689730927027,
-    "modifiedTime": 1690247332223,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
   }
 }

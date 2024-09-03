@@ -1,37 +1,37 @@
 {
-  "_id": "zna9B0k3tNIo0f9T",
+  "_id": "cYSLUTwj9DICCOMW",
   "name": "Infectious Bite",
   "type": "feat",
   "img": "icons/sundries/books/book-red-exclamation.webp",
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Infectious Bite FEAT 6</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">Those struck with your infectious bite can suffer the curse of the werebat if they fail a Fortitude save against your class or spell DC(whichever is higher). Unlike other lycanthropes, those with this curse gain no benefits, only the curse, unless they walk the path you now walk, trying to master this fell power. Your growing connection with your curse grants you Animal Empathy, allowing you to communicate with other bats and similar creatures.</p>\n<p> </p>",
+      "value": "<p>Those struck with your infectious bite can suffer the curse of the werebat if they fail a @Check[fortitude|against:class] save against your class DC. Unlike other lycanthropes, those with this curse gain no benefits, only the curse, unless they walk the path you now walk, trying to master this fell power. Your growing connection with your curse grants you @UUID[Compendium.pf2e.feats-srd.Item.cg816q76S5otM7yD]{Animal Empathy}, allowing you to communicate with other bats and similar creatures.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [
       {
         "key": "ActiveEffectLike",
+        "value": 1,
         "mode": "add",
-        "path": "flags.pf2e.werebat.archetypeFeatCount",
-        "value": 1
+        "path": "flags.pf2e.werebat.featCount"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e.feats-srd.Item.cg816q76S5otM7yD"
       }
     ],
     "slug": null,
     "_migration": {
-      "version": 0.925,
-      "lastMigration": null,
-      "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
-      }
+      "version": 0.932,
+      "lastMigration": null
     },
     "traits": {
       "otherTags": [],
       "value": [
-        "archetype"
+        "archetype",
+        "werebat"
       ],
       "rarity": "common",
       "toggles": {
@@ -40,7 +40,7 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
       "remaster": false
     },
@@ -73,25 +73,26 @@
     "selfEffect": null
   },
   "effects": [],
-  "folder": "tzWs6vvx7RiONsUa",
+  "folder": "pAo5V9scGcMNEY4D",
   "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
-    "core": {},
     "pf2e": {
       "rulesSelections": {},
       "itemGrants": {}
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1689731043086,
-    "modifiedTime": 1690323862712,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
   }
 }

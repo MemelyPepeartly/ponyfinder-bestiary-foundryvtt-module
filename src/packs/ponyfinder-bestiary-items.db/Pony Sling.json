@@ -1,0 +1,185 @@
+{
+  "_id": "d5Oqaz0lm5MafKDo",
+  "name": "Pony Sling",
+  "type": "weapon",
+  "img": "systems/pf2e/icons/equipment/weapons/sling.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Costing twice as much as any other sling model (minimum 1 sp), pony slings are designed to be attached to the leg of the pony, to be loaded with their mouth and propelled with a swing of that leg. Using this causes the pony to become slower, lowering their Speed by 10 feet until the start of their next turn. Despite being called a pony sling, it works equally well for any creature with the fingerless trait.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "Note",
+        "selector": "{item|id}-attack",
+        "text": "Using this causes the pony to become slower, lowering their Speed by 10 feet until the start of their next turn. @UUID[Compendium.world.ponyfinder-bestiary-effects.Item.cwMQAp0IAGdDWJgo]{Effect: Pony Sling Speed Penalty}",
+        "title": "{item|name}"
+      }
+    ],
+    "slug": "sling",
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null,
+      "previous": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "propulsive"
+      ],
+      "rarity": "common",
+      "toggles": {}
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 0
+    },
+    "quantity": 1,
+    "baseItem": "sling",
+    "bulk": {
+      "heldOrStowed": 0.1,
+      "value": 0.1,
+      "per": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "brokenThreshold": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "pp": 0,
+        "gp": 0,
+        "sp": 1,
+        "cp": 0
+      },
+      "per": 1
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null,
+      "effects": []
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Sling",
+        "img": "systems/pf2e/icons/unidentified_item_icons/weapon.webp",
+        "data": {
+          "description": {
+            "value": "The nature of this sling is unclear."
+          }
+        }
+      },
+      "misidentified": {},
+      "identified": {
+        "name": "Pony Sling",
+        "img": "systems/pf2e/icons/equipment/weapons/sling.webp",
+        "data": {
+          "description": {
+            "value": "<p>Costing twice as much as any other sling model (minimum 1 sp), pony slings are designed to be attached to the leg of the pony, to be loaded with their mouth and propelled with a swing of that leg. Using this causes the pony to become slower, lowering their Speed by 10 feet until the start of their next turn. Despite being called a pony sling, it works equally well for any creature with the fingerless trait.</p>"
+          }
+        }
+      }
+    },
+    "usage": {
+      "value": "held-in-one-hand",
+      "type": "held",
+      "hands": 1,
+      "canBeAmmo": false
+    },
+    "category": "simple",
+    "group": "sling",
+    "bonus": {
+      "value": 0
+    },
+    "damage": {
+      "dice": 1,
+      "die": "d6",
+      "damageType": "bludgeoning",
+      "persistent": null,
+      "modifier": 0
+    },
+    "bonusDamage": {
+      "value": 0
+    },
+    "splashDamage": {
+      "value": 0
+    },
+    "range": 50,
+    "reload": {
+      "value": "1",
+      "label": "Reload 1",
+      "consume": true
+    },
+    "runes": {
+      "potency": 0,
+      "striking": 0,
+      "property": [],
+      "effects": []
+    },
+    "specific": null,
+    "subitems": [],
+    "property1": {
+      "value": "",
+      "dice": 0,
+      "die": "",
+      "damageType": "",
+      "critDice": 0,
+      "critDie": "",
+      "critDamage": "",
+      "critDamageType": "",
+      "strikeConditionType": "",
+      "strikeConditionValue": null,
+      "criticalConditionType": "",
+      "criticalConditionValue": null
+    },
+    "stackGroup": null,
+    "graspingAppendage": false,
+    "selectedAmmoId": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.pf2e.equipment-srd.Item.UCH4myuFnokGv0vF"
+    },
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {},
+      "comboMeleeUsage": false,
+      "damageFacesUpgraded": false,
+      "attackItemBonus": 0
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762226065,
+    "modifiedTime": 1723786579349,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": "Compendium.pf2e.equipment-srd.Item.UCH4myuFnokGv0vF",
+    "duplicateSource": null
+  }
+}

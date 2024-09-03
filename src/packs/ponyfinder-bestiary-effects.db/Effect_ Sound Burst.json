@@ -1,0 +1,81 @@
+{
+  "_id": "UDwjBQrp5G6Fj8ro",
+  "name": "Effect: Sound Burst",
+  "type": "effect",
+  "img": "icons/magic/sonic/projectile-sound-rings-wave.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Granted by @UUID[Compendium.world.ponyfinder-bestiary-feats.Item.jZVKADipWCFwxDtD]{Sound Burst}</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "Sense",
+        "selector": "echolocation",
+        "acuity": "precise",
+        "value": 60
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": []
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 1
+    },
+    "duration": {
+      "value": 1,
+      "unit": "rounds",
+      "expiry": "turn-start",
+      "sustained": false
+    },
+    "start": {
+      "value": 0,
+      "initiative": null
+    },
+    "tokenIcon": {
+      "show": true
+    },
+    "badge": null,
+    "context": null,
+    "unidentified": false,
+    "fromSpell": false,
+    "expired": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762170406,
+    "modifiedTime": 1723786766659,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": "Compendium.world.ponyfinder-bestiary-effects.Item.UDwjBQrp5G6Fj8ro",
+    "duplicateSource": null
+  }
+}

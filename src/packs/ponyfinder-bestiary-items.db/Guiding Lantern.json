@@ -1,0 +1,139 @@
+{
+  "_id": "N89Fc1oSQJ1PYrPC",
+  "name": "Guiding Lantern",
+  "type": "equipment",
+  "img": "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p>Besides serving as a hooded lantern with a radius of 60 feet of bright light and another 60 feet of dim light, when directed at an illusion as part of a @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action, make a level 3 counteract check with the @Check[perception] of the holder of the lamp. On a success, the illusion fades away so long it remains in the bright light of the lamp, becoming easily ignored. They create this item from a living guiding light after it passes on. How it was obtained is known to other guiding lights that see it, and may influence their starting dispositions.</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "TokenLight",
+        "value": {
+          "animation": {
+            "intensity": 4,
+            "speed": 1,
+            "type": "torch"
+          },
+          "bright": 30,
+          "color": "#975335",
+          "dim": 60,
+          "shadows": 0.2
+        }
+      },
+      {
+        "key": "TokenEffectIcon",
+        "value": "icons/sundries/lights/lantern-iron-yellow.webp"
+      }
+    ],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "level": {
+      "value": 5
+    },
+    "quantity": 1,
+    "baseItem": null,
+    "bulk": {
+      "heldOrStowed": 0.1,
+      "value": 0.1,
+      "per": 1
+    },
+    "hp": {
+      "value": 0,
+      "max": 0,
+      "brokenThreshold": 0
+    },
+    "hardness": 0,
+    "price": {
+      "value": {
+        "pp": 0,
+        "gp": 150,
+        "sp": 0,
+        "cp": 0
+      },
+      "per": 1
+    },
+    "equipped": {
+      "carryType": "worn",
+      "invested": null,
+      "handsHeld": 0
+    },
+    "containerId": null,
+    "size": "med",
+    "material": {
+      "type": null,
+      "grade": null,
+      "effects": []
+    },
+    "identification": {
+      "status": "identified",
+      "unidentified": {
+        "name": "Unusual Object",
+        "img": "systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp",
+        "data": {
+          "description": {
+            "value": "The nature of this object is unclear."
+          }
+        }
+      },
+      "misidentified": {},
+      "identified": {
+        "name": "Guiding Lantern",
+        "img": "icons/sundries/lights/lantern-bullseye-signal-copper.webp",
+        "data": {
+          "description": {
+            "value": "<p>Besides serving as a hooded lantern with a radius of 60 feet of bright light and another 60 feet of dim light, when directed at an illusion as part of a @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action, make a level 3 counteract check with the @Check[perception] of the holder of the lamp. On a success, the illusion fades away so long it remains in the bright light of the lamp, becoming easily ignored. They create this item from a living guiding light after it passes on. How it was obtained is known to other guiding lights that see it, and may influence their starting dispositions.</p>"
+          }
+        }
+      }
+    },
+    "usage": {
+      "value": "held-in-one-hand",
+      "type": "held",
+      "hands": 1
+    },
+    "subitems": [],
+    "stackGroup": null
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762226065,
+    "modifiedTime": 1723762620104,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

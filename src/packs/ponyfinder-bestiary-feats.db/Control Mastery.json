@@ -1,37 +1,33 @@
 {
-  "_id": "PLZGe8YOx3xx046g",
+  "_id": "XeCogRJ2VJChnp2d",
   "name": "Control Mastery",
   "type": "feat",
   "img": "icons/sundries/books/book-red-exclamation.webp",
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Control Mastery FEAT 4</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">Your control over your mutable form has increased. Using Lycanthropic Control is now [one-action] and the flat check is reduced to DC 10, minus 2 for every werebat archetype feat you have, including this one.</p>\n<p> </p>",
+      "value": "<p>Your control over your mutable form has increased. Using Lycanthropic Control is now 1 action and the flat check is reduced to a @Check[flat|dc:10], minus 2 for every werebat archetype feat you have, including this one.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [
       {
         "key": "ActiveEffectLike",
+        "value": 1,
         "mode": "add",
-        "path": "flags.pf2e.werebat.archetypeFeatCount",
-        "value": 1
+        "path": "flags.pf2e.werebat.featCount"
       }
     ],
     "slug": null,
     "_migration": {
-      "version": 0.925,
-      "lastMigration": null,
-      "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
-      }
+      "version": 0.932,
+      "lastMigration": null
     },
     "traits": {
       "otherTags": [],
       "value": [
-        "archetype"
+        "archetype",
+        "werebat"
       ],
       "rarity": "common",
       "toggles": {
@@ -40,7 +36,7 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
       "remaster": false
     },
@@ -73,11 +69,11 @@
     "selfEffect": null
   },
   "effects": [],
-  "folder": "tzWs6vvx7RiONsUa",
-  "sort": 200000,
+  "folder": "pAo5V9scGcMNEY4D",
+  "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
     "pf2e": {
@@ -86,11 +82,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1689730470014,
-    "modifiedTime": 1690247554718,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
   }
 }

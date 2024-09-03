@@ -1,0 +1,107 @@
+{
+  "_id": "0P4ZmCBvCiKysQ80",
+  "name": "Reptilin",
+  "type": "ancestry",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderReptilinShaman1.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<p><em>While most reptilin are, to put it bluntly, savages, others have chosen to embrace the visitors to their tribes, to find ways that are better than the ways of their own kind. Such reptilin are less versed in their native ways but gain a flexibility of thought and horizon that their forebears lacked.</em></p><p><em>Resembling an elfin humanoid from the waist up and a long snake from there down, a reptilin carries few traits of the seemingly mixed heritage because they have actually evolved directly from snakes with the aid of magic. Strong and fierce warriors, the snake-people of Everglow are new to the world at large but are increasingly seeing their own place within it.</em></p><p><em>Tending toward a neutral approach to life, a reptilin leans toward aloofness in all things social but, when matters are reduced to choice regarding life or death, are brutally ruthless.</em></p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [],
+    "slug": null,
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "beast-folk",
+        "fey",
+        "reptilin"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 10,
+    "size": "med",
+    "reach": 5,
+    "speed": 25,
+    "boosts": {
+      "0": {
+        "value": [
+          "str"
+        ],
+        "selected": "str"
+      },
+      "1": {
+        "value": [
+          "wis"
+        ],
+        "selected": "wis"
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": [
+          "int"
+        ],
+        "selected": "int"
+      }
+    },
+    "languages": {
+      "value": [
+        "common"
+      ],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [],
+      "custom": ""
+    },
+    "items": {},
+    "vision": "low-light-vision"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762145000,
+    "modifiedTime": 1723762368684,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

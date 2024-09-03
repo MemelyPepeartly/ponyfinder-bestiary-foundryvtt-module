@@ -1,58 +1,53 @@
 {
-  "_id": "o6FlfDFOGJW94wEx",
+  "_id": "DmTwSVaCXpkgZOqB",
   "name": "Surge of the Wild",
   "type": "feat",
   "img": "icons/sundries/books/book-red-exclamation.webp",
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Surge of the Wild FEAT 10</h1>\n<p dir=\"ltr\">[Archetype][Werebat]</p>\n<p dir=\"ltr\">The primal power of your curse runs through your veins at all times, empowering you. Gain a boost to your Strength or Dexterity, chosen when taking this feat. This increases that ability score by 2 if it was under 17, or 1 otherwise.</p>\n<h1 dir=\"ltr\"> </h1>",
+      "value": "<p>The primal power of your curse runs through your veins at all times, empowering you. Gain a boost to your Strength or Dexterity, chosen when taking this feat. This increases that ability score by 2 if it was under 17, or 1 otherwise.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [
       {
         "key": "ActiveEffectLike",
+        "value": 1,
         "mode": "add",
-        "path": "flags.pf2e.werebat.archetypeFeatCount",
-        "value": 1
+        "path": "flags.pf2e.werebat.featCount"
       },
       {
         "key": "ChoiceSet",
-        "flag": "stat",
-        "prompt": "Which stat do you get a boost in?",
         "choices": [
           {
-            "label": "Strength",
-            "value": "str"
+            "label": "PF2E.AbilityDex",
+            "value": "dex"
           },
           {
-            "label": "Dexterity",
-            "value": "dex"
+            "label": "PF2E.AbilityStr",
+            "value": "str"
           }
-        ]
+        ],
+        "flag": "attribute"
       },
       {
         "key": "ActiveEffectLike",
-        "value": "ternary(gte(@actor.abilities.{item|flags.pf2e.rulesSelections.stat}.value, 17), 1, 2)",
-        "path": "system.abilities.{item|flags.pf2e.rulesSelections.stat}.value",
-        "mode": "add"
+        "path": "system.abilities.{item|flags.pf2e.rulesSelections.attribute}.mod",
+        "mode": "add",
+        "value": "ternary(lt(@actor.abilities.str.mod, 4), 1, 0.5)"
       }
     ],
-    "slug": "surge-of-the-wild",
+    "slug": null,
     "_migration": {
-      "version": 0.925,
-      "lastMigration": null,
-      "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
-      }
+      "version": 0.932,
+      "lastMigration": null
     },
     "traits": {
       "otherTags": [],
       "value": [
-        "archetype"
+        "archetype",
+        "werebat"
       ],
       "rarity": "common",
       "toggles": {
@@ -61,7 +56,7 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
       "remaster": false
     },
@@ -94,25 +89,26 @@
     "selfEffect": null
   },
   "effects": [],
-  "folder": "tzWs6vvx7RiONsUa",
+  "folder": "pAo5V9scGcMNEY4D",
   "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
-    "core": {},
     "pf2e": {
       "rulesSelections": {},
       "itemGrants": {}
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1689731043086,
-    "modifiedTime": 1690326514167,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.2.1",
+    "createdTime": 1723762198615,
+    "modifiedTime": 1723762198615,
+    "lastModifiedBy": "7V80iZREAvj5ZaV4",
+    "compendiumSource": null,
+    "duplicateSource": null
   }
 }
