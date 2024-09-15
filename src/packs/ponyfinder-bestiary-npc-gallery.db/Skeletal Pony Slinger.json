@@ -2147,16 +2147,7 @@
         "width": 5
       }
     },
-    "autoChanges": {
-      "system.attributes.hp.negativeHealing": [
-        {
-          "mode": "override",
-          "level": null,
-          "value": true,
-          "source": "Void Healing"
-        }
-      ]
-    },
+    "autoChanges": {},
     "customModifiers": {},
     "actions": [
       {

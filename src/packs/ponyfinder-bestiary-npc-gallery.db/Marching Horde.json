@@ -1762,16 +1762,7 @@
         "width": 5
       }
     },
-    "autoChanges": {
-      "flags.pf2e.rageTempHP": [
-        {
-          "mode": "override",
-          "level": null,
-          "value": 0,
-          "source": "Born of Flame"
-        }
-      ]
-    },
+    "autoChanges": {},
     "customModifiers": {},
     "actions": [
       {
