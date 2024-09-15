@@ -39,7 +39,7 @@
         "key": "ActiveEffectLike",
         "value": 1,
         "mode": "add",
-        "path": "system.skills.sur.rank"
+        "path": "system.skills.survival.rank"
       },
       {
         "key": "GrantItem",
@@ -108,12 +108,12 @@
     ],
     "slug": "horse",
     "_migration": {
-      "version": 0.925,
+      "version": 0.932,
       "lastMigration": null,
       "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.3.1"
       }
     },
     "traits": {
@@ -174,7 +174,7 @@
     }
   },
   "effects": [],
-  "folder": "wiKKkGcmogVS605G",
+  "folder": null,
   "sort": 400000,
   "ownership": {
     "default": 0,
@@ -195,11 +195,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
     "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
     "createdTime": 1663468948983,
     "modifiedTime": 1689344841386,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "lastModifiedBy": "7U4sXug561SwttNa",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-animal-companions.Item.UG5YfMxRAVS9D42R",
+    "duplicateSource": null
   }
 }
