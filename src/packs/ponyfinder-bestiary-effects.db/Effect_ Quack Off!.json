@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>Granted by @UUID[Compendium.world.ponyfinder-bestiary-npc-gallery.Actor.iaGTjD4zauJEGjCG]{Canardy}'s Quack Off!</p><p></p>",
+      "value": "<p>Granted by @UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.iaGTjD4zauJEGjCG]{Canardy}'s Quack Off!</p><p></p>",
       "addenda": [],
       "override": null
     },
@@ -89,11 +89,11 @@
   "_stats": {
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.2.1",
+    "systemVersion": "6.3.1",
     "createdTime": 1723762166519,
-    "modifiedTime": 1723786647853,
-    "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": "Compendium.world.ponyfinder-bestiary-effects.Item.zkY7FGWdy6BF1ID9",
+    "modifiedTime": 1725410643925,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.zkY7FGWdy6BF1ID9",
     "duplicateSource": null
   }
 }

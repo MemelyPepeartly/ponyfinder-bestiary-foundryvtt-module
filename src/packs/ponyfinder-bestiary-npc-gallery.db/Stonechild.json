@@ -930,7 +930,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "athletics": {
@@ -974,7 +974,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "crafting": {
@@ -1018,18 +1018,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "deception": {
         "base": 0,
         "slug": "deception",
         "label": "Deception",
-        "value": 2,
-        "totalModifier": 2,
-        "dc": 12,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1041,7 +1041,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1059,10 +1059,10 @@
             "predicate": []
           }
         ],
-        "mod": 2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "diplomacy": {
@@ -1113,11 +1113,11 @@
         "base": 0,
         "slug": "intimidation",
         "label": "Intimidation",
-        "value": 2,
-        "totalModifier": 2,
-        "dc": 12,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1129,7 +1129,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1147,10 +1147,10 @@
             "predicate": []
           }
         ],
-        "mod": 2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "medicine": {
@@ -1194,7 +1194,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "nature": {
@@ -1238,7 +1238,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "occultism": {
@@ -1282,18 +1282,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "performance": {
         "base": 0,
         "slug": "performance",
         "label": "Performance",
-        "value": 2,
-        "totalModifier": 2,
-        "dc": 12,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1305,7 +1305,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1323,10 +1323,10 @@
             "predicate": []
           }
         ],
-        "mod": 2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "religion": {
@@ -1370,7 +1370,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "society": {
@@ -1414,18 +1414,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "stealth": {
         "base": 0,
         "slug": "stealth",
         "label": "Stealth",
-        "value": 2,
-        "totalModifier": 2,
-        "dc": 12,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier +2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1437,7 +1437,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1455,10 +1455,10 @@
             "predicate": []
           }
         ],
-        "mod": 2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "survival": {
@@ -1502,18 +1502,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "thievery": {
         "base": 0,
         "slug": "thievery",
         "label": "Thievery",
-        "value": 2,
-        "totalModifier": 2,
-        "dc": 12,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier +2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1525,7 +1525,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1543,10 +1543,10 @@
             "predicate": []
           }
         ],
-        "mod": 2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       }
     },
@@ -1609,8 +1609,14 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": "<p>This attack deals 1 additional bludgeoning damage (Maximum +3) to every ally within 5 feet of the target.</p>"
+              "value": "<p>This attack deals 1 additional bludgeoning damage (Maximum +3) to every ally within 5 feet of the target.</p>",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [
               {
@@ -1621,26 +1627,47 @@
                 "suboptions": [
                   {
                     "label": "One",
-                    "value": "1"
+                    "value": "1",
+                    "predicate": []
                   },
                   {
                     "label": "Two",
-                    "value": "2"
+                    "value": "2",
+                    "predicate": []
                   },
                   {
                     "label": "Three or more",
-                    "value": "3"
+                    "value": "3",
+                    "predicate": []
                   }
-                ]
+                ],
+                "slug": null,
+                "priority": 50,
+                "ignored": false,
+                "predicate": [],
+                "domain": "all",
+                "phase": "applyAEs",
+                "mergeable": false,
+                "value": false
               },
               {
                 "key": "FlatModifier",
-                "selector": "strike-damage",
+                "selector": [
+                  "strike-damage"
+                ],
                 "value": 1,
                 "predicate": [
                   "adjacent-allies"
                 ],
-                "slug": "adjacent-allies-damage"
+                "slug": "adjacent-allies-damage",
+                "priority": 100,
+                "ignored": false,
+                "type": "untyped",
+                "force": false,
+                "hideIfDisabled": false,
+                "fromEquipment": true,
+                "critical": null,
+                "removeAfterRoll": false
               },
               {
                 "key": "AdjustModifier",
@@ -1650,7 +1677,14 @@
                 "value": 2,
                 "predicate": [
                   "adjacent-allies:2"
-                ]
+                ],
+                "priority": 40,
+                "ignored": false,
+                "selectors": [],
+                "relabel": null,
+                "damageType": null,
+                "suppress": false,
+                "maxApplications": null
               },
               {
                 "key": "AdjustModifier",
@@ -1660,27 +1694,28 @@
                 "value": 3,
                 "predicate": [
                   "adjacent-allies:3"
-                ]
+                ],
+                "priority": 40,
+                "ignored": false,
+                "selectors": [],
+                "relabel": null,
+                "damageType": null,
+                "suppress": false,
+                "maxApplications": null
               }
             ],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": []
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "JtBu8c3Ms2fhescx": {
@@ -1705,19 +1740,21 @@
           },
           "flags": {
             "pf2e": {
-              "rulesSelections": {},
+              "rulesSelections": {
+                "adjacentAllies": null
+              },
               "itemGrants": {}
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -1727,8 +1764,14 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": "<p>This attack deals 1 additional bludgeoning damage (Maximum +3) to every ally within 5 feet of the target.</p>"
+              "value": "<p>This attack deals 1 additional bludgeoning damage (Maximum +3) to every ally within 5 feet of the target.</p>",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [
               {
@@ -1739,26 +1782,47 @@
                 "suboptions": [
                   {
                     "label": "One",
-                    "value": "1"
+                    "value": "1",
+                    "predicate": []
                   },
                   {
                     "label": "Two",
-                    "value": "2"
+                    "value": "2",
+                    "predicate": []
                   },
                   {
                     "label": "Three or more",
-                    "value": "3"
+                    "value": "3",
+                    "predicate": []
                   }
-                ]
+                ],
+                "slug": null,
+                "priority": 50,
+                "ignored": false,
+                "predicate": [],
+                "domain": "all",
+                "phase": "applyAEs",
+                "mergeable": false,
+                "value": false
               },
               {
                 "key": "FlatModifier",
-                "selector": "strike-damage",
+                "selector": [
+                  "strike-damage"
+                ],
                 "value": 1,
                 "predicate": [
                   "adjacent-allies"
                 ],
-                "slug": "adjacent-allies-damage"
+                "slug": "adjacent-allies-damage",
+                "priority": 100,
+                "ignored": false,
+                "type": "untyped",
+                "force": false,
+                "hideIfDisabled": false,
+                "fromEquipment": true,
+                "critical": null,
+                "removeAfterRoll": false
               },
               {
                 "key": "AdjustModifier",
@@ -1768,7 +1832,14 @@
                 "value": 2,
                 "predicate": [
                   "adjacent-allies:2"
-                ]
+                ],
+                "priority": 40,
+                "ignored": false,
+                "selectors": [],
+                "relabel": null,
+                "damageType": null,
+                "suppress": false,
+                "maxApplications": null
               },
               {
                 "key": "AdjustModifier",
@@ -1778,27 +1849,28 @@
                 "value": 3,
                 "predicate": [
                   "adjacent-allies:3"
-                ]
+                ],
+                "priority": 40,
+                "ignored": false,
+                "selectors": [],
+                "relabel": null,
+                "damageType": null,
+                "suppress": false,
+                "maxApplications": null
               }
             ],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": []
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "JtBu8c3Ms2fhescx": {
@@ -1823,19 +1895,21 @@
           },
           "flags": {
             "pf2e": {
-              "rulesSelections": {},
+              "rulesSelections": {
+                "adjacentAllies": null
+              },
               "itemGrants": {}
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -2225,7 +2299,8 @@
           "hp-remaining:15": true,
           "hp-percent:100": true,
           "speed:land": true,
-          "self:signature:fd6ccb81-f6df-5459-ade9-ae32113c5b5c": true
+          "self:signature:fd6ccb81-f6df-5459-ade9-ae32113c5b5c": true,
+          "self:signature:1d5029e3-61ec-58ac-82a8-4e26bbf18c8c": true
         }
       },
       "trackedItems": {},
@@ -2239,7 +2314,7 @@
     "createdTime": 1723762245334,
     "modifiedTime": 1723762245334,
     "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.S09VzxDuDvoMWCqH",
     "duplicateSource": null
   }
 }

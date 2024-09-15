@@ -16,7 +16,9 @@
         "details": "",
         "negativeHealing": false,
         "unrecoverable": 0,
-        "base": 390
+        "base": 390,
+        "adjustedHigher": false,
+        "adjustedLower": false
       },
       "speed": {
         "slug": "land-speed",
@@ -887,11 +889,11 @@
         "base": 0,
         "slug": "arcana",
         "label": "Arcana",
-        "value": 5,
-        "totalModifier": 5,
-        "dc": 15,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +5",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -903,7 +905,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 5,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -921,10 +923,10 @@
             "predicate": []
           }
         ],
-        "mod": 5,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "athletics": {
@@ -975,11 +977,11 @@
         "base": 0,
         "slug": "crafting",
         "label": "Crafting",
-        "value": 5,
-        "totalModifier": 5,
-        "dc": 15,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +5",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -991,7 +993,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 5,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1009,10 +1011,10 @@
             "predicate": []
           }
         ],
-        "mod": 5,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "deception": {
@@ -1063,11 +1065,11 @@
         "base": 0,
         "slug": "diplomacy",
         "label": "Diplomacy",
-        "value": 6,
-        "totalModifier": 6,
-        "dc": 16,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +6",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1079,7 +1081,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 6,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1097,10 +1099,10 @@
             "predicate": []
           }
         ],
-        "mod": 6,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "intimidation": {
@@ -1151,11 +1153,11 @@
         "base": 0,
         "slug": "medicine",
         "label": "Medicine",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1167,7 +1169,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1185,10 +1187,10 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "nature": {
@@ -1239,11 +1241,11 @@
         "base": 0,
         "slug": "occultism",
         "label": "Occultism",
-        "value": 5,
-        "totalModifier": 5,
-        "dc": 15,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +5",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1255,7 +1257,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 5,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1273,21 +1275,21 @@
             "predicate": []
           }
         ],
-        "mod": 5,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "performance": {
         "base": 0,
         "slug": "performance",
         "label": "Performance",
-        "value": 6,
-        "totalModifier": 6,
-        "dc": 16,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +6",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1299,7 +1301,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 6,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1317,21 +1319,21 @@
             "predicate": []
           }
         ],
-        "mod": 6,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "religion": {
         "base": 0,
         "slug": "religion",
         "label": "Religion",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1343,7 +1345,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1361,21 +1363,21 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "society": {
         "base": 0,
         "slug": "society",
         "label": "Society",
-        "value": 5,
-        "totalModifier": 5,
-        "dc": 15,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +5",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1387,7 +1389,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 5,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1405,10 +1407,10 @@
             "predicate": []
           }
         ],
-        "mod": 5,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "stealth": {
@@ -1503,11 +1505,11 @@
         "base": 0,
         "slug": "thievery",
         "label": "Thievery",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1519,7 +1521,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1537,10 +1539,10 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       }
     },
@@ -1608,19 +1610,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -1628,11 +1628,13 @@
                 "reach-15"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "R0Gax2h9jLKVEhCb": {
@@ -1664,14 +1666,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -1681,19 +1683,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -1701,11 +1701,13 @@
                 "reach-15"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "R0Gax2h9jLKVEhCb": {
@@ -1737,14 +1739,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -1833,19 +1835,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -1854,11 +1854,13 @@
                 "reach-10"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "xo9cABGu1WJPdJt3": {
@@ -1895,14 +1897,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -1912,19 +1914,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -1933,11 +1933,13 @@
                 "reach-10"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "xo9cABGu1WJPdJt3": {
@@ -1974,14 +1976,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -2076,19 +2078,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -2096,11 +2096,13 @@
                 "reach-15"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "52uPhVf9LLpzwSLO": {
@@ -2132,14 +2134,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -2149,19 +2151,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -2169,11 +2169,13 @@
                 "reach-15"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "52uPhVf9LLpzwSLO": {
@@ -2205,14 +2207,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -2301,19 +2303,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -2321,11 +2321,13 @@
                 "magical"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "tZfl6ptJ2iEONUjG": {
@@ -2357,14 +2359,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -2374,19 +2376,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -2394,11 +2394,13 @@
                 "magical"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "tZfl6ptJ2iEONUjG": {
@@ -2430,14 +2432,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -2847,7 +2849,7 @@
       "system": {
         "description": {
           "gm": "",
-          "value": "<p>On a successful hit with the ice dragon's claw, jaws, horn, or tail Strikes, the target must make a @Check[fortitude|dc:39] save or take a -5 penalty to their Speed, their body filled with chills and shivering with cold. Successive hits on the creature increases this penalty, with a maximum value of -25. At the end of their turn, if the creature's Speed would be reduced by 25 with this effect, it must make a @Check[fortitude|dc:39] save or be turned to solid ice. This second effect has the incapacitation trait.</p><p>@UUID[Compendium.world.ponyfinder-bestiary-effects.Item.RenNfifnfxis7MuW]{Effect: Chilling Factor}</p><p>Effects which would return a body to its fleshly components, such as the stone to flesh spell, will return a creature turned into ice back to normal. Additionally, creatures can make a single Interact action to warm themselves and reduce this cumulative penalty inflicted by this effect by 5. If the creature comes into contact or proximity to a heat source, is affected by an ability or spell with the fire trait, or takes fire damage, this also reduces the cumulative penalty inflicted by this effect by 5.</p>",
+          "value": "<p>On a successful hit with the ice dragon's claw, jaws, horn, or tail Strikes, the target must make a @Check[fortitude|dc:39] save or take a -5 penalty to their Speed, their body filled with chills and shivering with cold. Successive hits on the creature increases this penalty, with a maximum value of -25. At the end of their turn, if the creature's Speed would be reduced by 25 with this effect, it must make a @Check[fortitude|dc:39] save or be turned to solid ice. This second effect has the incapacitation trait.</p><p>@UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.RenNfifnfxis7MuW]{Effect: Chilling Factor}</p><p>Effects which would return a body to its fleshly components, such as the stone to flesh spell, will return a creature turned into ice back to normal. Additionally, creatures can make a single Interact action to warm themselves and reduce this cumulative penalty inflicted by this effect by 5. If the creature comes into contact or proximity to a heat source, is affected by an ability or spell with the fire trait, or takes fire damage, this also reduces the cumulative penalty inflicted by this effect by 5.</p>",
           "addenda": [],
           "override": null
         },
@@ -2907,10 +2909,10 @@
       "_stats": {
         "coreVersion": "12.331",
         "systemId": "pf2e",
-        "systemVersion": "6.2.1",
+        "systemVersion": "6.3.1",
         "createdTime": null,
-        "modifiedTime": 1723786189235,
-        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "modifiedTime": 1725410211207,
+        "lastModifiedBy": "TArEmjqYQirefbfC",
         "compendiumSource": null,
         "duplicateSource": null
       }
@@ -4212,7 +4214,8 @@
           "speed:fly": true,
           "speed:swim": true,
           "self:signature:dd9f6c52-7aaa-5cdd-b55d-04439a9a3560": true,
-          "self:caster:tradition:primal": true
+          "self:caster:tradition:primal": true,
+          "self:signature:1491a820-9fd3-5d5d-931e-934a9bac2de3": true
         }
       },
       "trackedItems": {},
@@ -4226,7 +4229,7 @@
     "createdTime": 1723762245334,
     "modifiedTime": 1723782415346,
     "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.J2vfYC66lohrrZsD",
     "duplicateSource": null
   }
 }

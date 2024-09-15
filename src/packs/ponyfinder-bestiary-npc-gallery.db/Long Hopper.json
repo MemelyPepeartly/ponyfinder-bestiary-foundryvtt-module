@@ -476,7 +476,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "athletics": {
@@ -520,7 +520,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "crafting": {
@@ -564,7 +564,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "deception": {
@@ -608,7 +608,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "diplomacy": {
@@ -652,7 +652,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "intimidation": {
@@ -696,18 +696,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "medicine": {
         "base": 0,
         "slug": "medicine",
         "label": "Medicine",
-        "value": 1,
-        "totalModifier": 1,
-        "dc": 11,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +1",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -719,7 +719,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 1,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -737,21 +737,21 @@
             "predicate": []
           }
         ],
-        "mod": 1,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "nature": {
         "base": 0,
         "slug": "nature",
         "label": "Nature",
-        "value": 1,
-        "totalModifier": 1,
-        "dc": 11,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +1",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -763,7 +763,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 1,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -781,10 +781,10 @@
             "predicate": []
           }
         ],
-        "mod": 1,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "occultism": {
@@ -828,7 +828,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "performance": {
@@ -872,18 +872,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "religion": {
         "base": 0,
         "slug": "religion",
         "label": "Religion",
-        "value": 1,
-        "totalModifier": 1,
-        "dc": 11,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +1",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -895,7 +895,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 1,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -913,10 +913,10 @@
             "predicate": []
           }
         ],
-        "mod": 1,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "society": {
@@ -960,7 +960,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "stealth": {
@@ -1055,11 +1055,11 @@
         "base": 0,
         "slug": "thievery",
         "label": "Thievery",
-        "value": 3,
-        "totalModifier": 3,
-        "dc": 13,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier +3",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1071,7 +1071,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 3,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1089,10 +1089,10 @@
             "predicate": []
           }
         ],
-        "mod": 3,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       }
     },
@@ -1146,14 +1146,11 @@
         "attackRollType": "PF2E.NPCAttackMelee",
         "additionalEffects": [],
         "item": {
-          "type": "melee",
+          "_id": "ezQ1EX9MPN0H0l6L",
           "name": "Jaws",
-          "effects": [],
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
-            "_migration": {
-              "version": 0.932,
-              "previous": null
-            },
             "description": {
               "value": "",
               "gm": ""
@@ -1170,9 +1167,13 @@
               "otherTags": [],
               "value": []
             },
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
             "damageRolls": {
               "29A7juUUym0IaLGJ": {
-                "damage": "1d6+1",
+                "damage": "1d6 + 1",
                 "damageType": "piercing",
                 "category": null
               }
@@ -1184,35 +1185,36 @@
               "value": []
             }
           },
-          "_id": "ezQ1EX9MPN0H0l6L",
-          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "effects": [],
           "folder": null,
           "sort": 0,
           "ownership": {
             "default": 0,
             "7V80iZREAvj5ZaV4": 3
           },
-          "flags": {},
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
-          "type": "melee",
+          "_id": "ezQ1EX9MPN0H0l6L",
           "name": "Jaws",
-          "effects": [],
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
-            "_migration": {
-              "version": 0.932,
-              "previous": null
-            },
             "description": {
               "value": "",
               "gm": ""
@@ -1229,9 +1231,13 @@
               "otherTags": [],
               "value": []
             },
+            "_migration": {
+              "version": 0.932,
+              "previous": null
+            },
             "damageRolls": {
               "29A7juUUym0IaLGJ": {
-                "damage": "1d6+1",
+                "damage": "1d6 + 1",
                 "damageType": "piercing",
                 "category": null
               }
@@ -1243,24 +1249,28 @@
               "value": []
             }
           },
-          "_id": "ezQ1EX9MPN0H0l6L",
-          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "effects": [],
           "folder": null,
           "sort": 0,
           "ownership": {
             "default": 0,
             "7V80iZREAvj5ZaV4": 3
           },
-          "flags": {},
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -1539,7 +1549,7 @@
       "system": {
         "description": {
           "gm": "",
-          "value": "<p>So long as at least two other Long Hoppers are within 30 feet, they can synchronize their unheard ballad to coordinate their efforts. As soon as at least 3 Long Hoppers have used this action within range in the last round, the Long Hopper gains 4 temporary hit points and a +1 circumstance bonus to attack and damage rolls until a minute passes without 3 Long Hoppers singing.</p><p>@UUID[Compendium.world.ponyfinder-bestiary-effects.Item.IZpsvpgy19iifUpZ]{Effect: Long Hopper Silent Song}</p>",
+          "value": "<p>So long as at least two other Long Hoppers are within 30 feet, they can synchronize their unheard ballad to coordinate their efforts. As soon as at least 3 Long Hoppers have used this action within range in the last round, the Long Hopper gains 4 temporary hit points and a +1 circumstance bonus to attack and damage rolls until a minute passes without 3 Long Hoppers singing.</p><p>@UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.IZpsvpgy19iifUpZ]{Effect: Long Hopper Silent Song}</p>",
           "addenda": [],
           "override": null
         },
@@ -1593,10 +1603,10 @@
       "_stats": {
         "coreVersion": "12.331",
         "systemId": "pf2e",
-        "systemVersion": "6.2.1",
+        "systemVersion": "6.3.1",
         "createdTime": null,
-        "modifiedTime": 1723786476359,
-        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "modifiedTime": 1725410533943,
+        "lastModifiedBy": "TArEmjqYQirefbfC",
         "compendiumSource": null,
         "duplicateSource": null
       }
@@ -1710,7 +1720,7 @@
         },
         "deathNote": false,
         "selfEffect": {
-          "uuid": "Compendium.world.ponyfinder-bestiary-effects.Item.BROuiLd3QSIAdSwy",
+          "uuid": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.BROuiLd3QSIAdSwy",
           "name": "Effect: Sudden Dash",
           "img": "icons/skills/movement/arrow-upward-yellow.webp"
         }
@@ -1731,10 +1741,10 @@
       "_stats": {
         "coreVersion": "12.331",
         "systemId": "pf2e",
-        "systemVersion": "6.2.1",
+        "systemVersion": "6.3.1",
         "createdTime": null,
-        "modifiedTime": 1723786844687,
-        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "modifiedTime": 1725410468196,
+        "lastModifiedBy": "TArEmjqYQirefbfC",
         "compendiumSource": null,
         "duplicateSource": null
       }
@@ -1766,7 +1776,8 @@
           "self:trait:beast": true,
           "self:size:1": true,
           "self:size:small": true,
-          "hp-remaining:7": true
+          "hp-remaining:7": true,
+          "self:signature:be509e2b-61a9-5ae9-af4e-f99038f25927": true
         }
       },
       "trackedItems": {},
@@ -1780,7 +1791,7 @@
     "createdTime": 1723762245334,
     "modifiedTime": 1723782696592,
     "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": "Compendium.world.ponyfinder-bestiary-npc-gallery.Actor.OoIaCOFicjStaEeb",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.OoIaCOFicjStaEeb",
     "duplicateSource": null
   }
 }

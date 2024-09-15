@@ -1,39 +1,41 @@
 {
-  "_id": "VBwUsBDR2Aklv0Hj",
-  "name": "Great Beam",
-  "img": "systems/pf2e/icons/default-icons/npc.svg",
+  "_id": "HSxBlnsdGEIriJzE",
+  "name": "Rift Dragon (Young)",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderRiftDragonYoung.webp",
   "type": "npc",
   "system": {
     "attributes": {
       "hp": {
         "slug": "hp",
         "_modifiers": [],
-        "breakdown": "Base Max HP 173",
+        "breakdown": "Base Max HP 150",
         "totalModifier": 0,
-        "value": 173,
+        "value": 150,
         "temp": 0,
-        "max": 173,
+        "max": 150,
         "details": "",
         "negativeHealing": false,
         "unrecoverable": 0,
-        "base": 173
+        "base": 150,
+        "adjustedHigher": false,
+        "adjustedLower": false
       },
       "speed": {
         "slug": "land-speed",
         "_modifiers": [],
-        "breakdown": "Base Land Speed 0",
+        "breakdown": "Base Land Speed 25",
         "totalModifier": 0,
-        "total": 0,
-        "value": 0,
+        "total": 25,
+        "value": 25,
         "otherSpeeds": [
           {
             "slug": "fly-speed",
             "_modifiers": [],
-            "breakdown": "Base Fly Speed 40",
+            "breakdown": "Base Fly Speed 90",
             "totalModifier": 0,
             "type": "fly",
             "label": "Fly",
-            "value": 40
+            "value": 90
           }
         ],
         "details": "",
@@ -43,11 +45,11 @@
       "ac": {
         "slug": "ac",
         "label": "PF2E.ArmorClassLabel",
-        "value": 25,
-        "totalModifier": 15,
-        "dc": 25,
+        "value": 26,
+        "totalModifier": 16,
+        "dc": 26,
         "attribute": "dex",
-        "breakdown": "Base DC 10, Modifier +15",
+        "breakdown": "Base DC 10, Modifier +16",
         "modifiers": [
           {
             "slug": "base",
@@ -56,7 +58,7 @@
               "all",
               "dex-based"
             ],
-            "modifier": 15,
+            "modifier": 16,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -81,7 +83,7 @@
       },
       "weaknesses": [
         {
-          "type": "cold-iron",
+          "type": "wood",
           "exceptions": [],
           "definition": null,
           "source": null,
@@ -170,8 +172,8 @@
         "value": 0
       },
       "reach": {
-        "base": 5,
-        "manipulate": 5
+        "base": 10,
+        "manipulate": 10
       },
       "shield": {
         "itemId": null,
@@ -202,24 +204,24 @@
         "max": 3
       },
       "spellDC": {
-        "value": 26
+        "value": 23
       },
       "classDC": {
         "value": 24
       },
       "classOrSpellDC": {
-        "value": 26
+        "value": 24
       },
       "emitsSound": true
     },
     "initiative": {
       "slug": "initiative",
       "label": "Perception",
-      "value": 21,
-      "totalModifier": 21,
-      "dc": 31,
+      "value": 16,
+      "totalModifier": 16,
+      "dc": 26,
       "attribute": "wis",
-      "breakdown": "Modifier +21",
+      "breakdown": "Modifier +16",
       "modifiers": [
         {
           "slug": "base",
@@ -230,7 +232,7 @@
             "all",
             "initiative"
           ],
-          "modifier": 21,
+          "modifier": 16,
           "type": "untyped",
           "ability": null,
           "adjustments": [],
@@ -254,7 +256,12 @@
     "details": {
       "languages": {
         "value": [
-          "fey"
+          "common",
+          "draconic",
+          "dwarven",
+          "fey",
+          "pyric",
+          "thalassic"
         ],
         "details": ""
       },
@@ -263,7 +270,7 @@
         "base": 8
       },
       "blurb": "",
-      "publicNotes": "<p>Guiding lights can take on many forms, from floating torches or hooded lanterns to the larger species that appear more like the great lamp of a lighthouse and signaling greater things that are coming or going. Usually kind hearted, they lead people away from danger, but the want to be mischievous sometimes comes to the foreground. Their tricks are just as capable of misleading those they deem worthy of a little punishment.</p>",
+      "publicNotes": "<p id=\"docs-internal-guid-a6068b50-7fff-47d0-8a29-4beb70e34923\" dir=\"ltr\" style=\"line-height:1.656;text-indent:18pt;margin-top:0pt;margin-bottom:0pt\"><span style=\"font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap\">Rift dragons are drawn to, and some suggest born from, elemental imbalances. Anywhere the elemental planes clash and cross with the prime material a rift dragon may appear, and will act to defend it from interference. They have a strong resistance to the direct touch of the divine, and to the forged metal of civilization, as if made to counter sentience itself.</span></p>\n<p dir=\"ltr\" style=\"line-height:1.656;text-indent:18pt;margin-top:0pt;margin-bottom:0pt\"><span style=\"font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap\">Left to their own devices, they will attempt to become rulers of any given location of planar interference, drawing on the power of the friction generated between two competing planes of reality. They fiercely defend such places and will attack foolhardy adventurers or soldiers who attempt to dispel such dangerous places. </span></p>\n<p dir=\"ltr\" style=\"line-height:1.656;text-indent:18pt;margin-top:0pt;margin-bottom:0pt\"><span style=\"font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre-wrap\">Approached carefully, and making no attempt to harm their home, rift dragons can be spoken with and even enjoy a good conversation. Not inherently evil, they can be reasoned with, but they are as mercurial as the disturbances they call home.</span></p>",
       "privateNotes": "",
       "publication": {
         "title": "",
@@ -291,12 +298,12 @@
     },
     "abilities": {
       "str": {
-        "mod": -4,
+        "mod": 9,
         "label": "PF2E.AbilityStr",
         "shortLabel": "PF2E.AbilityId.str"
       },
       "dex": {
-        "mod": 6,
+        "mod": 5,
         "label": "PF2E.AbilityDex",
         "shortLabel": "PF2E.AbilityId.dex"
       },
@@ -306,17 +313,17 @@
         "shortLabel": "PF2E.AbilityId.con"
       },
       "int": {
-        "mod": 3,
+        "mod": 4,
         "label": "PF2E.AbilityInt",
         "shortLabel": "PF2E.AbilityId.int"
       },
       "wis": {
-        "mod": 4,
+        "mod": 3,
         "label": "PF2E.AbilityWis",
         "shortLabel": "PF2E.AbilityId.wis"
       },
       "cha": {
-        "mod": 3,
+        "mod": 5,
         "label": "PF2E.AbilityCha",
         "shortLabel": "PF2E.AbilityId.cha"
       }
@@ -324,11 +331,11 @@
     "perception": {
       "slug": "perception",
       "label": "Perception",
-      "value": 21,
-      "totalModifier": 21,
-      "dc": 31,
+      "value": 16,
+      "totalModifier": 16,
+      "dc": 26,
       "attribute": "wis",
-      "breakdown": "Modifier +21",
+      "breakdown": "Modifier +16",
       "modifiers": [
         {
           "slug": "base",
@@ -338,7 +345,7 @@
             "wis-based",
             "all"
           ],
-          "modifier": 21,
+          "modifier": 16,
           "type": "untyped",
           "ability": null,
           "adjustments": [],
@@ -356,21 +363,38 @@
           "predicate": []
         }
       ],
-      "senses": [],
+      "senses": [
+        {
+          "type": "darkvision",
+          "acuity": "precise",
+          "range": null,
+          "source": null,
+          "label": "Darkvision",
+          "emphasizeLabel": false
+        },
+        {
+          "type": "scent",
+          "acuity": "imprecise",
+          "range": 60,
+          "source": null,
+          "label": "Scent (Imprecise) 60 Feet",
+          "emphasizeLabel": false
+        }
+      ],
       "vision": true,
       "details": "",
-      "mod": 21
+      "mod": 16
     },
     "saves": {
       "fortitude": {
-        "value": 13,
+        "value": 16,
         "saveDetail": "",
         "attribute": null,
         "slug": "fortitude",
         "label": "Fortitude",
-        "totalModifier": 13,
-        "dc": 23,
-        "breakdown": "Modifier +13",
+        "totalModifier": 16,
+        "dc": 26,
+        "breakdown": "Modifier +16",
         "modifiers": [
           {
             "slug": "base",
@@ -381,7 +405,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 13,
+            "modifier": 16,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -399,7 +423,7 @@
             "predicate": []
           }
         ],
-        "base": 13
+        "base": 16
       },
       "reflex": {
         "value": 16,
@@ -441,14 +465,14 @@
         "base": 16
       },
       "will": {
-        "value": 13,
+        "value": 14,
         "saveDetail": "",
         "attribute": null,
         "slug": "will",
         "label": "Will",
-        "totalModifier": 13,
-        "dc": 23,
-        "breakdown": "Modifier +13",
+        "totalModifier": 14,
+        "dc": 24,
+        "breakdown": "Modifier +14",
         "modifiers": [
           {
             "slug": "base",
@@ -459,7 +483,7 @@
               "saving-throw",
               "all"
             ],
-            "modifier": 13,
+            "modifier": 14,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -477,7 +501,7 @@
             "predicate": []
           }
         ],
-        "base": 13
+        "base": 14
       }
     },
     "skills": {
@@ -526,14 +550,14 @@
         "special": []
       },
       "arcana": {
-        "base": 0,
+        "base": 16,
         "slug": "arcana",
         "label": "Arcana",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 16,
+        "totalModifier": 16,
+        "dc": 26,
         "attribute": "int",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +16",
         "modifiers": [
           {
             "slug": "base",
@@ -545,7 +569,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 16,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -563,21 +587,21 @@
             "predicate": []
           }
         ],
-        "mod": 0,
+        "mod": 16,
         "itemId": null,
         "lore": false,
         "visible": true,
         "special": []
       },
       "athletics": {
-        "base": 0,
+        "base": 18,
         "slug": "athletics",
         "label": "Athletics",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 18,
+        "totalModifier": 18,
+        "dc": 28,
         "attribute": "str",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +18",
         "modifiers": [
           {
             "slug": "base",
@@ -589,7 +613,7 @@
               "str-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 18,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -607,7 +631,7 @@
             "predicate": []
           }
         ],
-        "mod": 0,
+        "mod": 18,
         "itemId": null,
         "lore": false,
         "visible": true,
@@ -658,14 +682,14 @@
         "special": []
       },
       "deception": {
-        "base": 16,
+        "base": 0,
         "slug": "deception",
         "label": "Deception",
-        "value": 16,
-        "totalModifier": 16,
-        "dc": 26,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +16",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -677,7 +701,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 16,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -695,7 +719,7 @@
             "predicate": []
           }
         ],
-        "mod": 16,
+        "mod": 0,
         "itemId": null,
         "lore": false,
         "visible": true,
@@ -878,14 +902,14 @@
         "special": []
       },
       "occultism": {
-        "base": 18,
+        "base": 0,
         "slug": "occultism",
         "label": "Occultism",
-        "value": 18,
-        "totalModifier": 18,
-        "dc": 28,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +18",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -897,7 +921,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 18,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -915,7 +939,7 @@
             "predicate": []
           }
         ],
-        "mod": 18,
+        "mod": 0,
         "itemId": null,
         "lore": false,
         "visible": true,
@@ -1054,14 +1078,14 @@
         "special": []
       },
       "stealth": {
-        "base": 16,
+        "base": 15,
         "slug": "stealth",
         "label": "Stealth",
-        "value": 16,
-        "totalModifier": 16,
-        "dc": 26,
+        "value": 15,
+        "totalModifier": 15,
+        "dc": 25,
         "attribute": "dex",
-        "breakdown": "Modifier +16",
+        "breakdown": "Modifier +15",
         "modifiers": [
           {
             "slug": "base",
@@ -1073,7 +1097,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 16,
+            "modifier": 15,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1091,21 +1115,21 @@
             "predicate": []
           }
         ],
-        "mod": 16,
+        "mod": 15,
         "itemId": null,
         "lore": false,
         "visible": true,
         "special": []
       },
       "survival": {
-        "base": 0,
+        "base": 14,
         "slug": "survival",
         "label": "Survival",
-        "value": 0,
-        "totalModifier": 0,
-        "dc": 10,
+        "value": 14,
+        "totalModifier": 14,
+        "dc": 24,
         "attribute": "wis",
-        "breakdown": "Modifier +0",
+        "breakdown": "Modifier +14",
         "modifiers": [
           {
             "slug": "base",
@@ -1117,7 +1141,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 0,
+            "modifier": 14,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1135,7 +1159,7 @@
             "predicate": []
           }
         ],
-        "mod": 0,
+        "mod": 14,
         "itemId": null,
         "lore": false,
         "visible": true,
@@ -1188,21 +1212,466 @@
     },
     "traits": {
       "value": [
-        "fey",
-        "good"
+        "chaotic",
+        "dragon"
       ],
       "rarity": "common",
       "size": {
         "value": "med",
-        "length": 5,
-        "width": 5
+        "length": 10,
+        "width": 10
       }
     },
-    "autoChanges": {},
+    "autoChanges": {
+      "flags.pf2e.riftDragon.element": [
+        {
+          "mode": "override",
+          "level": null,
+          "value": "acid",
+          "source": "Breath Weapon"
+        }
+      ]
+    },
     "customModifiers": {},
     "actions": [
       {
-        "slug": "bright-touch",
+        "slug": "claw",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 20,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +20",
+        "totalModifier": 20,
+        "label": "Claw",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "rFYmw5cvopkXLNld",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [],
+        "item": {
+          "_id": "rFYmw5cvopkXLNld",
+          "name": "Claw",
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "system": {
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "agile"
+              ]
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
+            "damageRolls": {
+              "OriuGwvXwtmIXqh9": {
+                "damage": "2d8 + 9",
+                "damageType": "slashing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 20
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "0g5yUyfOblB2pGL3": 3
+          },
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        "weapon": {
+          "_id": "rFYmw5cvopkXLNld",
+          "name": "Claw",
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "system": {
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "agile"
+              ]
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
+            "damageRolls": {
+              "OriuGwvXwtmIXqh9": {
+                "damage": "2d8 + 9",
+                "damageType": "slashing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 20
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "0g5yUyfOblB2pGL3": 3
+          },
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee",
+          "agile"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          },
+          {
+            "name": "agile",
+            "label": "Agile",
+            "description": "PF2E.TraitDescriptionAgile"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +20"
+          },
+          {
+            "label": "+16 (MAP -4)"
+          },
+          {
+            "label": "+12 (MAP -8)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      },
+      {
+        "slug": "jaws",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 20,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +20",
+        "totalModifier": 20,
+        "label": "Jaws",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "7EaND6VcFpqC3Rsr",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [],
+        "item": {
+          "_id": "7EaND6VcFpqC3Rsr",
+          "name": "Jaws",
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "system": {
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [
+              {
+                "key": "DamageDice",
+                "diceNumber": 2,
+                "dieSize": "d6",
+                "damageType": "{actor|flags.pf2e.riftDragon.element}",
+                "selector": [
+                  "{item|id}-damage"
+                ],
+                "slug": null,
+                "priority": 100,
+                "ignored": false,
+                "predicate": [],
+                "hideIfDisabled": false
+              }
+            ],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
+            "damageRolls": {
+              "Wx9xcHgFzP6Y86v8": {
+                "damage": "2d10 + 11",
+                "damageType": "piercing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 20
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "0g5yUyfOblB2pGL3": 3
+          },
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        "weapon": {
+          "_id": "7EaND6VcFpqC3Rsr",
+          "name": "Jaws",
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "system": {
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [
+              {
+                "key": "DamageDice",
+                "diceNumber": 2,
+                "dieSize": "d6",
+                "damageType": "{actor|flags.pf2e.riftDragon.element}",
+                "selector": [
+                  "{item|id}-damage"
+                ],
+                "slug": null,
+                "priority": 100,
+                "ignored": false,
+                "predicate": [],
+                "hideIfDisabled": false
+              }
+            ],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
+            "damageRolls": {
+              "Wx9xcHgFzP6Y86v8": {
+                "damage": "2d10 + 11",
+                "damageType": "piercing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 20
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "0g5yUyfOblB2pGL3": 3
+          },
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +20"
+          },
+          {
+            "label": "+15 (MAP -5)"
+          },
+          {
+            "label": "+10 (MAP -10)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
+      },
+      {
+        "slug": "tail",
         "_modifiers": [
           {
             "slug": "base",
@@ -1229,16 +1698,16 @@
         ],
         "breakdown": "Modifier +18",
         "totalModifier": 18,
-        "label": "Bright Touch",
+        "label": "Tail",
         "type": "strike",
         "glyph": "1",
         "description": "",
-        "sourceId": "kVaRj50vAFdTQZKE",
+        "sourceId": "eHWq3Kg5S1cgKXAp",
         "attackRollType": "PF2E.NPCAttackMelee",
         "additionalEffects": [],
         "item": {
-          "_id": "kVaRj50vAFdTQZKE",
-          "name": "Bright Touch",
+          "_id": "eHWq3Kg5S1cgKXAp",
+          "name": "Tail",
           "type": "melee",
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
@@ -1257,8 +1726,7 @@
             "traits": {
               "otherTags": [],
               "value": [
-                "magical",
-                "occult"
+                "reach-10"
               ]
             },
             "_migration": {
@@ -1270,9 +1738,9 @@
               }
             },
             "damageRolls": {
-              "j8u4JrdbcbwdDuHB": {
-                "damage": "2d10 + 11",
-                "damageType": "fire",
+              "ZRbfyfLAjo0XfNzS": {
+                "damage": "2d8 + 9",
+                "damageType": "slashing",
                 "category": null
               }
             },
@@ -1308,8 +1776,8 @@
           }
         },
         "weapon": {
-          "_id": "kVaRj50vAFdTQZKE",
-          "name": "Bright Touch",
+          "_id": "eHWq3Kg5S1cgKXAp",
+          "name": "Tail",
           "type": "melee",
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
@@ -1328,8 +1796,7 @@
             "traits": {
               "otherTags": [],
               "value": [
-                "magical",
-                "occult"
+                "reach-10"
               ]
             },
             "_migration": {
@@ -1341,9 +1808,9 @@
               }
             },
             "damageRolls": {
-              "j8u4JrdbcbwdDuHB": {
-                "damage": "2d10 + 11",
-                "damageType": "fire",
+              "ZRbfyfLAjo0XfNzS": {
+                "damage": "2d8 + 9",
+                "damageType": "slashing",
                 "category": null
               }
             },
@@ -1382,8 +1849,7 @@
         "options": [
           "self:action:slug:strike",
           "melee",
-          "magical",
-          "occult"
+          "reach-10"
         ],
         "traits": [
           {
@@ -1392,14 +1858,9 @@
             "description": "PF2E.TraitDescriptionAttack"
           },
           {
-            "name": "magical",
-            "label": "Magical",
-            "description": "PF2E.TraitDescriptionMagical"
-          },
-          {
-            "name": "occult",
-            "label": "Occult",
-            "description": "PF2E.TraitDescriptionOccult"
+            "name": "reach-10",
+            "label": "Reach 10 feet",
+            "description": "PF2E.TraitDescriptionReach"
           }
         ],
         "variants": [
@@ -1416,6 +1877,214 @@
         "ready": true,
         "success": "",
         "criticalSuccess": ""
+      },
+      {
+        "slug": "wing",
+        "_modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [],
+            "modifier": 18,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "alterations": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "predicate": [],
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier"
+          }
+        ],
+        "breakdown": "Modifier +18",
+        "totalModifier": 18,
+        "label": "Wing",
+        "type": "strike",
+        "glyph": "1",
+        "description": "",
+        "sourceId": "SJrj6AGXuBbGc82H",
+        "attackRollType": "PF2E.NPCAttackMelee",
+        "additionalEffects": [],
+        "item": {
+          "_id": "SJrj6AGXuBbGc82H",
+          "name": "Wing",
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "system": {
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "agile"
+              ]
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
+            "damageRolls": {
+              "gBY9yrI9shZmkKVN": {
+                "damage": "1d10 + 10",
+                "damageType": "slashing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 18
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "0g5yUyfOblB2pGL3": 3
+          },
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        "weapon": {
+          "_id": "SJrj6AGXuBbGc82H",
+          "name": "Wing",
+          "type": "melee",
+          "img": "systems/pf2e/icons/default-icons/melee.svg",
+          "system": {
+            "description": {
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "agile"
+              ]
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
+            "damageRolls": {
+              "gBY9yrI9shZmkKVN": {
+                "damage": "1d10 + 10",
+                "damageType": "slashing",
+                "category": null
+              }
+            },
+            "bonus": {
+              "value": 18
+            },
+            "attackEffects": {
+              "value": []
+            }
+          },
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "ownership": {
+            "default": 0,
+            "0g5yUyfOblB2pGL3": 3
+          },
+          "flags": {
+            "pf2e": {
+              "rulesSelections": {},
+              "itemGrants": {}
+            }
+          },
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": "pf2e",
+            "systemVersion": "6.2.1",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        "canStrike": true,
+        "options": [
+          "self:action:slug:strike",
+          "melee",
+          "agile"
+        ],
+        "traits": [
+          {
+            "name": "attack",
+            "label": "Attack",
+            "description": "PF2E.TraitDescriptionAttack"
+          },
+          {
+            "name": "agile",
+            "label": "Agile",
+            "description": "PF2E.TraitDescriptionAgile"
+          }
+        ],
+        "variants": [
+          {
+            "label": "Strike +18"
+          },
+          {
+            "label": "+14 (MAP -4)"
+          },
+          {
+            "label": "+10 (MAP -8)"
+          }
+        ],
+        "ready": true,
+        "success": "",
+        "criticalSuccess": ""
       }
     ],
     "spellcasting": {
@@ -1425,15 +2094,15 @@
     }
   },
   "prototypeToken": {
-    "name": "Great Beam",
+    "name": "Young Rift Dragon",
     "displayName": 20,
     "actorLink": false,
     "appendNumber": false,
-    "prependAdjective": false,
+    "prependAdjective": true,
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "systems/pf2e/icons/default-icons/npc.svg",
+      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/rift%20dragon%20young%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
@@ -1445,7 +2114,7 @@
       "tint": "#ffffff",
       "alphaThreshold": 0.75
     },
-    "hexagonalShape": 0,
+    "hexagonalShape": 1,
     "lockRotation": false,
     "rotation": 0,
     "alpha": 1,
@@ -1519,165 +2188,63 @@
   },
   "items": [
     {
-      "_id": "dwmRKIuH3DUnTqeU",
-      "name": "Guiding Light",
-      "type": "action",
-      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "_id": "7EaND6VcFpqC3Rsr",
+      "name": "Jaws",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
       "system": {
         "description": {
-          "gm": "",
-          "value": "<p><span id=\"docs-internal-guid-8aa53f59-7fff-d09f-68d5-9f24bb364959\">The guiding light may lead the way. It may @UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{Stride} as part of this action to show the way it means and pantomime if need be, though there is no assurance of being understood. Creatures obeying its command can ignore difficult terrain so long as they move towards the guiding light.</span></p>",
-          "addenda": [],
-          "override": null
-        },
-        "rules": [],
-        "slug": null,
-        "_migration": {
-          "version": 0.932,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.925,
-            "foundry": "12.330",
-            "system": "6.2.1"
-          }
-        },
-        "traits": {
-          "otherTags": [],
-          "value": [],
-          "toggles": {
-            "mindshift": null
-          }
+          "value": "",
+          "gm": ""
         },
         "publication": {
           "title": "",
           "authors": "",
           "license": "OGL",
           "remaster": false
-        },
-        "actionType": {
-          "value": "action"
-        },
-        "category": "interaction",
-        "actions": {
-          "value": 2
-        },
-        "deathNote": false,
-        "requirements": {
-          "value": ""
-        },
-        "trigger": {
-          "value": ""
-        },
-        "selfEffect": null
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "0g5yUyfOblB2pGL3": 3
-      },
-      "flags": {
-        "pf2e": {
-          "rulesSelections": {},
-          "itemGrants": {}
-        }
-      },
-      "_stats": {
-        "coreVersion": "12.331",
-        "systemId": "pf2e",
-        "systemVersion": "6.2.1",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": null,
-        "duplicateSource": null
-      }
-    },
-    {
-      "_id": "KF5eVtM8LPY4xocI",
-      "name": "Constant Light",
-      "type": "action",
-      "img": "systems/pf2e/icons/default-icons/action.svg",
-      "system": {
-        "description": {
-          "gm": "",
-          "value": "<p><span id=\"docs-internal-guid-8a4071bb-7fff-9918-dd8f-bf1b905f485b\">The Great Beam puts out light as per a light spell with a level equal to half its level (4 normally) with a range of 120 feet bright light and 120 feet dim light beyond that and an angle of 60 degrees. It can change the direction as a free action on its turn whenever it wishes.</span></p>",
-          "addenda": [],
-          "override": null
         },
         "rules": [
           {
-            "key": "TokenLight",
-            "value": {
-              "dim": 240,
-              "bright": 120,
-              "animation": {
-                "type": "wave",
-                "speed": 1,
-                "intensity": 2,
-                "reverse": false
-              },
-              "angle": 60,
-              "alpha": 0.1,
-              "color": "#bdfef1",
-              "negative": false,
-              "priority": 0,
-              "coloration": 1,
-              "attenuation": 0.5,
-              "luminosity": 0.5,
-              "saturation": 0,
-              "contrast": 0,
-              "shadows": 0,
-              "darkness": {
-                "min": 0,
-                "max": 1
-              }
-            },
+            "key": "DamageDice",
+            "diceNumber": 2,
+            "dieSize": "d6",
+            "damageType": "{actor|flags.pf2e.riftDragon.element}",
+            "selector": [
+              "{item|id}-damage"
+            ],
             "slug": null,
             "priority": 100,
             "ignored": false,
-            "predicate": []
+            "predicate": [],
+            "hideIfDisabled": false
           }
         ],
         "slug": null,
-        "_migration": {
-          "version": 0.932,
-          "lastMigration": null,
-          "previous": {
-            "schema": 0.925,
-            "foundry": "12.330",
-            "system": "6.2.1"
-          }
-        },
         "traits": {
           "otherTags": [],
-          "value": [],
-          "toggles": {
-            "mindshift": null
+          "value": []
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": {
+            "foundry": "12.330",
+            "system": "6.2.1",
+            "schema": 0.925
           }
         },
-        "publication": {
-          "title": "",
-          "authors": "",
-          "license": "OGL",
-          "remaster": false
+        "damageRolls": {
+          "Wx9xcHgFzP6Y86v8": {
+            "damage": "2d10 + 11",
+            "damageType": "piercing",
+            "category": null
+          }
         },
-        "actionType": {
-          "value": "passive"
+        "bonus": {
+          "value": 20
         },
-        "category": null,
-        "actions": {
-          "value": null
-        },
-        "deathNote": false,
-        "requirements": {
-          "value": ""
-        },
-        "trigger": {
-          "value": ""
-        },
-        "selfEffect": null
+        "attackEffects": {
+          "value": []
+        }
       },
       "effects": [],
       "folder": null,
@@ -1704,8 +2271,8 @@
       }
     },
     {
-      "_id": "kVaRj50vAFdTQZKE",
-      "name": "Bright Touch",
+      "_id": "rFYmw5cvopkXLNld",
+      "name": "Claw",
       "type": "melee",
       "img": "systems/pf2e/icons/default-icons/melee.svg",
       "system": {
@@ -1724,8 +2291,7 @@
         "traits": {
           "otherTags": [],
           "value": [
-            "magical",
-            "occult"
+            "agile"
           ]
         },
         "_migration": {
@@ -1737,9 +2303,79 @@
           }
         },
         "damageRolls": {
-          "j8u4JrdbcbwdDuHB": {
-            "damage": "2d10 + 11",
-            "damageType": "fire",
+          "OriuGwvXwtmIXqh9": {
+            "damage": "2d8 + 9",
+            "damageType": "slashing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 20
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "0g5yUyfOblB2pGL3": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "eHWq3Kg5S1cgKXAp",
+      "name": "Tail",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "reach-10"
+          ]
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": {
+            "foundry": "12.330",
+            "system": "6.2.1",
+            "schema": 0.925
+          }
+        },
+        "damageRolls": {
+          "ZRbfyfLAjo0XfNzS": {
+            "damage": "2d8 + 9",
+            "damageType": "slashing",
             "category": null
           }
         },
@@ -1775,8 +2411,78 @@
       }
     },
     {
-      "_id": "DdycnEZA8J8Ke3Da",
-      "name": "Occult Innate Spells",
+      "_id": "SJrj6AGXuBbGc82H",
+      "name": "Wing",
+      "type": "melee",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "system": {
+        "description": {
+          "value": "",
+          "gm": ""
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "agile"
+          ]
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": {
+            "foundry": "12.330",
+            "system": "6.2.1",
+            "schema": 0.925
+          }
+        },
+        "damageRolls": {
+          "gBY9yrI9shZmkKVN": {
+            "damage": "1d10 + 10",
+            "damageType": "slashing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 18
+        },
+        "attackEffects": {
+          "value": []
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "0g5yUyfOblB2pGL3": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "u9G9HTVCwO2YuI6s",
+      "name": "Arcane Innate Spells",
       "type": "spellcastingEntry",
       "img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
       "system": {
@@ -1807,14 +2513,14 @@
           "remaster": false
         },
         "ability": {
-          "value": "wis"
+          "value": "cha"
         },
         "spelldc": {
-          "value": 18,
-          "dc": 26
+          "value": 15,
+          "dc": 23
         },
         "tradition": {
-          "value": "occult"
+          "value": "arcane"
         },
         "prepared": {
           "value": "innate",
@@ -1890,7 +2596,7 @@
           }
         },
         "autoHeightenLevel": {
-          "value": null
+          "value": 4
         },
         "showUnpreparedSpells": {
           "value": false
@@ -1922,151 +2628,49 @@
       }
     },
     {
-      "_id": "VkDnqADGzOpeBAFG",
-      "name": "Mirage",
+      "_id": "phqHAFgPK6s85GzK",
+      "name": "Detect Magic",
       "type": "spell",
-      "img": "icons/environment/wilderness/cave-entrance-vulcano.webp",
+      "img": "systems/pf2e/icons/spells/detect-magic.webp",
       "system": {
         "description": {
           "gm": "",
-          "value": "<p>You create an illusion that causes natural terrain to look, sound, feel, and smell like a different kind of terrain. This doesn't disguise any structures or creatures in the area.</p>\n<p>Any creature that touches the illusion or uses the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to examine it can attempt to disbelieve your illusion.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> Your image can also disguise structures or create illusory structures (but still doesn't disguise creatures).</p>",
+          "value": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies.</p>\n<p>You detect illusion magic only if that magic's effect has a lower level than the level of your detect magic spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an invisibility potion) typically are detected normally.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You learn the school of magic for the highest-level effect within range that the spell detects. If multiple effects are equally strong, the GM determines which you learn.</p>\n<p><strong>Heightened (4th)</strong> As 3rd level, but you also pinpoint the source of the highest-level magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>",
           "addenda": [],
           "override": null
         },
         "rules": [],
-        "slug": "mirage",
+        "slug": "detect-magic",
         "_migration": {
           "version": 0.932,
           "lastMigration": null,
-          "previous": null
+          "previous": {
+            "schema": 0.925,
+            "foundry": "12.330",
+            "system": "6.2.1"
+          }
         },
         "traits": {
           "otherTags": [],
           "value": [
+            "cantrip",
             "concentrate",
-            "exploration",
-            "exploration",
-            "illusion",
+            "detection",
             "manipulate"
           ],
-          "rarity": "uncommon",
+          "rarity": "common",
           "traditions": [
             "arcane",
+            "divine",
             "occult",
             "primal"
           ]
         },
         "publication": {
-          "title": "Pathfinder Player Core",
+          "title": "Pathfinder Core Rulebook",
           "authors": "",
-          "license": "ORC",
-          "remaster": true
-        },
-        "level": {
-          "value": 4
-        },
-        "requirements": "",
-        "target": {
-          "value": ""
-        },
-        "range": {
-          "value": "500 feet"
-        },
-        "area": {
-          "type": "burst",
-          "value": 50
-        },
-        "time": {
-          "value": "10 minutes"
-        },
-        "duration": {
-          "value": "until your next daily preparations",
-          "sustained": false
-        },
-        "damage": {},
-        "defense": null,
-        "cost": {
-          "value": ""
-        },
-        "location": {
-          "value": "DdycnEZA8J8Ke3Da",
-          "heightenedLevel": 4,
-          "uses": {
-            "value": 1,
-            "max": 1
-          }
-        },
-        "counteraction": false,
-        "cast": {
-          "focusPoints": 0
-        }
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "0g5yUyfOblB2pGL3": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX"
-        },
-        "pf2e": {
-          "rulesSelections": {},
-          "itemGrants": {}
-        }
-      },
-      "_stats": {
-        "coreVersion": "12.331",
-        "systemId": "pf2e",
-        "systemVersion": "6.2.1",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.HBJPsonQnWcC3qdX",
-        "duplicateSource": null
-      }
-    },
-    {
-      "_id": "9Q4ImcfLn8ICwDCH",
-      "name": "Dizzying Colors",
-      "type": "spell",
-      "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
-      "system": {
-        "description": {
-          "gm": "",
-          "value": "<p>You unleash a swirling multitude of colors that overwhelms creatures based on their Will saves.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1}, @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, and dazzled for 1 minute.</p>\n<p><strong>Critical Failure</strong> The creature is stunned for 1 round and blinded for 1 minute.</p>",
-          "addenda": [],
-          "override": null
-        },
-        "rules": [],
-        "slug": "dizzying-colors",
-        "_migration": {
-          "version": 0.932,
-          "lastMigration": null,
-          "previous": null
-        },
-        "traits": {
-          "otherTags": [],
-          "value": [
-            "concentrate",
-            "illusion",
-            "incapacitation",
-            "manipulate",
-            "visual"
-          ],
-          "rarity": "common",
-          "traditions": [
-            "arcane",
-            "occult"
-          ]
-        },
-        "publication": {
-          "title": "Pathfinder Player Core",
-          "authors": "",
-          "license": "ORC",
-          "remaster": true
+          "license": "OGL",
+          "remaster": false
         },
         "level": {
           "value": 1
@@ -2079,124 +2683,15 @@
           "value": ""
         },
         "area": {
-          "type": "cone",
-          "value": 15
+          "type": "emanation",
+          "value": 30
         },
-        "time": {
-          "value": "2"
-        },
-        "duration": {
-          "value": "1 or more rounds (see below)",
-          "sustained": false
-        },
-        "damage": {},
-        "defense": {
-          "save": {
-            "basic": false,
-            "statistic": "will"
-          }
-        },
-        "cost": {
-          "value": ""
-        },
-        "location": {
-          "value": "DdycnEZA8J8Ke3Da",
-          "heightenedLevel": 3,
-          "uses": {
-            "value": 1,
-            "max": 1
-          }
-        },
-        "counteraction": false,
-        "cast": {
-          "focusPoints": 0
-        }
-      },
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "0g5yUyfOblB2pGL3": 3
-      },
-      "flags": {
-        "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl"
-        },
-        "pf2e": {
-          "rulesSelections": {},
-          "itemGrants": {}
-        }
-      },
-      "_stats": {
-        "coreVersion": "12.331",
-        "systemId": "pf2e",
-        "systemVersion": "6.2.1",
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null,
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.UKsIOWmMx4hSpafl",
-        "duplicateSource": null
-      }
-    },
-    {
-      "_id": "zSsJcBA8l0NRtrJl",
-      "name": "Illusory Creature",
-      "type": "spell",
-      "img": "icons/creatures/magical/spirit-undead-winged-ghost.webp",
-      "system": {
-        "description": {
-          "gm": "",
-          "value": "<p>You create an illusory image of a Large or smaller creature. It generates the appropriate sounds, smells, and feels believable to the touch. If you and the image are ever farther than 500 feet apart, the spell ends.</p>\n<p>The image can't speak, but you can use your actions to speak through the creature, with the spell disguising your voice as appropriate. You might need to attempt a Deception or Performance check to mimic the creature, as determined by the GM. This is especially likely if you're trying to imitate a specific person and engage with someone that person knows.</p>\n<p>In combat, the illusion can use 2 actions per turn, which it uses when you Sustain the spell. It uses your spell attack modifier for attack rolls and your spell DC for its AC. Its saving throw modifiers are equal to your spell DC – 10. It is substantial enough that it can flank other creatures. If the image is hit by an attack or fails a save, the spell ends.</p>\n<p>The illusion can cause damage by making the target believe the illusion's attacks are real, but it cannot otherwise directly affect the physical world. If the illusory creature hits with a Strike, the target takes @Damage[3d4[mental]] damage. The illusion's Strikes are nonlethal. If the damage doesn't correspond to the image of the monster—for example, if an illusory Large dragon deals only 5 damage—the GM might allow the target to attempt an immediate Perception check to disbelieve the spell. Any relevant resistances and weaknesses apply if the target thinks they do, as judged by the GM. For example, if the illusion wields a warhammer and attacks a creature resistant to bludgeoning damage, the creature would take less mental damage. However, illusory damage does not deactivate regeneration or trigger other effects that require a certain damage type. The GM should track illusory damage dealt by the illusion.</p>\n<p>Any creature that touches the image or uses the @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{Seek} action to examine it can attempt to disbelieve your illusion. When a creature disbelieves the illusion, it recovers from half the damage it had taken from it (if any) and doesn't take any further damage from it.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage of the image's Strikes increases by 1d4, and the maximum size of creature you can create increases by one (to a maximum of Gargantuan).</p>",
-          "addenda": [],
-          "override": null
-        },
-        "rules": [],
-        "slug": "illusory-creature",
-        "_migration": {
-          "version": 0.932,
-          "lastMigration": null,
-          "previous": null
-        },
-        "traits": {
-          "otherTags": [],
-          "value": [
-            "auditory",
-            "concentrate",
-            "illusion",
-            "manipulate",
-            "olfactory",
-            "visual"
-          ],
-          "rarity": "common",
-          "traditions": [
-            "arcane",
-            "occult"
-          ]
-        },
-        "publication": {
-          "title": "Pathfinder Player Core",
-          "authors": "",
-          "license": "ORC",
-          "remaster": true
-        },
-        "level": {
-          "value": 2
-        },
-        "requirements": "",
-        "target": {
-          "value": ""
-        },
-        "range": {
-          "value": "500 feet"
-        },
-        "area": null,
         "time": {
           "value": "2"
         },
         "duration": {
           "value": "",
-          "sustained": true
+          "sustained": false
         },
         "damage": {},
         "defense": null,
@@ -2204,8 +2699,7 @@
           "value": ""
         },
         "location": {
-          "value": "DdycnEZA8J8Ke3Da",
-          "heightenedLevel": 3,
+          "value": "u9G9HTVCwO2YuI6s",
           "uses": {
             "value": 1,
             "max": 1
@@ -2225,7 +2719,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly"
+          "sourceId": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl"
         },
         "pf2e": {
           "rulesSelections": {},
@@ -2239,64 +2733,74 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.f8SBoXiXQjlCKqly",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl",
         "duplicateSource": null
       }
     },
     {
-      "_id": "Zyf6qypPzV84GoZa",
-      "name": "Invisibility (At-Will)",
+      "_id": "jqfBIbrMJNZHuDLk",
+      "name": "Read Aura",
       "type": "spell",
-      "img": "icons/creatures/magical/construct-stone-earth-gray.webp",
+      "img": "systems/pf2e/icons/spells/read-aura.webp",
       "system": {
         "description": {
           "gm": "",
-          "value": "<p>Illusions bend light around the target, rendering it @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. This makes it @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>",
+          "value": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical, and if it is, you learn the school of magic.</p>\n<p>If the object is illusory, you detect this only if the effect's level is lower than the level of your read aura spell.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>",
           "addenda": [],
           "override": null
         },
         "rules": [],
-        "slug": "invisibility",
+        "slug": "read-aura",
         "_migration": {
           "version": 0.932,
           "lastMigration": null,
-          "previous": null
+          "previous": {
+            "schema": 0.925,
+            "foundry": "12.330",
+            "system": "6.2.1"
+          }
         },
         "traits": {
           "otherTags": [],
           "value": [
-            "illusion",
-            "manipulate",
-            "subtle"
+            "cantrip",
+            "concentrate",
+            "detection",
+            "exploration",
+            "exploration",
+            "exploration",
+            "manipulate"
           ],
           "rarity": "common",
           "traditions": [
             "arcane",
-            "occult"
+            "divine",
+            "occult",
+            "primal"
           ]
         },
         "publication": {
-          "title": "Pathfinder Player Core",
+          "title": "Pathfinder Core Rulebook",
           "authors": "",
-          "license": "ORC",
-          "remaster": true
+          "license": "OGL",
+          "remaster": false
         },
         "level": {
-          "value": 2
+          "value": 1
         },
         "requirements": "",
         "target": {
-          "value": "1 creature"
+          "value": "1 object"
         },
         "range": {
-          "value": "touch"
+          "value": "30 feet"
         },
         "area": null,
         "time": {
-          "value": "2"
+          "value": "1 Minute"
         },
         "duration": {
-          "value": "10 minutes",
+          "value": "",
           "sustained": false
         },
         "damage": {},
@@ -2305,14 +2809,28 @@
           "value": ""
         },
         "location": {
-          "value": "DdycnEZA8J8Ke3Da",
-          "heightenedLevel": 2,
+          "value": "u9G9HTVCwO2YuI6s",
           "uses": {
-            "max": 999,
-            "value": 999
+            "value": 1,
+            "max": 1
           }
         },
         "counteraction": false,
+        "heightening": {
+          "levels": {
+            "3": {
+              "target": {
+                "value": "10 objects"
+              }
+            },
+            "6": {
+              "target": {
+                "value": "any number of objects"
+              }
+            }
+          },
+          "type": "fixed"
+        },
         "cast": {
           "focusPoints": 0
         }
@@ -2326,7 +2844,7 @@
       },
       "flags": {
         "core": {
-          "sourceId": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB"
+          "sourceId": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA"
         },
         "pf2e": {
           "rulesSelections": {},
@@ -2340,19 +2858,159 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB",
+        "compendiumSource": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA",
         "duplicateSource": null
       }
     },
     {
-      "_id": "RcDb8cwj4eBj7Cnu",
-      "name": "Confusing Dance",
+      "_id": "tErvZylPZEJ9cJ47",
+      "name": "Breath Weapon",
       "type": "action",
       "img": "systems/pf2e/icons/default-icons/action.svg",
       "system": {
         "description": {
           "gm": "",
-          "value": "<p id=\"docs-internal-guid-9d11d89c-7fff-59c5-cd9b-7dc10bbd6201\" dir=\"ltr\">By dancing and strobing erratically, all creatures the light  wishes to target within 30 feet must make a @Check[will|dc:26] save.</p><hr /><p dir=\"ltr\"><strong>Critical Success </strong>The target creature is unaffected</p><p dir=\"ltr\"><strong>Success </strong>The target creature takes @Damage[3d8[mental]] damage.</p><p dir=\"ltr\"><strong>Failure</strong> The target creature takes @Damage[(4d8+4)[mental]] damage.</p><p><strong>Critical Failure </strong>The target creature takes @Damage[(4d8+4)[mental]] damage and becomes @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 2} for an hour.</p>",
+          "value": "<p>The dragon breathes a blast of elemental fury that matches the element of the plane or rift it is currently in. This deals @Damage[9d6[@actor.flags.pf2e.riftDragon.element]] damage in a @Template[type:cone|distance:40] (@Check[reflex|dc:26|basic] save). It can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds} or if it's not in an elementally aligned area. Positive and negative are valid elements, but will never heal a creature (but could fail to damage it).</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [
+          {
+            "key": "RollOption",
+            "label": "Element",
+            "option": "element",
+            "suboptions": [
+              {
+                "label": "PF2E.TraitAcid",
+                "value": "acid",
+                "predicate": []
+              },
+              {
+                "label": "PF2E.TraitCold",
+                "value": "cold",
+                "predicate": []
+              },
+              {
+                "label": "PF2E.TraitElectricity",
+                "value": "electricity",
+                "predicate": []
+              },
+              {
+                "label": "PF2E.TraitFire",
+                "value": "fire",
+                "predicate": []
+              },
+              {
+                "label": "PF2E.TraitVitality",
+                "value": "vitality",
+                "predicate": []
+              },
+              {
+                "label": "PF2E.TraitVoid",
+                "value": "void",
+                "predicate": []
+              }
+            ],
+            "toggleable": true,
+            "alwaysActive": true,
+            "value": true,
+            "priority": 49,
+            "slug": null,
+            "ignored": false,
+            "predicate": [],
+            "domain": "all",
+            "phase": "applyAEs",
+            "mergeable": false
+          },
+          {
+            "key": "ActiveEffectLike",
+            "mode": "override",
+            "path": "flags.pf2e.riftDragon.element",
+            "value": "{item|flags.pf2e.rulesSelections.element}",
+            "slug": null,
+            "priority": 50,
+            "ignored": false,
+            "predicate": [],
+            "testDomains": [],
+            "phase": "applyAEs"
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.925,
+            "foundry": "12.330",
+            "system": "6.2.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "arcane"
+          ],
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "action"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": 2
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "0g5yUyfOblB2pGL3": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {
+            "element": "acid"
+          },
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "0iVgCPccAC6nZ5u5",
+      "name": "Draconic Frenzy",
+      "type": "action",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>",
           "addenda": [],
           "override": null
         },
@@ -2369,10 +3027,7 @@
         },
         "traits": {
           "otherTags": [],
-          "value": [
-            "occult",
-            "visual"
-          ],
+          "value": [],
           "toggles": {
             "mindshift": null
           }
@@ -2424,14 +3079,180 @@
       }
     },
     {
-      "_id": "yzGQwlX5MASNXvct",
-      "name": "Focused Light",
+      "_id": "BM67EKKVdPWcKw3Z",
+      "name": "Draconic Momentum",
       "type": "action",
       "img": "systems/pf2e/icons/default-icons/action.svg",
       "system": {
         "description": {
           "gm": "",
-          "value": "<p><span id=\"docs-internal-guid-b9128c13-7fff-2b75-6eb4-906fe1164889\">The target of this attack (which must be in range and direction of the constant light's bright light ability) becomes the focus of bright light, requiring a @Check[reflex|dc:25|basic] save against @Damage[4d8[fire]] damage. Undead creatures take @Damage[4d8[spirit]] damage as well.</span></p>",
+          "value": "<p>The dragon recharges its Breath Weapon whenever it scores a critical hit with a Strike.</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.925,
+            "foundry": "12.330",
+            "system": "6.2.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "0g5yUyfOblB2pGL3": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "hfWGDNCq0BXkaKfM",
+      "name": "Psychic Vulnerability",
+      "type": "action",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>Effects and spells with the mental trait operate against the dragon one category in the dragon's disadvantage (turning a hit to a critical success or a failed saving throw into a critical failure, as examples).</p>",
+          "addenda": [],
+          "override": null
+        },
+        "rules": [
+          {
+            "key": "AdjustDegreeOfSuccess",
+            "selector": "saving-throw",
+            "adjustment": {
+              "all": "one-degree-worse"
+            },
+            "predicate": [
+              "item:trait:mental"
+            ],
+            "slug": null,
+            "priority": 100,
+            "ignored": false
+          }
+        ],
+        "slug": null,
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.925,
+            "foundry": "12.330",
+            "system": "6.2.1"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "toggles": {
+            "mindshift": null
+          }
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "offensive",
+        "actions": {
+          "value": null
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "selfEffect": null
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "0g5yUyfOblB2pGL3": 3
+      },
+      "flags": {
+        "pf2e": {
+          "rulesSelections": {},
+          "itemGrants": {}
+        }
+      },
+      "_stats": {
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    },
+    {
+      "_id": "qJ2QVaAJVF0T3IGp",
+      "name": "Elemental Shift",
+      "type": "action",
+      "img": "systems/pf2e/icons/default-icons/action.svg",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>The dragon creates an imbalance where there was none before. The area (100 yard burst from the dragon) gains a shift of fire, cold, acid, electricity, positive, or negative. This ability gains the trait of the chosen element. Effects that deal this damage do 1 more damage per die. Effects that deal the opposite deal 1 less per die of damage. This can only be used in places without elemental favor to begin with. This does allow the rift dragon to use its elemental abilities. It lasts for 1 minute and cannot be used again for one day.</p>",
           "addenda": [],
           "override": null
         },
@@ -2449,9 +3270,8 @@
         "traits": {
           "otherTags": [],
           "value": [
-            "flourish",
-            "occult",
-            "visual"
+            "arcane",
+            "magical"
           ],
           "toggles": {
             "mindshift": null
@@ -2466,9 +3286,9 @@
         "actionType": {
           "value": "action"
         },
-        "category": "offensive",
+        "category": null,
         "actions": {
-          "value": 1
+          "value": 2
         },
         "deathNote": false,
         "requirements": {
@@ -2512,31 +3332,39 @@
     "7V80iZREAvj5ZaV4": 3
   },
   "flags": {
+    "core": {},
     "pf2e": {
       "rollOptions": {
         "all": {
           "self:type:npc": true,
-          "self:signature:22b04e3e-862a-53cb-aeac-171b0ed7163c": true,
+          "self:signature:4fd06d57-cb80-57ce-aa25-8df1b765b20a": true,
           "self:creature": true,
           "self:level:8": true,
           "self:caster": true,
-          "self:caster:tradition:occult": true,
+          "self:caster:tradition:arcane": true,
           "self:mode:living": true,
-          "self:trait:fey": true,
-          "self:trait:good": true,
+          "self:trait:chaotic": true,
+          "self:trait:dragon": true,
           "self:armored": false,
-          "self:size:2": true,
-          "self:size:medium": true,
-          "hp-remaining:173": true,
+          "self:size:3": true,
+          "self:size:large": true,
+          "hp-remaining:150": true,
           "hp-percent:100": true,
           "speed:land": true,
-          "self:signature:566f020f-7c2f-50ac-9d22-67467588abd6": true,
           "speed:fly": true,
-          "self:signature:a7c80799-8dd6-5c99-9b5c-4a67074dbcf9": true
+          "self:signature:37f10c0c-1b00-5568-818a-b2d0a915f641": true,
+          "element:acid": true,
+          "element": true,
+          "self:size:2": true,
+          "self:size:medium": true,
+          "self:signature:6362de5c-ec27-5773-828b-9cba59631cfb": true
         }
       },
       "trackedItems": {},
-      "lootable": false
+      "lootable": false,
+      "riftDragon": {
+        "element": "acid"
+      }
     }
   },
   "_stats": {
@@ -2544,9 +3372,9 @@
     "systemId": "pf2e",
     "systemVersion": "6.2.1",
     "createdTime": 1723762245334,
-    "modifiedTime": 1723762245334,
-    "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.VBwUsBDR2Aklv0Hj",
+    "modifiedTime": 1725410382929,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.HSxBlnsdGEIriJzE",
     "duplicateSource": null
   }
 }

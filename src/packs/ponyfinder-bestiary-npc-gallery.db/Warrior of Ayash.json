@@ -1239,30 +1239,30 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
-            },
-            "rules": [],
-            "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
-            "traits": {
-              "otherTags": [],
-              "value": [
-                "force"
-              ]
+              "value": "",
+              "gm": ""
             },
             "publication": {
               "title": "",
               "authors": "",
               "license": "OGL",
               "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "force"
+              ]
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "yCsaI080YctHARdA": {
@@ -1292,14 +1292,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -1309,30 +1309,30 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
-            },
-            "rules": [],
-            "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
-            "traits": {
-              "otherTags": [],
-              "value": [
-                "force"
-              ]
+              "value": "",
+              "gm": ""
             },
             "publication": {
               "title": "",
               "authors": "",
               "license": "OGL",
               "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": [
+                "force"
+              ]
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "yCsaI080YctHARdA": {
@@ -1362,14 +1362,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -1447,19 +1447,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -1467,11 +1465,13 @@
                 "force"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "QMeKijlACz5P5hoJ": {
@@ -1501,14 +1501,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -1518,19 +1518,17 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
+              "value": "",
+              "gm": ""
+            },
+            "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
             },
             "rules": [],
             "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
             "traits": {
               "otherTags": [],
               "value": [
@@ -1538,11 +1536,13 @@
                 "force"
               ]
             },
-            "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "QMeKijlACz5P5hoJ": {
@@ -1572,14 +1572,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -2548,7 +2548,8 @@
           "hp-remaining:217": true,
           "hp-percent:100": true,
           "speed:land": true,
-          "self:signature:0ba62ba0-5656-583a-abfb-b023b5b2e099": true
+          "self:signature:0ba62ba0-5656-583a-abfb-b023b5b2e099": true,
+          "self:signature:66118dee-dce8-50dc-a144-f0a3876f6354": true
         }
       },
       "trackedItems": {},
@@ -2562,7 +2563,7 @@
     "createdTime": 1723762245334,
     "modifiedTime": 1723783107968,
     "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.QDqhdWoSsp9DvSLJ",
     "duplicateSource": null
   }
 }

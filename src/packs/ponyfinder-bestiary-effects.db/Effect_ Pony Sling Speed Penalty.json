@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>Granted by @UUID[Compendium.world.ponyfinder-bestiary-items.Item.d5Oqaz0lm5MafKDo]{Pony Sling}</p>",
+      "value": "<p>Granted by @UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-items.Item.d5Oqaz0lm5MafKDo]{Pony Sling}</p>",
       "addenda": [],
       "override": null
     },
@@ -70,11 +70,11 @@
   "_stats": {
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.2.1",
+    "systemVersion": "6.3.1",
     "createdTime": 1723762164759,
-    "modifiedTime": 1723786611893,
-    "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": "Compendium.world.ponyfinder-bestiary-effects.Item.cwMQAp0IAGdDWJgo",
+    "modifiedTime": 1725410568395,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.cwMQAp0IAGdDWJgo",
     "duplicateSource": null
   }
 }

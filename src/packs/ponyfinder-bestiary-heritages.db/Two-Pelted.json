@@ -19,8 +19,7 @@
     "traits": {
       "otherTags": [],
       "value": [
-        "beast-folk",
-        "two-pelted"
+        "beast-folk"
       ],
       "rarity": "common"
     },
@@ -33,7 +32,7 @@
     "ancestry": null
   },
   "effects": [],
-  "folder": "5fuzt0GFWyuyUrz1",
+  "folder": null,
   "sort": 0,
   "ownership": {
     "default": 0,
@@ -48,11 +47,11 @@
   "_stats": {
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.2.1",
+    "systemVersion": "6.3.1",
     "createdTime": 1723762219536,
-    "modifiedTime": 1723762219536,
-    "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": null,
+    "modifiedTime": 1725410970704,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-heritages.Item.2RffsUMRe2KODXxF",
     "duplicateSource": null
   }
 }

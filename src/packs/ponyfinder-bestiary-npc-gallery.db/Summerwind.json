@@ -461,11 +461,11 @@
         "base": 0,
         "slug": "arcana",
         "label": "Arcana",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -477,7 +477,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -495,10 +495,10 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "athletics": {
@@ -549,11 +549,11 @@
         "base": 0,
         "slug": "crafting",
         "label": "Crafting",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -565,7 +565,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -583,10 +583,10 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "deception": {
@@ -681,11 +681,11 @@
         "base": 0,
         "slug": "intimidation",
         "label": "Intimidation",
-        "value": 2,
-        "totalModifier": 2,
-        "dc": 12,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -697,7 +697,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -715,21 +715,21 @@
             "predicate": []
           }
         ],
-        "mod": 2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "medicine": {
         "base": 0,
         "slug": "medicine",
         "label": "Medicine",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -741,7 +741,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -759,21 +759,21 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "nature": {
         "base": 0,
         "slug": "nature",
         "label": "Nature",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -785,7 +785,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -803,21 +803,21 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "occultism": {
         "base": 0,
         "slug": "occultism",
         "label": "Occultism",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -829,7 +829,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -847,21 +847,21 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "performance": {
         "base": 0,
         "slug": "performance",
         "label": "Performance",
-        "value": 2,
-        "totalModifier": 2,
-        "dc": 12,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier +2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -873,7 +873,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": 2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -891,21 +891,21 @@
             "predicate": []
           }
         ],
-        "mod": 2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "religion": {
         "base": 0,
         "slug": "religion",
         "label": "Religion",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -917,7 +917,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -935,21 +935,21 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "society": {
         "base": 0,
         "slug": "society",
         "label": "Society",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -961,7 +961,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -979,10 +979,10 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "stealth": {
@@ -1033,11 +1033,11 @@
         "base": 0,
         "slug": "survival",
         "label": "Survival",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "wis",
-        "breakdown": "Modifier +4",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1049,7 +1049,7 @@
               "wis-skill-check",
               "all"
             ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1067,21 +1067,21 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "thievery": {
         "base": 0,
         "slug": "thievery",
         "label": "Thievery",
-        "value": 6,
-        "totalModifier": 6,
-        "dc": 16,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier +6",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1093,7 +1093,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": 6,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1111,10 +1111,10 @@
             "predicate": []
           }
         ],
-        "mod": 6,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       }
     },
@@ -1177,28 +1177,28 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": "<div data-visibility=\"gm\"><p><strong>Success</strong> The target is moved 10 feet in any direction.</p><p><strong>Critical Success</strong> The target also drops one item they are carrying or are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, attacker’s choice.</p></div>"
-            },
-            "rules": [],
-            "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
-            "traits": {
-              "otherTags": [],
-              "value": []
+              "value": "<div data-visibility=\"gm\"><p><strong>Success</strong> The target is moved 10 feet in any direction.</p><p><strong>Critical Success</strong> The target also drops one item they are carrying or are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, attacker’s choice.</p></div>",
+              "gm": ""
             },
             "publication": {
               "title": "",
               "authors": "",
               "license": "OGL",
               "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "zUTGf9ncJd8SKtb3": {
@@ -1228,14 +1228,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -1245,28 +1245,28 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": "<div data-visibility=\"gm\"><p><strong>Success</strong> The target is moved 10 feet in any direction.</p><p><strong>Critical Success</strong> The target also drops one item they are carrying or are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, attacker’s choice.</p></div>"
-            },
-            "rules": [],
-            "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
-            "traits": {
-              "otherTags": [],
-              "value": []
+              "value": "<div data-visibility=\"gm\"><p><strong>Success</strong> The target is moved 10 feet in any direction.</p><p><strong>Critical Success</strong> The target also drops one item they are carrying or are knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, attacker’s choice.</p></div>",
+              "gm": ""
             },
             "publication": {
               "title": "",
               "authors": "",
               "license": "OGL",
               "remaster": false
+            },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
             },
             "damageRolls": {
               "zUTGf9ncJd8SKtb3": {
@@ -1296,14 +1296,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -1774,7 +1774,7 @@
       "system": {
         "description": {
           "gm": "",
-          "value": "<p>Up to three allies within 30 feet may immediately use their reaction to stride and make a single attack at any point. If this succeeds, they deal an additional 1d8 damage of the same type as their attack. They may fly during this movement.</p><p>@UUID[Compendium.world.ponyfinder-bestiary-effects.Item.bRRVtxZX5VNEU4QO]{Effect: Winds of War}</p>",
+          "value": "<p>Up to three allies within 30 feet may immediately use their reaction to stride and make a single attack at any point. If this succeeds, they deal an additional 1d8 damage of the same type as their attack. They may fly during this movement.</p><p>@UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.bRRVtxZX5VNEU4QO]{Effect: Winds of War}</p>",
           "addenda": [],
           "override": null
         },
@@ -1837,10 +1837,10 @@
       "_stats": {
         "coreVersion": "12.331",
         "systemId": "pf2e",
-        "systemVersion": "6.2.1",
+        "systemVersion": "6.3.1",
         "createdTime": null,
-        "modifiedTime": 1723786948681,
-        "lastModifiedBy": "7V80iZREAvj5ZaV4",
+        "modifiedTime": 1725410825763,
+        "lastModifiedBy": "TArEmjqYQirefbfC",
         "compendiumSource": null,
         "duplicateSource": null
       }
@@ -1874,7 +1874,8 @@
           "hp-percent:100": true,
           "speed:land": true,
           "speed:fly": true,
-          "self:signature:f8b18550-168b-5402-bb2a-531dcf1b1935": true
+          "self:signature:f8b18550-168b-5402-bb2a-531dcf1b1935": true,
+          "self:signature:2c26b138-57bc-5db9-976e-12eac6bed52c": true
         }
       },
       "trackedItems": {},
@@ -1888,7 +1889,7 @@
     "createdTime": 1723762245334,
     "modifiedTime": 1723762245334,
     "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": "Compendium.world.ponyfinder-bestiary-npc-gallery.Actor.W43p1UQsZqOACohh",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.W43p1UQsZqOACohh",
     "duplicateSource": null
   }
 }

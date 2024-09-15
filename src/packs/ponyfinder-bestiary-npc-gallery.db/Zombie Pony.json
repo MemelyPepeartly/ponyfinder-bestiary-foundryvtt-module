@@ -1215,11 +1215,11 @@
         "base": 0,
         "slug": "acrobatics",
         "label": "Acrobatics",
-        "value": -2,
-        "totalModifier": -2,
-        "dc": 8,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier -2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1231,95 +1231,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": -2,
-            "type": "untyped",
-            "ability": null,
-            "adjustments": [],
-            "force": false,
-            "enabled": true,
-            "ignored": false,
-            "source": null,
-            "custom": false,
-            "damageType": null,
-            "damageCategory": null,
-            "critical": null,
-            "traits": [],
-            "hideIfDisabled": false,
-            "kind": "penalty",
-            "predicate": []
-          }
-        ],
-        "mod": -2,
-        "itemId": null,
-        "lore": false,
-        "visible": false,
-        "special": []
-      },
-      "arcana": {
-        "base": 0,
-        "slug": "arcana",
-        "label": "Arcana",
-        "value": -5,
-        "totalModifier": -5,
-        "dc": 5,
-        "attribute": "int",
-        "breakdown": "Modifier -5",
-        "modifiers": [
-          {
-            "slug": "base",
-            "label": "Modifier",
-            "domains": [
-              "arcana",
-              "int-based",
-              "skill-check",
-              "int-skill-check",
-              "all"
-            ],
-            "modifier": -5,
-            "type": "untyped",
-            "ability": null,
-            "adjustments": [],
-            "force": false,
-            "enabled": true,
-            "ignored": false,
-            "source": null,
-            "custom": false,
-            "damageType": null,
-            "damageCategory": null,
-            "critical": null,
-            "traits": [],
-            "hideIfDisabled": false,
-            "kind": "penalty",
-            "predicate": []
-          }
-        ],
-        "mod": -5,
-        "itemId": null,
-        "lore": false,
-        "visible": false,
-        "special": []
-      },
-      "athletics": {
-        "base": 0,
-        "slug": "athletics",
-        "label": "Athletics",
-        "value": 4,
-        "totalModifier": 4,
-        "dc": 14,
-        "attribute": "str",
-        "breakdown": "Modifier +4",
-        "modifiers": [
-          {
-            "slug": "base",
-            "label": "Modifier",
-            "domains": [
-              "athletics",
-              "str-based",
-              "skill-check",
-              "str-skill-check",
-              "all"
-            ],
-            "modifier": 4,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1337,21 +1249,109 @@
             "predicate": []
           }
         ],
-        "mod": 4,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
+        "special": []
+      },
+      "arcana": {
+        "base": 0,
+        "slug": "arcana",
+        "label": "Arcana",
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
+        "attribute": "int",
+        "breakdown": "Modifier +0",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "arcana",
+              "int-based",
+              "skill-check",
+              "int-skill-check",
+              "all"
+            ],
+            "modifier": 0,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "mod": 0,
+        "itemId": null,
+        "lore": false,
+        "visible": true,
+        "special": []
+      },
+      "athletics": {
+        "base": 0,
+        "slug": "athletics",
+        "label": "Athletics",
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
+        "attribute": "str",
+        "breakdown": "Modifier +0",
+        "modifiers": [
+          {
+            "slug": "base",
+            "label": "Modifier",
+            "domains": [
+              "athletics",
+              "str-based",
+              "skill-check",
+              "str-skill-check",
+              "all"
+            ],
+            "modifier": 0,
+            "type": "untyped",
+            "ability": null,
+            "adjustments": [],
+            "force": false,
+            "enabled": true,
+            "ignored": false,
+            "source": null,
+            "custom": false,
+            "damageType": null,
+            "damageCategory": null,
+            "critical": null,
+            "traits": [],
+            "hideIfDisabled": false,
+            "kind": "modifier",
+            "predicate": []
+          }
+        ],
+        "mod": 0,
+        "itemId": null,
+        "lore": false,
+        "visible": true,
         "special": []
       },
       "crafting": {
         "base": 0,
         "slug": "crafting",
         "label": "Crafting",
-        "value": -5,
-        "totalModifier": -5,
-        "dc": 5,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier -5",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1363,7 +1363,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": -5,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1377,25 +1377,25 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -5,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "deception": {
         "base": 0,
         "slug": "deception",
         "label": "Deception",
-        "value": -2,
-        "totalModifier": -2,
-        "dc": 8,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier -2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1407,7 +1407,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": -2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1421,25 +1421,25 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "diplomacy": {
         "base": 0,
         "slug": "diplomacy",
         "label": "Diplomacy",
-        "value": -2,
-        "totalModifier": -2,
-        "dc": 8,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier -2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1451,7 +1451,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": -2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1465,25 +1465,25 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "intimidation": {
         "base": 0,
         "slug": "intimidation",
         "label": "Intimidation",
-        "value": -2,
-        "totalModifier": -2,
-        "dc": 8,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier -2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1495,7 +1495,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": -2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1509,14 +1509,14 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "medicine": {
@@ -1560,7 +1560,7 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "nature": {
@@ -1604,18 +1604,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "occultism": {
         "base": 0,
         "slug": "occultism",
         "label": "Occultism",
-        "value": -5,
-        "totalModifier": -5,
-        "dc": 5,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier -5",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1627,7 +1627,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": -5,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1641,25 +1641,25 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -5,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "performance": {
         "base": 0,
         "slug": "performance",
         "label": "Performance",
-        "value": -2,
-        "totalModifier": -2,
-        "dc": 8,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "cha",
-        "breakdown": "Modifier -2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1671,7 +1671,7 @@
               "cha-skill-check",
               "all"
             ],
-            "modifier": -2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1685,14 +1685,14 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "religion": {
@@ -1736,18 +1736,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "society": {
         "base": 0,
         "slug": "society",
         "label": "Society",
-        "value": -5,
-        "totalModifier": -5,
-        "dc": 5,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "int",
-        "breakdown": "Modifier -5",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1759,7 +1759,7 @@
               "int-skill-check",
               "all"
             ],
-            "modifier": -5,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1773,25 +1773,25 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -5,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "stealth": {
         "base": 0,
         "slug": "stealth",
         "label": "Stealth",
-        "value": -2,
-        "totalModifier": -2,
-        "dc": 8,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier -2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1803,7 +1803,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": -2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1817,14 +1817,14 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "survival": {
@@ -1868,18 +1868,18 @@
         "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       },
       "thievery": {
         "base": 0,
         "slug": "thievery",
         "label": "Thievery",
-        "value": -2,
-        "totalModifier": -2,
-        "dc": 8,
+        "value": 0,
+        "totalModifier": 0,
+        "dc": 10,
         "attribute": "dex",
-        "breakdown": "Modifier -2",
+        "breakdown": "Modifier +0",
         "modifiers": [
           {
             "slug": "base",
@@ -1891,7 +1891,7 @@
               "dex-skill-check",
               "all"
             ],
-            "modifier": -2,
+            "modifier": 0,
             "type": "untyped",
             "ability": null,
             "adjustments": [],
@@ -1905,14 +1905,14 @@
             "critical": null,
             "traits": [],
             "hideIfDisabled": false,
-            "kind": "penalty",
+            "kind": "modifier",
             "predicate": []
           }
         ],
-        "mod": -2,
+        "mod": 0,
         "itemId": null,
         "lore": false,
-        "visible": false,
+        "visible": true,
         "special": []
       }
     },
@@ -1975,22 +1975,8 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
-            },
-            "rules": [],
-            "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
-            "traits": {
-              "otherTags": [],
-              "value": []
+              "value": "",
+              "gm": ""
             },
             "publication": {
               "title": "",
@@ -1998,9 +1984,23 @@
               "license": "OGL",
               "remaster": false
             },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
             "damageRolls": {
               "m37TLqy0p8oZDKVF": {
-                "damage": "1d8+4",
+                "damage": "1d8 + 4",
                 "damageType": "piercing",
                 "category": null
               }
@@ -2026,14 +2026,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "weapon": {
@@ -2043,22 +2043,8 @@
           "img": "systems/pf2e/icons/default-icons/melee.svg",
           "system": {
             "description": {
-              "gm": "",
-              "value": ""
-            },
-            "rules": [],
-            "slug": null,
-            "_migration": {
-              "version": 0.932,
-              "previous": {
-                "schema": 0.925,
-                "foundry": "12.330",
-                "system": "6.2.1"
-              }
-            },
-            "traits": {
-              "otherTags": [],
-              "value": []
+              "value": "",
+              "gm": ""
             },
             "publication": {
               "title": "",
@@ -2066,9 +2052,23 @@
               "license": "OGL",
               "remaster": false
             },
+            "rules": [],
+            "slug": null,
+            "traits": {
+              "otherTags": [],
+              "value": []
+            },
+            "_migration": {
+              "version": 0.932,
+              "previous": {
+                "foundry": "12.330",
+                "system": "6.2.1",
+                "schema": 0.925
+              }
+            },
             "damageRolls": {
               "m37TLqy0p8oZDKVF": {
-                "damage": "1d8+4",
+                "damage": "1d8 + 4",
                 "damageType": "piercing",
                 "category": null
               }
@@ -2094,14 +2094,14 @@
             }
           },
           "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
             "coreVersion": "12.331",
             "systemId": "pf2e",
             "systemVersion": "6.2.1",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         "canStrike": true,
@@ -2602,7 +2602,8 @@
           "speed:land": true,
           "self:signature:b814db70-d561-5724-bdea-a1ab79fcd973": true,
           "self:condition:slowed": true,
-          "self:condition:slowed:1": true
+          "self:condition:slowed:1": true,
+          "self:signature:7dc698d0-e2ac-5ef9-921e-d7c6462111bf": true
         }
       },
       "trackedItems": {},
@@ -2616,7 +2617,7 @@
     "createdTime": 1723762245334,
     "modifiedTime": 1723783175997,
     "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": null,
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.jgnEueaGlVLGPEk7",
     "duplicateSource": null
   }
 }

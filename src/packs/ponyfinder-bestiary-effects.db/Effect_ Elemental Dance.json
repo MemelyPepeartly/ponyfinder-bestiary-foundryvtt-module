@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>Granted by @UUID[Compendium.world.ponyfinder-bestiary-npc-gallery.Actor.J4hhqxi8c6U6a6vH]{Rift Dragon}'s Elemental Dance</p>",
+      "value": "<p>Granted by @UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.eJ1ZPOgQiPM6dXrT]{Rift Dragon}'s Elemental Dance</p>",
       "addenda": [],
       "override": null
     },
@@ -149,11 +149,11 @@
   "_stats": {
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.2.1",
+    "systemVersion": "6.3.1",
     "createdTime": 1723762162848,
-    "modifiedTime": 1723786356031,
-    "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": "Compendium.world.ponyfinder-bestiary-effects.Item.4YBl2MfEC6JI3v1y",
+    "modifiedTime": 1725410342133,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.4YBl2MfEC6JI3v1y",
     "duplicateSource": null
   }
 }

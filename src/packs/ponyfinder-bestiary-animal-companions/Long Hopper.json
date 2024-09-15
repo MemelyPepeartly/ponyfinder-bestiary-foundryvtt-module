@@ -1,0 +1,184 @@
+{
+  "_id": "LYvogwl2ECSLWGU4",
+  "name": "Long Hopper",
+  "type": "ancestry",
+  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/waxraven_longhoppers.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h2 dir=\"ltr\">Long Hopper</h2><p dir=\"ltr\">Deviously intelligent, accepting a long hopper as a companion is much more a partnership than an ownership.</p><p dir=\"ltr\"><strong>Size </strong>Medium</p><p dir=\"ltr\"><strong>Type </strong>Fey</p><p dir=\"ltr\"><strong>Melee </strong><span class=\"pf2-icon\">A</span> bite (finesse), <strong>Damage </strong>1d6 piercing</p><p dir=\"ltr\">Str +0, Dex +3, Con +2, Int +0, Wis +1, Cha +0</p><p dir=\"ltr\"><strong>Hit Points </strong>8</p><p dir=\"ltr\"><strong>Skill </strong>Acrobatics</p><p dir=\"ltr\"><strong>Senses </strong>low-light vision</p><p dir=\"ltr\"><strong>Speed </strong>25 feet</p><p dir=\"ltr\"><strong>Support Benefit </strong>(auditory) With unheard squeaks far too high for most to hear, the long hopper guides its partner's motions, granting a +1 to attack rolls and damage rolls until the end of their turn.</p><h2 dir=\"ltr\"><strong> </strong></h2><p dir=\"ltr\"><strong>Advanced Maneuver</strong> Sudden Dash</p><p dir=\"ltr\"><strong>Sudden Dash</strong> <span class=\"pf2-icon\">D</span></p><p dir=\"ltr\">Both the long hopper and its partner gain a +10 status bonus to their Speed for a minute. This cannot be used again for 20 minutes.</p><p>@UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.BROuiLd3QSIAdSwy]{Effect: Sudden Dash}</p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "FlatModifier",
+        "type": "status",
+        "value": 10,
+        "selector": "land-speed"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 3,
+        "mode": "add",
+        "path": "system.abilities.dex.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.con.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.abilities.wis.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.skills.acrobatics.rank"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6",
+        "allowDuplicate": false
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "piercing",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "key": "Strike",
+        "label": "PF2E.BattleForm.Attack.Bite",
+        "range": null,
+        "traits": [
+          "unarmed",
+          "finesse"
+        ],
+        "img": "icons/skills/wounds/bone-broken-tooth-fang-red.webp",
+        "replaceBasicUnarmed": true
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "self:ancestry:Long Hopper",
+        "priority": 1
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-ancestries.Item.XzgJFUPZzdEUsGyF"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 4,
+        "mode": "add",
+        "path": "system.abilities.int.mod"
+      }
+    ],
+    "slug": "long-hopper",
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.925,
+        "foundry": "12.330",
+        "system": "6.2.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "animal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Ponyfinder: Bestiary of Everglow",
+      "authors": "David Silver",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 8,
+    "size": "med",
+    "reach": 5,
+    "speed": 25,
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [],
+      "custom": ""
+    },
+    "items": {},
+    "vision": "low-light-vision",
+    "voluntaryBoosts": {},
+    "voluntaryFlaws": {},
+    "rarity": {
+      "value": "common"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "7V80iZREAvj5ZaV4": 3
+  },
+  "flags": {
+    "core": {},
+    "exportSource": {
+      "world": "ac",
+      "system": "pf2e",
+      "coreVersion": "0.8.8",
+      "systemVersion": "2.6.0.6437"
+    },
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "6.3.1",
+    "createdTime": 1723762153281,
+    "modifiedTime": 1725410873615,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-animal-companions.Item.LYvogwl2ECSLWGU4",
+    "duplicateSource": null
+  }
+}

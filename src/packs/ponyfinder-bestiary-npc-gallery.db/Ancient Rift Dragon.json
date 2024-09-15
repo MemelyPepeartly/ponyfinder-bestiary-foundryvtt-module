@@ -1222,7 +1222,15 @@
         "width": 15
       }
     },
-    "autoChanges": {},
+    "autoChanges": {
+        "flags": {
+            "pf2e": {
+                "riftDragon": {
+                    "element": "fire"
+                }
+            }
+        }
+    },
     "customModifiers": {},
     "actions": [
       {

@@ -6,7 +6,7 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<p>Granted by @UUID[Compendium.world.ponyfinder-bestiary-npc-gallery.Actor.cQ4oFu9Nk6LAXm1Q]{Bakerlight}'s Comforting Flame</p>",
+      "value": "<p>Granted by @UUID[Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-npc-gallery.Actor.cQ4oFu9Nk6LAXm1Q]{Bakerlight}'s Comforting Flame</p>",
       "addenda": [],
       "override": null
     },
@@ -84,11 +84,11 @@
   "_stats": {
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.2.1",
+    "systemVersion": "6.3.1",
     "createdTime": 1723762161432,
-    "modifiedTime": 1723786275297,
-    "lastModifiedBy": "7V80iZREAvj5ZaV4",
-    "compendiumSource": "Compendium.world.ponyfinder-bestiary-effects.Item.CpAu4PYxLdhi03Je",
+    "modifiedTime": 1725410312698,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-effects.Item.CpAu4PYxLdhi03Je",
     "duplicateSource": null
   }
 }

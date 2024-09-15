@@ -1,0 +1,207 @@
+{
+  "_id": "UG5YfMxRAVS9D42R",
+  "name": "Fey Horse",
+  "type": "ancestry",
+  "img": "icons/magic/fire/elemental-creature-horse.webp",
+  "system": {
+    "description": {
+      "gm": "",
+      "value": "<h2 dir=\"ltr\">Fey Horse</h2>\n<p dir=\"ltr\">Your companion is a horse with a heavy touch of fey magic.</p>\n<p dir=\"ltr\"><strong>Size </strong>Medium or Large</p>\n<p dir=\"ltr\"><strong>Melee <span class=\"pf2-icon\">[a]</span></strong> hoof (agile), <strong>Damage </strong>1d6 bludgeoning</p>\n<p dir=\"ltr\"><strong>Str </strong>+2, <strong>Dex </strong>+2, <strong>Con </strong>+2, <strong>Int </strong>–4, <strong>Wis </strong>+1, <strong>Cha </strong>+0</p>\n<p dir=\"ltr\"><strong>Hit Points</strong> 8</p>\n<p dir=\"ltr\"><strong>Skill</strong> Survival</p>\n<p dir=\"ltr\"><strong>Senses</strong> low-light vision, scent (imprecise, 30 feet)</p>\n<p dir=\"ltr\"><strong>Speed</strong> 40 feet</p>\n<p dir=\"ltr\"><strong>Special</strong> mount</p>\n<p dir=\"ltr\"><strong>Support Benefit</strong> The fey horse can move through difficult terrain even with a rider, ignoring foilage-caused slowness. While performing this movement, difficult terrain or not, reactions are not triggered by its movement. This endures to the end of their turn.</p>\n<p dir=\"ltr\"> </p>\n<p dir=\"ltr\"><strong>Advanced Maneuver</strong>  Fey Wilde</p>\n<p dir=\"ltr\"><strong>Fey Wilde</strong><span class=\"pf2-icon\">[D]</span></p>\n<p dir=\"ltr\">The fey horse supports its owners magical actions, giving a +1 circumstance bonus to their class DC and spellcasting DC until the end of their turn.</p>\n<p> </p>",
+      "addenda": [],
+      "override": null
+    },
+    "rules": [
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.str.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.dex.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 2,
+        "mode": "add",
+        "path": "system.abilities.con.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.abilities.wis.mod"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "value": 1,
+        "mode": "add",
+        "path": "system.skills.survival.rank"
+      },
+      {
+        "key": "GrantItem",
+        "uuid": "Compendium.pf2e-animal-companions.AC-Features.Item.KKOgokqHa7RjVDN6",
+        "allowDuplicate": false
+      },
+      {
+        "acuity": "imprecise",
+        "key": "Sense",
+        "range": 30,
+        "selector": "scent"
+      },
+      {
+        "category": "unarmed",
+        "damage": {
+          "base": {
+            "damageType": "bludgeoning",
+            "dice": 1,
+            "die": "d6"
+          }
+        },
+        "group": "brawling",
+        "key": "Strike",
+        "label": "PF2E.BattleForm.Attack.Hoof",
+        "range": null,
+        "traits": [
+          "unarmed",
+          "agile"
+        ],
+        "img": "systems/pf2e/icons/unarmed-attacks/foot.webp",
+        "replaceBasicUnarmed": true
+      },
+      {
+        "adjustName": false,
+        "choices": [
+          {
+            "label": "PF2E.ActorSizeMedium",
+            "value": "med"
+          },
+          {
+            "label": "PF2E.ActorSizeLarge",
+            "value": "lg"
+          }
+        ],
+        "flag": "companionSize",
+        "key": "ChoiceSet",
+        "prompt": "PF2E.SpecificRule.Prompt.CreatureSize"
+      },
+      {
+        "key": "ActiveEffectLike",
+        "mode": "override",
+        "path": "system.traits.size.value",
+        "value": "{item|flags.pf2e.rulesSelections.companionSize}"
+      },
+      {
+        "key": "RollOption",
+        "domain": "all",
+        "option": "self:ancestry:fey horse",
+        "priority": 1
+      },
+      {
+        "key": "GrantItem",
+        "allowDuplicate": false,
+        "uuid": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-ancestries.Item.XzgJFUPZzdEUsGyF"
+      }
+    ],
+    "slug": "horse",
+    "_migration": {
+      "version": 0.932,
+      "lastMigration": null,
+      "previous": {
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.3.1"
+      }
+    },
+    "traits": {
+      "otherTags": [],
+      "value": [
+        "animal"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Pathfinder Core Rulebook",
+      "authors": "",
+      "license": "OGL",
+      "remaster": false
+    },
+    "hp": 8,
+    "size": "med",
+    "reach": 5,
+    "speed": 40,
+    "boosts": {
+      "0": {
+        "value": []
+      },
+      "1": {
+        "value": []
+      },
+      "2": {
+        "value": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    },
+    "flaws": {
+      "0": {
+        "value": []
+      }
+    },
+    "languages": {
+      "value": [],
+      "custom": ""
+    },
+    "additionalLanguages": {
+      "count": 0,
+      "value": [],
+      "custom": ""
+    },
+    "items": {},
+    "vision": "low-light-vision",
+    "voluntaryBoosts": {},
+    "voluntaryFlaws": {},
+    "rarity": {
+      "value": "common"
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 400000,
+  "ownership": {
+    "default": 0,
+    "rDxs69lNqIFN75Bl": 3,
+    "7U4sXug561SwttNa": 3
+  },
+  "flags": {
+    "core": {},
+    "exportSource": {
+      "world": "ac",
+      "system": "pf2e",
+      "coreVersion": "0.8.8",
+      "systemVersion": "2.6.0.6437"
+    },
+    "pf2e": {
+      "rulesSelections": {},
+      "itemGrants": {}
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "pf2e",
+    "systemVersion": "5.1.1",
+    "createdTime": 1663468948983,
+    "modifiedTime": 1689344841386,
+    "lastModifiedBy": "7U4sXug561SwttNa",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-animal-companions.Item.UG5YfMxRAVS9D42R",
+    "duplicateSource": null
+  }
+}
