@@ -1,30 +1,26 @@
 {
-  "_id": "s4twkLStRubHerc8",
+  "_id": "2PdGt5fg2NmXQ8tq",
   "name": "Dangerous Path",
   "type": "spell",
-  "img": "icons/svg/stone-path.svg",
+  "img": "icons/environment/wilderness/cave-entrance-vulcano.webp",
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Dangerous Path SPELL 3</h1>\n<p dir=\"ltr\">[Dynamic Heightening][Illusion][Mental]</p>\n<p dir=\"ltr\">Traditions occult, arcane</p>\n<p dir=\"ltr\">Cast [two-actions] somatic, verbal</p>\n<p dir=\"ltr\">Range 60 feet; Target 5 adjacent 5' squares</p>\n<p dir=\"ltr\">Duration 1 minute</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\">Masking the field in the effect of the spell, creatures you consider hostile see it as hazardous terrain(a hole, poisonous spikes, lava, or whatever else you think up). Passing through such areas is difficult terrain, and inflicts 4d6 mental damage with a basic Will saving throw. On a critical success, the illusion is disbelieved and no longer affects that creature.</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> If disbelieved, the spell still deals damage as if the target gained one step better on their saving throw. The spell gains the shadow trait.</p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> The spell can affect 3 additional adjacent 5' squares.</p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> Increase the damage by 2d6.</p>",
+      "value": "<p>Masking the field in the effect of the spell, creatures you consider hostile see it as hazardous terrain (a hole, poisonous spikes, lava, or whatever else you think up). Passing through such areas is difficult terrain, and inflicts 4d6 mental damage with a basic Will saving throw. On a critical success, the illusion is disbelieved and no longer affects that creature.</p><hr /><p><strong>Heightened (+1)</strong> If disbelieved, the spell still deals damage as if the target gained one step better on their saving throw. The spell gains the shadow trait.</p><p><strong>Heightened (+1)</strong> The spell can affect 3 additional adjacent 5' squares.</p><p><strong>Heightened (+1)</strong> Increase the damage by 2d6. @Damage[(2*(@item.level - 1))d6[mental]]{Heightened Damage}</p>",
       "addenda": [],
       "override": null
     },
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.925,
-      "lastMigration": null,
-      "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
-      }
+      "version": 0.932,
+      "lastMigration": null
     },
     "traits": {
       "otherTags": [],
       "value": [
         "concentrate",
+        "dynamic-heightening",
         "illusion",
         "manipulate",
         "mental"
@@ -37,16 +33,16 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
-      "remaster": false
+      "remaster": true
     },
     "level": {
       "value": 3
     },
     "requirements": "",
     "target": {
-      "value": "5 consecutive 5' squares"
+      "value": "5 adjacent 5' squares"
     },
     "range": {
       "value": "60 feet"
@@ -56,21 +52,20 @@
       "value": "2"
     },
     "duration": {
-      "value": "",
+      "value": "1 minute",
       "sustained": false
     },
     "damage": {
-      "11BwVNQOnmhCyOp4": {
-        "applyMod": false,
+      "Q7b6O4KFYbsJ35Ny": {
         "formula": "4d6",
+        "kinds": {},
         "type": "mental",
         "category": null,
         "materials": [],
-        "kinds": {}
+        "applyMod": false
       }
     },
     "defense": {
-      "passive": null,
       "save": {
         "statistic": "will",
         "basic": true
@@ -84,36 +79,33 @@
     },
     "counteraction": false,
     "heightening": {
-      "type": "interval",
-      "interval": 1,
-      "damage": {
-        "11BwVNQOnmhCyOp4": "0"
-      }
+      "damage": {}
     },
     "cast": {
       "focusPoints": 0
     }
   },
   "effects": [],
-  "folder": "vqjhSR4v0o24wWHk",
-  "sort": 400000,
+  "folder": null,
+  "sort": 0,
   "ownership": {
     "default": 0,
-    "7U4sXug561SwttNa": 3
+    "TArEmjqYQirefbfC": 3
   },
   "flags": {
-    "core": {},
     "pf2e": {
       "rulesSelections": {},
       "itemGrants": {}
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
-    "createdTime": 1689289473327,
-    "modifiedTime": 1689292316752,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "systemVersion": "6.3.1",
+    "createdTime": 1726511069057,
+    "modifiedTime": 1726511491800,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": null,
+    "duplicateSource": null
   }
 }

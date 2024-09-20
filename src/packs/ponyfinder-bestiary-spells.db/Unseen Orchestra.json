@@ -6,19 +6,19 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Unseen Orchestra CANTRIP 1</h1>\n<p dir=\"ltr\">[Auditory][Cantrip][Illusion]</p>\n<p dir=\"ltr\">Traditions arcane, occult</p>\n<p dir=\"ltr\">Cast [two-actions] somatic, verbal</p>\n<p dir=\"ltr\">Range 30 feet; Target one creature</p>\n<p dir=\"ltr\">Duration Sustained</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\">You create an auditory illusion of music. This music will follow what you or anyone you can see is doing, forming a background or accompanying soundtrack to what they're doing. This can replicate one instrument at a time. The spell has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range.</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p><strong id=\"docs-internal-guid-d90fb8cc-7fff-cc2b-e705-45f51b1129d9\">Heightened (+2) </strong>One additional instrument can be added to your orchestra and the maximum volume increases by 1 person.</p>",
+      "value": "<p>You create an auditory illusion of music. This music will follow what you or anyone you can see is doing, forming a background or accompanying soundtrack to what they're doing. This can replicate one instrument at a time. The spell has a maximum volume equal to four normal humans shouting. The sounds emanate from a square you designate within range.</p><hr /><p><strong>Heightened (+2)</strong> One additional instrument can be added to your orchestra and the maximum volume increases by 1 person.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.925,
+      "version": 0.932,
       "lastMigration": null,
       "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.3.1"
       }
     },
     "traits": {
@@ -79,7 +79,7 @@
     }
   },
   "effects": [],
-  "folder": "vqjhSR4v0o24wWHk",
+  "folder": null,
   "sort": 600000,
   "ownership": {
     "default": 0,
@@ -93,11 +93,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
+    "systemVersion": "6.3.1",
     "createdTime": 1689289473327,
-    "modifiedTime": 1689292337775,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "modifiedTime": 1726512188575,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-spells.Item.xyS1KjBU86MJ453r",
+    "duplicateSource": null
   }
 }

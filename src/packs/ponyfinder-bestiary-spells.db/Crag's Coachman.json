@@ -6,25 +6,26 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Crag's Coachman SPELL 2</h1>\n<p dir=\"ltr\">[Dynamic Heightening][Conjuration]</p>\n<p dir=\"ltr\">Traditions arcane, occult</p>\n<p dir=\"ltr\">Cast [two-actions] somatic, verbal</p>\n<p dir=\"ltr\">Range 30 feet</p>\n<p dir=\"ltr\">Duration 8 hours</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\">You conjure a wagon that can seat four medium creatures. A large creature counts as four medium creatures and tiny creatures count as one half a medium creature The wagon is clearly phantasmal in nature. If it's reduced to 0 Hit Points, it disappears and the spell ends. The wagon has the following stats. Its level is equal to twice the spell level.</p>\n<p dir=\"ltr\">Crag's Coachman     Vehicle X</p>\n<p dir=\"ltr\">[Large]</p>\n<p dir=\"ltr\">Price nil</p>\n<p dir=\"ltr\">Space 10 feet long, 10 feet wide, 4 feet high</p>\n<p dir=\"ltr\">Crew None; Passengers see above</p>\n<p dir=\"ltr\">Piloting Check It uses the caster's tradition-appropriate skill(arcana or occultism)</p>\n<p dir=\"ltr\">AC 20; Fort +6</p>\n<p dir=\"ltr\">Hardness 4, HP 10 (BT 5); Immunities critical hits, object immunities, precision damage</p>\n<p dir=\"ltr\">Speed 40 feet</p>\n<p dir=\"ltr\">Collision 1d10 (DC 14)</p>\n<p><strong><br /><br /></strong></p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\"><strong>Heightened (+1) </strong>Toughen: Increase the HP of the wagon by 5, its BT by 2, and its AC by 2.</p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> Speed: Increase its Speed by 5 feet.</p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> Sure Footed: The wagon can roll on water, and ignores areas of natural difficult terrain.</p>\n<p dir=\"ltr\"><strong>Heightened (+1) </strong>Air Walking: It can also air walk but must end its turn on solid ground or fall.</p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> Size: It can carry one additional medium creature.</p>\n<p> </p>",
+      "value": "<p>You conjure a wagon that can seat four medium creatures. A large creature counts as four medium creatures and tiny creatures count as one half a medium creature The wagon is clearly phantasmal in nature. If it's reduced to 0 Hit Points, it disappears and the spell ends. The wagon has the following stats. Its level is equal to twice the spell level.</p><hr /><p><strong>Crag's Coachman</strong> Vehicle X</p><section class=\"traits\"><p>Large</p></section><p><strong>Price</strong> nil</p><p><strong>Space</strong> 10 feet long, 10 feet wide, 4 feet high</p><p><strong>Crew</strong> None; <strong>Passengers</strong> see above</p><p><strong>Piloting Check</strong> It uses the caster's tradition-appropriate skill (@Check[arcana] or @Check[occultism])</p><p><strong>AC</strong> 20<strong>; Fort</strong> +6</p><p><strong>Hardness</strong> 4, <strong>HP</strong> 10 (BT 5); <strong>Immunities</strong> critical hits, object immunities, precision damage</p><p><strong>Speed</strong> 40 feet Collision 1d10 (DC 14)</p><hr /><p><strong>Heightened (+1)</strong> Toughen: Increase the HP of the wagon by 5, its BT by 2, and its AC by 2.</p><p><strong>Heightened (+1)</strong> Speed: Increase its Speed by 5 feet.</p><p><strong>Heightened (+1)</strong> Sure Footed: The wagon can roll on water, and ignores areas of natural difficult terrain.</p><p><strong>Heightened (+1)</strong> Air Walking: It can also air walk but must end its turn on solid ground or fall.</p><p><strong>Heightened (+1)</strong> Size: It can carry one additional medium creature.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.925,
+      "version": 0.932,
       "lastMigration": null,
       "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.3.1"
       }
     },
     "traits": {
       "otherTags": [],
       "value": [
         "concentrate",
+        "dynamic-heightening",
         "manipulate"
       ],
       "rarity": "common",
@@ -47,14 +48,14 @@
       "value": ""
     },
     "range": {
-      "value": ""
+      "value": "30 feet"
     },
     "area": null,
     "time": {
       "value": "2"
     },
     "duration": {
-      "value": "",
+      "value": "8 hours",
       "sustained": false
     },
     "damage": {},
@@ -76,7 +77,7 @@
     }
   },
   "effects": [],
-  "folder": "vqjhSR4v0o24wWHk",
+  "folder": null,
   "sort": 200000,
   "ownership": {
     "default": 0,
@@ -90,11 +91,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
+    "systemVersion": "6.3.1",
     "createdTime": 1689289473327,
-    "modifiedTime": 1689292325049,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "modifiedTime": 1726511030797,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-spells.Item.phRPFO9CohA17Wb4",
+    "duplicateSource": null
   }
 }

@@ -6,25 +6,26 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Cheer Me On SPELL 2</h1>\n<p dir=\"ltr\">[Dynamic Heightening][Enchantment][Emotion]</p>\n<p dir=\"ltr\">Traditions occult, primal</p>\n<p dir=\"ltr\">Cast [two-actions] somatic, verbal</p>\n<p dir=\"ltr\">Range 30 feet; Target one creature</p>\n<p dir=\"ltr\">Duration sustained up to one minute</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\">The creature you specify becomes attuned to the cheering of their allies, warding away fatigue and pains. Anyone within 30 feet of the target can take an audible, mental [one-action] action to call out encouragingly to the target while the spell persists, restoring [[/r 12[mental]]] hit points. Once a creature has cheered a creature on, they can't do so again for that creature until the start of their next turn.</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\"><strong>Heightened (+1)</strong> The hit points restored increases by 6.</p>\n<p dir=\"ltr\"><strong>Heightened (+1) </strong>The duration of the spell is no longer sustained and is just one minute.</p>\n<p dir=\"ltr\"><strong>Heightened (+2)</strong> An additional target can be specified.</p>",
+      "value": "<p>The creature you specify becomes attuned to the cheering of their allies, warding away fatigue and pains. Anyone within 30 feet of the target can take a single audible, mental action to call out encouragingly to the target while the spell persists, restoring 12 hit points. Once a creature has cheered a creature on, they can't do so again for that creature until the start of their next turn.</p><hr /><p><strong>Heightened (+1)</strong> The hit points restored increases by 6. @Damage[(6*@item.level)[healing]]{Heightened Healing}</p><p><strong>Heightened (+1)</strong> The duration of the spell is no longer sustained and is just one minute.</p><p><strong>Heightened (+2)</strong> An additional target can be specified.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.925,
+      "version": 0.932,
       "lastMigration": null,
       "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.3.1"
       }
     },
     "traits": {
       "otherTags": [],
       "value": [
         "concentrate",
+        "dynamic-heightening",
         "emotion",
         "manipulate"
       ],
@@ -36,9 +37,9 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
-      "remaster": false
+      "remaster": true
     },
     "level": {
       "value": 2
@@ -55,10 +56,19 @@
       "value": "2"
     },
     "duration": {
-      "value": "sustained for up to one minute",
+      "value": "1 minute",
       "sustained": true
     },
-    "damage": {},
+    "damage": {
+      "3cpFzNbJD7HadIQa": {
+        "formula": "12",
+        "kinds": {},
+        "type": "untyped",
+        "category": null,
+        "materials": [],
+        "applyMod": false
+      }
+    },
     "defense": null,
     "cost": {
       "value": ""
@@ -67,17 +77,12 @@
       "value": null
     },
     "counteraction": false,
-    "heightening": {
-      "type": "interval",
-      "interval": 1,
-      "damage": {}
-    },
     "cast": {
       "focusPoints": 0
     }
   },
   "effects": [],
-  "folder": "vqjhSR4v0o24wWHk",
+  "folder": null,
   "sort": 100000,
   "ownership": {
     "default": 0,
@@ -90,11 +95,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
+    "systemVersion": "6.3.1",
     "createdTime": 1689289473327,
-    "modifiedTime": 1689292334175,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "modifiedTime": 1726511156674,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-spells.Item.JGiBrcsSPmJJzM9z",
+    "duplicateSource": null
   }
 }

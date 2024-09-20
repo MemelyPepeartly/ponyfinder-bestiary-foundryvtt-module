@@ -6,19 +6,19 @@
   "system": {
     "description": {
       "gm": "",
-      "value": "<h1 dir=\"ltr\">Unerring Trail SPELL 3</h1>\n<p dir=\"ltr\">[Divination]</p>\n<p dir=\"ltr\"><strong>Traditions </strong>primal</p>\n<p dir=\"ltr\"><strong>Cast </strong>[two-actions] somatic, verbal</p>\n<p dir=\"ltr\"><strong>Range </strong>10 feet; <strong>Target</strong> a trail</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\">Cast on a trail you can see (possibly needing Survival to find the trail), you are given extra information that your magical spell gives to you, revealing the natural environment of the target and any immunities it may have. If more than one creature left the trail you found, you must select one creature to target, from largest to smallest size. If the creator of the trail was living when it made the trail, you learn its creature type. If not, you learn that it is not alive(like most undead or constructs)</p>\n<p dir=\"ltr\"> </p>\n<hr />\n<p> </p>\n<p dir=\"ltr\"><strong>Heightened (4th)</strong> You learn what resistances it has, but not at what strength.</p>\n<p dir=\"ltr\"><strong>Heightened (5th)</strong> Weaknesses are revealed, but not at what strength, as well as its usual diet.</p>\n<p dir=\"ltr\"><strong>Heightened (6th)</strong> The numbers of both of the previous are revealed if you successfully Counteract an ability of half the target's level, using this spell.</p>\n<p> </p>",
+      "value": "<p>Cast on a trail you can see (possibly needing Survival to find the trail), you are given extra information that your magical spell gives to you, revealing the natural environment of the target and any immunities it may have. If more than one creature left the trail you found, you must select one creature to target, from largest to smallest size. If the creator of the trail was living when it made the trail, you learn its creature type. If not, you learn that it is not alive(like most undead or constructs)</p><hr /><p><strong>Heightened (4th)</strong> You learn what resistances it has, but not at what strength.</p><p><strong>Heightened (5th)</strong> Weaknesses are revealed, but not at what strength, as well as its usual diet.</p><p><strong>Heightened (6th)</strong> The numbers of both of the previous are revealed if you successfully Counteract an ability of half the target's level, using this spell.</p>",
       "addenda": [],
       "override": null
     },
     "rules": [],
     "slug": null,
     "_migration": {
-      "version": 0.925,
+      "version": 0.932,
       "lastMigration": null,
       "previous": {
-        "schema": 0.845,
-        "foundry": "11.315",
-        "system": "5.14.4"
+        "schema": 0.925,
+        "foundry": "12.331",
+        "system": "6.3.1"
       }
     },
     "traits": {
@@ -34,12 +34,12 @@
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
-      "authors": "",
+      "authors": "David Silver",
       "license": "OGL",
-      "remaster": false
+      "remaster": true
     },
     "level": {
-      "value": 1
+      "value": 3
     },
     "requirements": "",
     "target": {
@@ -65,17 +65,12 @@
       "value": null
     },
     "counteraction": false,
-    "heightening": {
-      "type": "interval",
-      "interval": 1,
-      "damage": {}
-    },
     "cast": {
       "focusPoints": 0
     }
   },
   "effects": [],
-  "folder": "vqjhSR4v0o24wWHk",
+  "folder": null,
   "sort": 300000,
   "ownership": {
     "default": 0,
@@ -89,11 +84,13 @@
     }
   },
   "_stats": {
+    "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "5.1.1",
-    "coreVersion": "11.304",
+    "systemVersion": "6.3.1",
     "createdTime": 1689289473327,
-    "modifiedTime": 1689292309925,
-    "lastModifiedBy": "7U4sXug561SwttNa"
+    "modifiedTime": 1726512149492,
+    "lastModifiedBy": "TArEmjqYQirefbfC",
+    "compendiumSource": "Compendium.ponyfinder-bestiary-of-everglow.ponyfinder-bestiary-spells.Item.P8jyZ0SyyMcaz0OM",
+    "duplicateSource": null
   }
 }
