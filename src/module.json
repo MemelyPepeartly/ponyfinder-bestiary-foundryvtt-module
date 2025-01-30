@@ -1,5 +1,6 @@
 {
-  "name": "ponyfinder-bestiary-of-everglow",
+  "name": "ponyfinder-bestiary-of-everglow-for-pathfinder-2e",
+  "id": "ponyfinder-bestiary-of-everglow-for-pathfinder-2e",
   "title": "Ponyfinder: Bestiary of Everglow - Unified Edition",
   "description": "A collection of Ponyfinder: Bestiary of Everglow - Unified Edition content for Pathfinder 2e", 
   "version": "1.3.1",
@@ -10,7 +11,7 @@
     },
     {
       "name": "David Silver",
-      "discord": "David Silver#8501"
+      "discord": "DavidSilver"
     }
   ],
   "compatibility": {
@@ -32,9 +33,9 @@
     ]
   },
   "allowBugReporter": true,
-  "url": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module",
-  "manifest": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/latest/download/module.json",
-  "download": "https://github.com/MemelyPepeartly/ponyfinder-bestiary-foundryvtt-module/releases/latest/download/module.zip",
+  "url": "https://www.drivethrurpg.com/en/product/445373/foundry-vtt-ponyfinder-bestiary-of-everglow-pf2e",
+  "manifest": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/module.json",
+  "protected": true,
   "type": "module",
   "media": [
     {
