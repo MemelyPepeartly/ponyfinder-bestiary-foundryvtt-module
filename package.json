@@ -13,7 +13,7 @@
     "cb": "^0.1.1",
     "esno": "^0.17.0",
     "fs": "^0.0.1-security",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "js-yaml": "^4.1.0",
     "merge-stream": "^2.0.0",
