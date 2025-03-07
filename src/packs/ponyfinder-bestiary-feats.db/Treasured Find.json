@@ -40,20 +40,17 @@
         "sameAs": "simple"
       }
     ],
-    "slug": null,
+    "slug": "treasured-find",
     "_migration": {
-      "version": 0.932,
-      "lastMigration": null
+      "version": 0.935,
+      "previous": null
     },
     "traits": {
       "otherTags": [],
       "value": [
         "husbryce-scout"
       ],
-      "rarity": "common",
-      "toggles": {
-        "mindshift": null
-      }
+      "rarity": "common"
     },
     "publication": {
       "title": "Ponyfinder: Bestiary of Everglow",
@@ -62,8 +59,7 @@
       "remaster": false
     },
     "level": {
-      "value": 1,
-      "taken": null
+      "value": 1
     },
     "category": "ancestry",
     "onlyLevel1": false,
@@ -105,7 +101,7 @@
   "_stats": {
     "coreVersion": "12.331",
     "systemId": "pf2e",
-    "systemVersion": "6.2.1",
+    "systemVersion": "6.10.0",
     "createdTime": 1723762198615,
     "modifiedTime": 1723762198615,
     "lastModifiedBy": "7V80iZREAvj5ZaV4",
