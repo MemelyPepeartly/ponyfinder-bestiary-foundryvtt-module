@@ -48,63 +48,63 @@
     {
       "name": "ponyfinder-bestiary-actions",
       "label": "Ponyfinder Bestiary Actions",
-      "path": "packs/ponyfinder-bestiary-actions",
+      "path": "packs/ponyfinder-bestiary-actions.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-ancestries",
       "label": "Ponyfinder Bestiary Ancestries",
-      "path": "packs/ponyfinder-bestiary-ancestries",
+      "path": "packs/ponyfinder-bestiary-ancestries.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-animal-companions",
       "label": "Ponyfinder Bestiary Animal Companions",
-      "path": "packs/ponyfinder-bestiary-animal-companions",
+      "path": "packs/ponyfinder-bestiary-animal-companions.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-effects",
       "label": "Ponyfinder Bestiary Effects",
-      "path": "packs/ponyfinder-bestiary-effects",
+      "path": "packs/ponyfinder-bestiary-effects.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-feats",
       "label": "Ponyfinder Bestiary Feats",
-      "path": "packs/ponyfinder-bestiary-feats",
+      "path": "packs/ponyfinder-bestiary-feats.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-heritages",
       "label": "Ponyfinder Bestiary Heritages",
-      "path": "packs/ponyfinder-bestiary-heritages",
+      "path": "packs/ponyfinder-bestiary-heritages.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-items",
       "label": "Ponyfinder Bestiary Items",
-      "path": "packs/ponyfinder-bestiary-items",
+      "path": "packs/ponyfinder-bestiary-items.db",
       "type": "Item",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-npc-gallery",
       "label": "Ponyfinder Bestiary NPC Gallery",
-      "path": "packs/ponyfinder-bestiary-npc-gallery",
+      "path": "packs/ponyfinder-bestiary-npc-gallery.db",
       "type": "Actor",
       "system": "pf2e"
     },
     {
       "name": "ponyfinder-bestiary-spells",
       "label": "Ponyfinder Bestiary Spells",
-      "path": "packs/ponyfinder-bestiary-spells",
+      "path": "packs/ponyfinder-bestiary-spells.db",
       "type": "Item",
       "system": "pf2e"
     }
