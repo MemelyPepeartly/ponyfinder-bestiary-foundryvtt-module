@@ -1,9 +1,8 @@
 {
-  "name": "ponyfinder-bestiary-of-everglow-for-pathfinder-2e",
   "id": "ponyfinder-bestiary-of-everglow-for-pathfinder-2e",
   "title": "Ponyfinder: Bestiary of Everglow - Unified Edition",
   "description": "A collection of Ponyfinder: Bestiary of Everglow - Unified Edition content for Pathfinder 2e", 
-  "version": "1.4.1",
+  "version": "1.5.0",
   "authors": [
     {
       "name": "Memely",
@@ -15,19 +14,18 @@
     }
   ],
   "compatibility": {
-    "minimum": "11",
-    "verified": "12",
-    "maximum": "12.999"
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "13"
   },
   "relationships": {
     "systems": [
       {
         "id": "pf2e",
         "type": "system",
-        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
         "compatibility": {
-          "minimum": "5.14.1",
-          "verified": "5.14.1"
+          "minimum": "7.0.0",
+          "verified": "7.10.1"
         }
       }
     ]
@@ -35,20 +33,15 @@
   "allowBugReporter": true,
   "url": "https://www.drivethrurpg.com/en/product/445373/foundry-vtt-ponyfinder-bestiary-of-everglow-pf2e",
   "manifest": "https://r2.foundryvtt.com/packages-public/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/module.json",
+  "download": "https://r2.foundryvtt.com/packages-public/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/module.zip",
   "protected": true,
   "type": "module",
-  "media": [
+  "languages": [
     {
-      "type": "icon",
-      "location": ""
-    }, 
-    {
-      "type": "cover",
-      "location": ""
-    },
-    {
-      "type": "screenshot",
-      "location": ""
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
     }
   ],
   "packs": [
