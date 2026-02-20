@@ -45,8 +45,16 @@ function compilePacks(done) {
 }
 
 function copyModuleJson() {
-  return gulp.src('src/module.json')
-    .pipe(gulp.dest(DIST_DIR));
+  const moduleJsonPath = path.join('src', 'module.json');
+  const outPath = path.join(DIST_DIR, 'module.json');
+  const moduleJson = JSON.parse(fs.readFileSync(moduleJsonPath, 'utf8'));
+
+  // Foundry package upload for premium content rejects this key.
+  delete moduleJson.download;
+
+  fs.mkdirSync(DIST_DIR, { recursive: true });
+  fs.writeFileSync(outPath, `${JSON.stringify(moduleJson, null, 2)}\n`, 'utf8');
+  return Promise.resolve();
 }
 
 function copyLang() {
