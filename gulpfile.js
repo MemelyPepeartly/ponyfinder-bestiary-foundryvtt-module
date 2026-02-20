@@ -37,7 +37,8 @@ function compilePacks(done) {
       fs.mkdirSync(PACKS_DIST, { recursive: true });
     }
 
-    const dbPath = path.join(PACKS_DIST, `${category}`);
+    const packName = category.endsWith('.db') ? category.slice(0, -3) : category;
+    const dbPath = path.join(PACKS_DIST, packName);
     fs.writeFileSync(dbPath, dbContents.length > 0 ? `${dbContents}\n` : '');
   });
 
