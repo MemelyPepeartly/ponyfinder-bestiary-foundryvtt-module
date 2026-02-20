@@ -1,7 +1,7 @@
 {
   "_id": "xjo3bs0FRiyeBDU0",
   "name": "Disciple of Opichi",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/teresaguido_Disciple%20of%20Opichi.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/teresaguido_Disciple%20of%20Opichi.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1643,7 +1643,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/opichi%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/opichi%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

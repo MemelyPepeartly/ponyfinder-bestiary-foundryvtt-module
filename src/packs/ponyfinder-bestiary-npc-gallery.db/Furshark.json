@@ -1,7 +1,7 @@
 {
   "_id": "aRE0wXIgy9YJKFtI",
   "name": "Furshark",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/waxraven_furshark.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/waxraven_furshark.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1360,7 +1360,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/furshark%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/furshark%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

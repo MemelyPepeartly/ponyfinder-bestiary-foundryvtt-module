@@ -1,7 +1,7 @@
 {
   "_id": "X1O2Bq4pm9Vz13la",
   "name": "Skeletal Pony Slinger",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderSkeleton.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderSkeleton.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -2556,7 +2556,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/pony%20skeleton%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/pony%20skeleton%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

@@ -1,7 +1,7 @@
 {
   "_id": "IVppLZprFnXpt5TY",
   "name": "Keeper of the Flames",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderKeeperOfTheFlames.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderKeeperOfTheFlames.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1627,7 +1627,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/keeper%20of%20flames%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/keeper%20of%20flames%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

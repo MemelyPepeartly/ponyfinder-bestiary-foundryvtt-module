@@ -1,7 +1,7 @@
 {
   "_id": "KTUprsCchrELmIjj",
   "name": "Griffon Indoctrinator",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderGriffonIndoctrinator.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderGriffonIndoctrinator.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1577,7 +1577,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/griffon%20indoctrinator%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/griffon%20indoctrinator%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

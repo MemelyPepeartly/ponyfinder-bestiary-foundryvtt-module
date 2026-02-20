@@ -1,7 +1,7 @@
 {
   "_id": "l2SpuHckFXRy1o6e",
   "name": "Brilliant Luminary",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/luminary_angel_tiff_by_sitaart.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/luminary_angel_tiff_by_sitaart.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1585,7 +1585,7 @@
     "width": 3,
     "height": 3,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/luminary%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/luminary%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

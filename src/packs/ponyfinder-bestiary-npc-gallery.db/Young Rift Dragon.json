@@ -1,7 +1,7 @@
 {
   "_id": "HSxBlnsdGEIriJzE",
   "name": "Young Rift Dragon",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderRiftDragonYoung.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderRiftDragonYoung.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -2079,7 +2079,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/rift%20dragon%20young%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/rift%20dragon%20young%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

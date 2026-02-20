@@ -1,7 +1,7 @@
 {
   "_id": "1W4dvF3rCQw0Cc8c",
   "name": "Cult Bodyguard",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderCultBodyguard.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderCultBodyguard.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1492,7 +1492,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/cult%20bodyguard%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/cult%20bodyguard%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

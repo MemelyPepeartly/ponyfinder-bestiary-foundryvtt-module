@@ -1,7 +1,7 @@
 {
   "_id": "XPz3r8KJKay9Ljy9",
   "name": "Gak Wabooz",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/TMS_GakWabooz_Final.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/TMS_GakWabooz_Final.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1336,7 +1336,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/gak-wabooz.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/gak-wabooz.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

@@ -1,7 +1,7 @@
 {
   "_id": "pUMA4Zz9snLJ2wnA",
   "name": "Skreel",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/teresaguido_Skreel.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/teresaguido_Skreel.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1585,7 +1585,7 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/skrel%20(1).webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/skrel%20(1).webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

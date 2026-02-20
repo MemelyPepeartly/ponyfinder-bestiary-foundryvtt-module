@@ -1,7 +1,7 @@
 {
   "_id": "zKNxhlGlBM8D6SQ2",
   "name": "Whisperer",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/teresaguido-Whisperer.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/teresaguido-Whisperer.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1986,7 +1986,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/whisperer.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/whisperer.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

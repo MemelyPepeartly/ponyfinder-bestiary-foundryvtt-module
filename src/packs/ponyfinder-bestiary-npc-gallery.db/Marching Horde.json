@@ -1,7 +1,7 @@
 {
   "_id": "Ee0MMSOiBLjrvVXT",
   "name": "Marching Horde",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/teresaguido_Marching%20Horde.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/teresaguido_Marching%20Horde.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -2371,7 +2371,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/marching-horde.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/marching-horde.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

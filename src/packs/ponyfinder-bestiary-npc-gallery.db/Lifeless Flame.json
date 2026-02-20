@@ -1,7 +1,7 @@
 {
   "_id": "1IrfNEGSZakiszG4",
   "name": "Lifeless Flame",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/teresaguido_Lifeless%20Flames.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/teresaguido_Lifeless%20Flames.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -2755,7 +2755,7 @@
     "width": 4,
     "height": 4,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/lifeless%20flame%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/lifeless%20flame%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

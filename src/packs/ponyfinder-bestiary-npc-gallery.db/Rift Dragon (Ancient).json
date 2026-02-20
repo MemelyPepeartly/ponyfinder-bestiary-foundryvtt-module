@@ -1,7 +1,7 @@
 {
   "_id": "J4hhqxi8c6U6a6vH",
   "name": "Rift Dragon (Ancient)",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderRiftDragonGreatWyrm.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderRiftDragonGreatWyrm.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -2143,7 +2143,7 @@
     "width": 3,
     "height": 3,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/rift%20dragon%20elder%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/rift%20dragon%20elder%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

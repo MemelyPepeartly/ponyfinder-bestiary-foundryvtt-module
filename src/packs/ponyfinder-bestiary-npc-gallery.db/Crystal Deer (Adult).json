@@ -1,7 +1,7 @@
 {
   "_id": "h089qpicEDQXT43u",
   "name": "Crystal Deer (Adult)",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PachPaints_-_Crystal_Deer_for_WolfWings.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PachPaints_-_Crystal_Deer_for_WolfWings.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1343,7 +1343,7 @@
     "width": 3,
     "height": 3,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/Crystal%20Deer%20Token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/Crystal%20Deer%20Token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

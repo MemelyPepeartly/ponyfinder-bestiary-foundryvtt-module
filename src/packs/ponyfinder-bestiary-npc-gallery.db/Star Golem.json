@@ -1,7 +1,7 @@
 {
   "_id": "U5HuribmAYJhE1Eo",
   "name": "Star Golem",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/TMS_Star-Golem_Final.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/TMS_Star-Golem_Final.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -3086,7 +3086,7 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/star%20golem%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/star%20golem%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

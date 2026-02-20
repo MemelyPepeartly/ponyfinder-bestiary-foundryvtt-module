@@ -1,7 +1,7 @@
 {
   "_id": "ouPtA4g7ud0sEasF",
   "name": "Reptilin Strangler",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderReptilinStrangler1.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderReptilinStrangler1.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1561,7 +1561,7 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderReptilinStrangler1.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderReptilinStrangler1.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

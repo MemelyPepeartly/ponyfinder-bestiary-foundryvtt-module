@@ -1,7 +1,7 @@
 {
   "_id": "bH26pfRfatcg7Z7P",
   "name": "Line Tender",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/waxraven_linetender.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/waxraven_linetender.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1744,7 +1744,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/line%20tender%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/line%20tender%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

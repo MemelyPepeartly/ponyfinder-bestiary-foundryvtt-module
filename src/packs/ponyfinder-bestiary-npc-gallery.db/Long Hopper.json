@@ -1,7 +1,7 @@
 {
   "_id": "OoIaCOFicjStaEeb",
   "name": "Long Hopper",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/waxraven_longhoppers.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/waxraven_longhoppers.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1316,7 +1316,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/waxraven_longhoppers.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/waxraven_longhoppers.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

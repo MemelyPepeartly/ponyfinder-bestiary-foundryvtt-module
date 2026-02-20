@@ -1,7 +1,7 @@
 {
   "_id": "9AA658uTJHhKXABs",
   "name": "Deer Hunter",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/TMS_DeerHunter_Final.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/TMS_DeerHunter_Final.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1351,7 +1351,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/deerhunter%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/deerhunter%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

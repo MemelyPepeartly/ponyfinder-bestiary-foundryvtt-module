@@ -1,7 +1,7 @@
 {
   "_id": "zlUVdj12W0bh6Q9S",
   "name": "Gem Gnoll Raider",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/teargar_FINAL_nobg.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/teargar_FINAL_nobg.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1634,7 +1634,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/gnoll%20raider%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/gnoll%20raider%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

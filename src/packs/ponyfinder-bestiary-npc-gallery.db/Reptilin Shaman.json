@@ -1,7 +1,7 @@
 {
   "_id": "4kSOR2pv8chYXyzq",
   "name": "Reptilin Shaman",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderReptilinShaman1.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderReptilinShaman1.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -1561,7 +1561,7 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/shaman%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/shaman%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

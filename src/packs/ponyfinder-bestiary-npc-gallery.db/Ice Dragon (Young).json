@@ -1,7 +1,7 @@
 {
   "_id": "8SLIUxS4IkPizR8r",
   "name": "Ice Dragon (Young)",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/teresaguido_Ice%20Dragon.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/teresaguido_Ice%20Dragon.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -2441,7 +2441,7 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/ice-dragon.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/ice-dragon.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

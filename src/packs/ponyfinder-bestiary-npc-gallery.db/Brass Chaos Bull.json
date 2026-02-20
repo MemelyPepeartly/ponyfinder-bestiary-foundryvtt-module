@@ -1,7 +1,7 @@
 {
   "_id": "eF49oJOL7DJJcrEy",
   "name": "Brass Chaos Bull",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderBrassChaosBull.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderBrassChaosBull.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -3095,7 +3095,7 @@
     "width": 2,
     "height": 2,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/chaosbulltoken.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/chaosbulltoken.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,

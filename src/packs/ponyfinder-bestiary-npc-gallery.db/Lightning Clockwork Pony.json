@@ -1,7 +1,7 @@
 {
   "_id": "Lcqy0aaJ6Rz4cxzD",
   "name": "Lightning Clockwork Pony",
-  "img": "modules/ponyfinder-bestiary-of-everglow/assets/portraits/PonyfinderLightningClockworkPony.webp",
+  "img": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/portraits/PonyfinderLightningClockworkPony.webp",
   "type": "npc",
   "system": {
     "attributes": {
@@ -3057,7 +3057,7 @@
     "width": 1,
     "height": 1,
     "texture": {
-      "src": "modules/ponyfinder-bestiary-of-everglow/assets/tokens/lightning%20clockwork%20pony%20token.webp",
+      "src": "modules/ponyfinder-bestiary-of-everglow-for-pathfinder-2e/assets/tokens/lightning%20clockwork%20pony%20token.webp",
       "anchorX": 0.5,
       "anchorY": 0.5,
       "offsetX": 0,
