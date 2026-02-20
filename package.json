@@ -5,7 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy:local": "node ./tools/deploy-local.mjs",
+    "test:local": "npm run build && npm run deploy:local"
   },
   "author": "Memely",
   "license": "MIT",
